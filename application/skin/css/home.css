@@ -1,0 +1,222 @@
+html,body{
+	font-family: 'Microsoft YaHei';
+}
+ul{
+	list-style: none;
+	padding: 0;
+}
+.clear:after{
+	content: '';
+	display: block;
+	height: 0;
+	clear: both;
+	zoom: 1; 
+}
+a{
+	color: #333;
+}
+a:hover{
+	color: #333;
+}
+.center{
+	width: 1170px;
+	margin: 0 auto;
+}
+.header{
+	height: 40px;
+	background-color: #ed3d3d;
+}
+.header div ul{
+	float: right;
+	color: white;
+}
+.header div ul li{
+	float: left;
+	line-height: 40px;
+	margin: 0 40px;
+}
+.header div ul li a{
+	color: white;
+	line-height: 40px;
+	font-size: 16px;
+}
+.content-tit ul{
+	float: left;
+}
+.content-tit>span{
+	padding: 10px 0;
+	font-size: 22px;
+	color: #bfbfbf;
+}
+.content-tit ul li:not(:first-child):before{
+	content: '';
+	height: 20px;
+	width: 1px;
+	position: absolute;
+	top: 18px;
+	left: 0;
+	background-color: gainsboro;
+}
+.content-tit ul li{
+	float: left;
+	padding: 10px 20px;
+	position: relative;
+}
+.content-tit ul li.active a{
+	border-bottom: 2px solid #ed3d3d;
+	color: #ed3d3d;
+}
+.content-tit ul li a{
+	font-size: 20px;
+	padding-bottom: 10px;
+}
+.content-tit ul li a:hover{
+	color: #ed3d3d;
+}
+.content-nav{
+	margin-bottom: 30px;
+}
+.content-nav ul{
+	background-color: gainsboro;
+
+}
+.content-nav ul li{
+	float: left;
+	width: 20%;
+	text-align: center;
+	padding: 5px 0;
+}
+.content-nav ul li a{
+	display: inline-block;
+	font-size: 17px;
+	padding: 3px 25px;
+}
+.content-nav ul li a.am-active{
+	background-color: #ed3d3d;
+	color: white;
+	border-radius: 8px;
+}
+.order-goods{
+	margin-bottom: 30px;
+}
+.order-goods h2{
+	font-size: 20px;
+	padding-left: 50px;
+	font-weight:500;
+}
+.order-goods img{
+	float: left;
+	width: 180px;
+}
+.goods-info{
+	margin-left: 185px;
+}
+.goods-info>h1{
+	font-size: 35px;
+	font-weight: normal;
+	line-height: 40px;
+	margin: 0;
+}
+.goods-info>p{
+	margin: 10px 0;
+	font-size: 20px;
+	line-height: 25px;
+}
+.goods-info>p span{
+	position: relative;
+	color: #c9c9c9;
+}
+.goods-info>p span:before{
+	font: normal normal normal 1.6rem/1 FontAwesome,sans-serif;
+	content: '\f005\f005\f005\f005\f005';
+}
+.goods-info>p span i{
+	position: absolute;
+	top: 0;
+	left:0;
+	width: 100%;
+	height: 100%;
+	color: #ed3d3d;
+	overflow: hidden;
+	white-space:nowrap;
+	width: 80%;
+}
+.goods-info>p span i:before{
+	font: normal normal normal 1.6rem/1 FontAwesome,sans-serif;
+	content: '\f005\f005\f005\f005\f005';
+}
+.goods-price .goods-pl{
+	float: left;
+}
+.goods-price .goods-pl p{
+	margin-bottom: 10px;
+	color: #ffcf40;
+}
+.goods-price .goods-pl p span{
+	color: white;
+	padding: 5px 5px 10px;
+	background: url('../img/pfen_03.png') no-repeat;
+	background-size: 100% 100%;
+}
+.goods-pr{
+	float: right;
+}
+.goods-pr a{
+	display: inline-block;
+	padding: 3px 15px;
+	border-radius: 45px;
+	background-color: #ed3d3d;
+	color: white;
+	font-size: 20px;
+	margin-right: 60px;
+	margin-top: 10px;
+}
+.footer{
+	border-top: 1px solid gainsboro;
+}
+.footer ul{
+	padding: 50px 0;
+}
+.footer ul li h1{
+	font-size: 20px;
+	margin-bottom: 15px;
+}
+.footer ul li p{
+	margin: 10px 0;
+}
+.footer ul li a{
+	font-size: 18px;
+}
+.footer-btm{
+	text-align: center;
+	color: gray;
+}
+.erweima {
+	margin-left: -50px;
+	padding: 20px 0 20px 50px;
+	border-left: 1px solid #bfbfbf;
+}
+.erweima img{
+	width: 120px;
+	height: 120px;
+	float: left;
+	margin-right: 10px;
+}
+.erweima h2{
+	margin-top: 20px;
+	font-weight: normal;
+	font-size: 20px;
+}
+.erweima span{
+	color: #bfbfbf;
+	font-size: 17px;
+	display: inline-block;
+	margin-bottom: 20px;
+}
+
+
+
+
+
+
+
