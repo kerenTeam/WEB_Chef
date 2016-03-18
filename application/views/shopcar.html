@@ -3,13 +3,29 @@
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<title>大厨大家</title>
+<title>大厨大家-购物篮</title>
 <meta name="description" content="">
 <meta name="keywords" content="">
+<base href="<?php echo base_url();?>application/" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<link href="style.css" rel="stylesheet">
+<link rel="stylesheet" href="skin/css/amazeui.min.css">
+<link rel="stylesheet" type="text/css" href="skin/css/home.css">
+
+
+<link href="skin/css/shopcar.css" rel="stylesheet">
 </head>
 <body>
+<div class="header">
+    <div class="center">
+      <ul class="clear">
+        <li><a href="<?=site_url('welcome/personal');?>">我的订单</a></li>
+        <li><a href="#">我的大厨</a></li>
+        <li><a href="#">最近浏览</a></li>
+        <li><a href="#">购物篮</a></li>
+        <li><a href="javascript:;">登录/注册</a></li>
+      </ul>
+    </div>
+  </div>
 	<!-- main -->
 	<div class="main">
 		<!-- biaoti -->
@@ -21,7 +37,7 @@
 		<!-- xuanze -->
 		<div class="xuanze">
 			<span class="xunze_left">
-				<input type ="checkbox" name ="selected" value ="" class="cheyouall nihao" />
+				<label class="am-checkbox am-danger"><input type ="checkbox" name ="selected" value ="" class="cheyouall nihao" data-am-ucheck/></label>
 				<a href="javascript:;">全选</a>
 				<a href="javascript:;">项目</a>
 			</span>
@@ -35,34 +51,34 @@
 		<div class="shangpinlist">
 			<ul id="youul">
 				<li>
-					<input class="cheyou" type ="checkbox" name ="selected" value =""  />
-					<img src="img/caipintu.jpg" alt="">
+					<label class="am-checkbox am-danger"><input class="cheyou" type ="checkbox" name ="selected" value ="" data-am-ucheck/></label>
+					<img src="skin/img/caipintu.jpg" alt="">
 					<span><b>回锅肉，</b>口味独特,色泽红亮,肥而不腻入口浓香.简单搞定<br/> 身体必备营养物质</span>
 					<p class="p1">￥<span class="p1span">30.45</span></p>
 					<div class="jiajian">
-						<img class="jian"  src="img/jian.png"><input class="shuzhi" value="0" readonly><img class="jia"  src="img/jia.jpg">
+						<img class="jian"  src="skin/img/jian.png"><input class="shuzhi" value="0" readonly><img class="jia"  src="skin/img/jia.jpg">
 					</div>
 					<p class="p2">￥ <span class="p2span">0.00</span> </p>
 					<a href="javascript:;" class="you_a">删除</a>
 				</li>
 				<li>
-					<input class="cheyou" type ="checkbox" name ="selected" value ="">
-					<img src="img/caipintu.jpg" alt="">
+					<label class="am-checkbox am-danger"><input class="cheyou" type ="checkbox" name ="selected" value ="" data-am-ucheck /></label>
+					<img src="skin/img/caipintu.jpg" alt="">
 					<span><b>回锅肉，</b>口味独特,色泽红亮,肥而不腻入口浓香.简单搞定<br/> 身体必备营养物质</span>
 					<p class="p1">￥<span class="p1span">30.24</span></p>
 					<div class="jiajian">
-						<img class="jian" src="img/jian.png"><input class="shuzhi" value="0"><img class="jia" src="img/jia.jpg">
+						<img class="jian" src="skin/img/jian.png"><input class="shuzhi" value="0"><img class="jia" src="skin/img/jia.jpg">
 					</div>
 					<p class="p2">￥ <span class="p2span">0.00</span> </p>
 					<a href="javascript:;" class="you_a">删除</a>
 				</li>
 				<li>
-					<input class="cheyou" type ="checkbox" name ="selected" value =""  />
-					<img src="img/caipintu.jpg" alt="">
+					<label class="am-checkbox am-danger"><input class="cheyou" type ="checkbox" name ="selected" value ="" data-am-ucheck /></label>
+					<img src="skin/img/caipintu.jpg" alt="">
 					<span><b>回锅肉，</b>口味独特,色泽红亮,肥而不腻入口浓香.简单搞定<br/> 身体必备营养物质</span>
 					<p class="p1">￥<span class="p1span">30.45</span></p>
 					<div class="jiajian">
-						<img class="jian"  src="img/jian.png"><input class="shuzhi" value="0" readonly><img class="jia"  src="img/jia.jpg">
+						<img class="jian"  src="skin/img/jian.png"><input class="shuzhi" value="0" readonly><img class="jia"  src="skin/img/jia.jpg">
 					</div>
 					<p class="p2">￥ <span class="p2span">0.00</span> </p>
 					<a href="javascript:;" class="you_a" >删除</a>
@@ -71,13 +87,13 @@
 			<!-- 结算 -->
 			<div class="jiesuan">
 				<p class="p3"><span style="color: #000">合计：</span>￥<span id="p3span">0.00</span></p>
-				<p><img src="img/jiesuan.png" alt=""></p>
+				<p><input type="submit" value="去付款" class="am-btn am-btn-danger am-radius" /></p>
 			</div>
 		</div>
 		</form>
 		<!-- 购买人信息 -->
 		<div class="peoplexinxi">
-			<form>
+			<form class="am-form">
 				<p>
 					<span class="xinxi_span">收货人姓名</span><input type="text" name="shname" />
 				</p>
@@ -85,17 +101,49 @@
 					<span class="xinxi_span">手机号码</span><input type="text" name="sjname" />
 				</p>
 				<p>
-					<span class="xinxi_span">详细地址</span><input style="width:300px;height:50px;" type="text" name="xiname" />
+					<span class="xinxi_span">详细地址</span><textarea></textarea> 
 				</p>
 				<div>
-					<input type="checkbox"><span>设置为默认地址</span>
-					<input class="tijiao" type="submit" value="" />
+					<label class="am-checkbox am-danger"><input type="checkbox"  data-am-ucheck> 设置为默认地址</label>
+					<input type="submit" value="保存" class="am-btn am-btn-danger am-radius" />
 				</div>
 			</form>
 		</div>
-
-
 	</div>
-<script src="script.js"></script>	
+	<div class="footer">
+    <div class="center">
+      <ul class="am-avg-sm-4">
+        <li>
+          <h1>用户帮助</h1>
+          <p><a href="#">服务中心</a></p>
+          <p><a href="#">常见问题</a></p>
+          <p><a href="#">在线客服</a></p>
+        </li>
+        <li>
+          <h1>商务合作</h1>
+          <p><a href="#">服务中心</a></p>
+          <p><a href="#">常见问题</a></p>
+          <p><a href="#">在线客服</a></p>
+        </li>
+        <li>
+          <h1>关于我们</h1>
+          <p><a href="#">服务中心</a></p>
+          <p><a href="#">常见问题</a></p>
+          <p><a href="#">在线客服</a></p>
+        </li>
+        <li>
+          <div class="erweima">
+            <img src="skin/img/erweima.png">
+            <h2> 下载手机版</h2>
+            <span> 手机订餐方便</span>
+          </div>
+        </li>
+      </ul>
+      <p class="footer-btm">DHFUEGQA UGR(JISFHOOOO</p>
+    </div>
+  </div>
+<script src="skin/js/jquery.min.js"></script>
+<script src="skin/js/amazeui.min.js"></script>
+<script src="skin/js/shopcar.js"></script>
 </body>
 </html>

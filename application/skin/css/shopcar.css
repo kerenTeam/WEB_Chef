@@ -13,6 +13,9 @@
 a{
 	text-decoration: none;
 }
+ul{
+	padding: 0;
+}
 li{
 	list-style: none;
 }
@@ -39,7 +42,7 @@ li{
 }
 .quanbu span{
     border-bottom: 2px solid red;
-    padding-bottom: 9px;
+    padding-bottom: 12px;
 }
 /* xuanze */
 .xuanze{
@@ -66,8 +69,11 @@ li{
 	border: 1px solid #c4c2c2;
 }
 .shangpinlist li{
-	height: 80px;
-	padding-top: 20px; 
+	padding: 20px 0; 
+}
+.shangpinlist label.am-checkbox,.xunze_left label.am-checkbox{
+	display: inline-block;
+	width: auto;
 }
 .shangpinlist ul>li:first-child{
 	border-top: 0;
@@ -85,6 +91,7 @@ li{
 	vertical-align: middle;
 	width: 110px;
 	margin-left: 30px;
+	height: 65px;
 }
 .shangpinlist input{
 	margin-left: 50px;
@@ -99,6 +106,7 @@ li{
 	width: 26px; 
 	margin:0px;
 	height: 26px;
+	vertical-align: top;
 }
 .jiajian input{
 	margin: 0; 
@@ -131,6 +139,9 @@ li{
 .p3 span{
 	color: #ff3333;font-size: 18px;
 }
+.jiesuan input{
+	font-size: 20px;
+}
 /* 购买人信息 */
 .peoplexinxi{
 	border: 1px solid #c4c2c2;
@@ -142,6 +153,15 @@ li{
 	display: inline-block;
 	text-align: right;
     margin-right: 10px;
+}
+.peoplexinxi .am-form input{
+	display: inline-block;
+	width: auto;
+}
+.peoplexinxi .am-form textarea{
+	display: inline-block;
+	width: 300px;
+	height: 100px;
 }
 .peoplexinxi p{
 	margin-top: 20px;

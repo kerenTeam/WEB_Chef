@@ -88,9 +88,10 @@
 	var oCheyouall = document.getElementsByClassName("cheyouall");
 	for (var i = 0; i < oCheyouall.length; i++) {
 		oCheyouall[i].onclick = function(){
-			if (this.className === 'cheyouall nihao') {
+			if (this.className == "cheyouall nihao am-ucheck-checkbox") {
 				for (var k = 0; k < ochecklist.length; k++) {
 					ochecklist[k].checked = this.checked;
+					console.log(123)
 				}
 			}
 			if (this.checked == false) {

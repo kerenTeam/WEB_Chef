@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>大厨到家-详情</title>
     <meta charset="utf-8">
   	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <base href="<?php echo base_url();?>application/" />
   	<meta name="description" content="">
   	<meta name="keywords" content="">
   	<!-- Set render engine for 360 browser -->
@@ -11,15 +12,15 @@
     <!-- No Baidu Siteapp-->
     <meta http-equiv="Cache-Control" content="no-siteapp"/>
     <!-- <link rel="icon" type="image/png" href="assets/i/favicon.png"> -->
-    <link rel="stylesheet" href="../skin/css/amazeui.min.css">
-    <link rel="stylesheet" type="text/css" href="../skin/css/home.css">
+    <link rel="stylesheet" href="skin/css/amazeui.min.css">
+    <link rel="stylesheet" type="text/css" href="skin/css/home.css">
 
 </head>
 <body>
   <div class="header">
     <div class="center">
       <ul class="clear">
-        <li><a href="#">我的订单</a></li>
+        <li><a href="<?=site_url('welcome/personal');?>">我的订单</a></li>
         <li><a href="#">我的大厨</a></li>
         <li><a href="#">最近浏览</a></li>
         <li><a href="#">购物篮</a></li>
@@ -50,14 +51,14 @@
                     class="am-slider am-slider-default info-pics"
                     data-am-flexslider="{controlNav: 'thumbnails', directionNav: false, slideshow: false}">
                     <ul class="am-slides">
-                      <li data-thumb="../skin/img/food_info_03.png">
-                        <img src="../skin/img/food_info_03.png" /></li>
-                      <li data-thumb="../skin/img/food_info_03.png">
-                        <img src="../skin/img/food_info_03.png" /></li>
-                      <li data-thumb="../skin/img/food_info_03.png">
-                        <img src="../skin/img/food_info_03.png" /></li>
-                      <li data-thumb="../skin/img/food_info_03.png">
-                        <img src="../skin/img/food_info_03.png" /></li>
+                      <li data-thumb="skin/img/food_info_03.png">
+                        <img src="skin/img/food_info_03.png" /></li>
+                      <li data-thumb="skin/img/food_info_03.png">
+                        <img src="skin/img/food_info_03.png" /></li>
+                      <li data-thumb="skin/img/food_info_03.png">
+                        <img src="skin/img/food_info_03.png" /></li>
+                      <li data-thumb="skin/img/food_info_03.png">
+                        <img src="skin/img/food_info_03.png" /></li>
                     </ul>
                   </div>
               </li>
@@ -72,9 +73,9 @@
                         <div class="food-num clear">
                             <div>数量</div>
                             <div class="num-btn">
-                                <span id="subtract"><img src="../skin/img/jian.png"></span>
+                                <span id="subtract"><img src="skin/img/jian.png"></span>
                                 <input value="1" readonly></input>
-                                <span id="plus"><img src="../skin/img/jia.jpg"></span>
+                                <span id="plus"><img src="skin/img/jia.jpg"></span>
                             </div>
                         </div>
                         <ul class="buy-food">
@@ -83,7 +84,7 @@
                             </li>
                             <li>
                                 <a class="am-btn am-btn-default am-radius join-car" href="#">
-                                  <img src="../skin/img/shop-car_03.png">
+                                  <img src="skin/img/shop-car_03.png">
                                 </a>
                             </li>
                             <li>
@@ -101,7 +102,7 @@
                                     <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
                                 </a>
                                 </div>
-                                <img src="../skin/img/share_03.png">
+                                <img src="skin/img/share_03.png">
                                     <span> 分享</span>
                                 </div>
                             </li>
@@ -123,8 +124,8 @@
                 属于优质蛋白质.回锅肉的营养非常全面，除了蛋白质、脂肪等主要营养成分。含有钙
                 铁、锌等人体必备元素。方便快捷，家常菜。便利好操作。属于优质蛋白质.回锅肉的营养非常全面，除了蛋白质、脂肪等主要营养成分。含有钙铁、锌等人体必备元素。方便快捷，家常菜。便利好操作。
             </p>
-            <img src="../skin/img/food_info_03.png">
-            <img src="../skin/img/food_info_03.png">
+            <img src="skin/img/food_info_03.png">
+            <img src="skin/img/food_info_03.png">
           </div>
           <!-- 消费评论 -->
           <div class="food-appraise">
@@ -287,7 +288,7 @@
         </li>
         <li>
           <div class="erweima">
-            <img src="../skin/img/erweima.png">
+            <img src="skin/img/erweima.png">
             <h2> 下载手机版</h2>
             <span> 手机订餐方便</span>
           </div>
@@ -296,8 +297,8 @@
       <p class="footer-btm">DHFUEGQA UGR(JISFHOOOO</p>
     </div>
   </div>
-<script src="../skin/js/jquery.min.js"></script>
-<script src="../skin/js/amazeui.min.js"></script>
+<script src="skin/js/jquery.min.js"></script>
+<script src="skin/js/amazeui.min.js"></script>
 <script type="text/javascript">
     $(function(){
         var remove = $("#subtract");
