@@ -1,0 +1,161 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2016-03-15 17:52:16
+ * @version $Id$
+ */
+*{
+	padding:0;
+	margin: 0; 
+	font-family: 微软雅黑;
+}
+a{
+	text-decoration: none;
+}
+li{
+	list-style: none;
+}
+/* tijiao */
+.main{
+	width: 1170px; 
+	margin:20px auto;
+}
+.biaoti {
+    border-bottom: 1px solid #999;
+    padding-bottom: 10px;
+}
+.biaoti a{
+	font-size: 20px; 
+	color: #ff3333;
+} 
+.biaoti .quanbu:after{
+	content: "";
+	width: 1px; 
+	height: 15px; 
+	background-color: #999; 
+	display: inline-block; 
+	margin: 0 5px 0 10px; 
+}
+.quanbu span{
+    border-bottom: 2px solid red;
+    padding-bottom: 9px;
+}
+/* xuanze */
+.xuanze{
+	margin: 10px 0;
+}
+.xunze_left a{
+	margin-left: 30px; color: #333;
+}
+.xunze_left input{
+	vertical-align: middle;
+    margin-right: -20px;
+    margin-left: 20px;
+    width: 16px;
+}
+.xunze_right{
+	float: right;
+}
+.xunze_right a{
+	margin-right: 100px;
+	 color: #333;
+}
+/* 商品列表 */
+.shangpinlist{
+	border: 1px solid #c4c2c2;
+}
+.shangpinlist li{
+	height: 80px;
+	padding-top: 20px; 
+}
+.shangpinlist ul>li:first-child{
+	border-top: 0;
+}
+.shangpinlist ul>li:last-child{
+	border-bottom:1px solid #c4c2c2; 
+}
+.shangpinlist span{
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 14px;
+	margin-left: 10px;
+}
+.shangpinlist img{
+	vertical-align: middle;
+	width: 110px;
+	margin-left: 30px;
+}
+.shangpinlist input{
+	margin-left: 50px;
+}
+.shangpinlist .p1,.shangpinlist .p2, .shangpinlist form ,.jiajian{
+	display: inline-block;
+}
+.jiajian {
+	margin-left: 75px; border: 1px solid #dcdcdc;
+}
+.jiajian img{
+	width: 26px; 
+	margin:0px;
+	height: 26px;
+}
+.jiajian input{
+	margin: 0; 
+	width: 26px;
+	border: 0; 
+	text-align: center;
+	outline: none;
+	font-size: 16px;
+	vertical-align: middle;
+}
+.shangpinlist .p1{
+	margin-left: 180px; color: #ff3333;
+}
+.shangpinlist .p2{
+	margin-left: 40px;color: #ff3333;
+}
+.shangpinlist a{
+    margin-left: 20px; color: #cc9999; font-size: 15px;
+}
+.shangpinlist li{
+	border-top: 1px solid #c4c2c2;
+} 
+/* 结算 */
+.jiesuan{
+    margin: 20px 0px 20px 950px;
+}
+.jiesuan .p3{
+	margin: 20px; color: #ff3333;
+}
+.p3 span{
+	color: #ff3333;font-size: 18px;
+}
+/* 购买人信息 */
+.peoplexinxi{
+	border: 1px solid #c4c2c2;
+	margin-top: 20px; 
+	padding-bottom: 30px;
+}
+.peoplexinxi .xinxi_span{
+	width: 100px; 
+	display: inline-block;
+	text-align: right;
+    margin-right: 10px;
+}
+.peoplexinxi p{
+	margin-top: 20px;
+}
+.peoplexinxi div{
+	margin:30px 0 0 120px; 
+}
+.peoplexinxi .tijiao{
+	display: block;
+    margin-top: 10px;
+    background: none;
+    background-image: url(img/baocun.png);
+    background-size: 100%;
+    width: 80px;
+    height: 41px;
+    border: 0;
+}
