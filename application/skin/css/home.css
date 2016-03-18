@@ -16,6 +16,9 @@ ul{
 a,a:link,a:hover,a:visited,a.active{
 	color: #333;
 }
+body{
+	background-color: #f5f2f2;
+}
 .center{
 	width: 1170px;
 	margin: 0 auto;
@@ -37,6 +40,9 @@ a,a:link,a:hover,a:visited,a.active{
 	color: white;
 	line-height: 40px;
 	font-size: 16px;
+}
+.content-tit{
+	background-color: #fff;
 }
 .content-tit ul{
 	float: left;
@@ -75,7 +81,7 @@ a,a:link,a:hover,a:visited,a.active{
 	margin-bottom: 30px;
 }
 .content-nav ul{
-	background-color: gainsboro;
+	background-color: #fff;
 
 }
 .content-nav ul li{
@@ -99,8 +105,10 @@ a,a:link,a:hover,a:visited,a.active{
 }
 .order-goods h2{
 	font-size: 20px;
-	padding-left: 50px;
-	font-weight:500;
+    padding: 0 50px;
+    font-weight: 500;
+    background: #fff;
+    display: inline-block;
 }
 .order-goods img{
 	float: left;

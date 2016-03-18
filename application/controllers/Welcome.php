@@ -40,4 +40,12 @@ class Welcome extends CI_Controller {
 
 		$this->load->view('shopcar.html');
 	}
+	function login(){
+
+		$this->load->view('login.html');
+	}
+	function register(){
+
+		$this->load->view('register.html');
+	}
 }
