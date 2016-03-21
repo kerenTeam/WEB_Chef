@@ -48,4 +48,12 @@ class Welcome extends CI_Controller {
 
 		$this->load->view('register.html');
 	}
+	function custom(){
+
+		$this->load->view('custom.html');
+	}
+	function price(){
+
+		$this->load->view('price.html');
+	}
 }

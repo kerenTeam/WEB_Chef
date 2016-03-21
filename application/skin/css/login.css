@@ -79,23 +79,33 @@ a,a:link,a:hover,a:visited,a.active{
 	height: 45px;
 	padding-left: 3.75rem !important;
 }
+.yz_ts div{
+	border: 1px solid #ed3d3d;
+	color: #ed3d3d;
+	/*border-radius: 5px;*/
+	padding: 5px 10px;
+	/*text-align: center;*/
+	font-size: 16px;
+	margin-bottom: 10px;
+}
 .validate>input[type="text"]{
 	display: inline-block;
 	height: 45px;
 	width: 50%;
 	vertical-align: top;
 }
-.validate div{
+.validate #code{
 	width: 35%;
 	display: inline-block;
 	height: 45px;
-	background: #ed3d3d;
+	background-color: #ed3d3d;
 }
 .validate span{
 	display: inline-block;
 	height: 50px;
 	font-size: 14px;
 	vertical-align: top;
+	cursor: pointer;
 }
 .group{
 	margin-bottom: 15px;
@@ -128,7 +138,6 @@ a,a:link,a:hover,a:visited,a.active{
 }
 .log_qw{
 	text-align: center;
-	padding-top: 30px;
 	margin-bottom: 15px;
 }
 .log_qw a{

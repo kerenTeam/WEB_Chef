@@ -32,9 +32,9 @@
       <div class="center">
           <div class="content-tit clear">
           <ul class="clear">
-            <li class="active"><a href="<?=site_url('welcome/add');?>">所有商品</a></li>
-            <li><a href="javascript:;">宴会定制</a></li>
-            <li><a href="javascript:;">实时菜价</a></li>
+            <li><a href="<?=site_url('welcome/add');?>">所有商品</a></li>
+            <li><a href="<?=site_url('welcome/custom');?>">宴会定制</a></li>
+            <li><a href="<?=site_url('welcome/price');?>">实时菜价</a></li>
           </ul>
         </div>
         <!-- info -->
@@ -299,15 +299,15 @@
 <script src="skin/js/amazeui.min.js"></script>
 <script type="text/javascript">
     $(function(){
-        var remove = $("javascript:;subtract");
-        var add = $("javascript:;plus");
+        var remove = $("#subtract");
+        var add = $("#plus");
         var num = $(".num-btn").find("input");
         remove.bind('click',nums);
         add.bind('click',nums);
         function nums(){
             var count = num.val();
             if($(this).attr('id') == "subtract"){
-                if(count <= 0){
+                if(count <= 1){
                     return false;
                 }else{
                   count--;
@@ -322,13 +322,13 @@
             num.val(count);
         }
         // 收藏
-        $("javascript:;food-collect").click(function(){
+        $("#food-collect").click(function(){
             var or = $(this).hasClass('house');
             $(this).toggleClass('house');
             if(or){
-                $("javascript:;food-collect span:last").html('收藏');
+                $("#food-collect span:last").html('收藏');
             }else{
-                $("javascript:;food-collect span:last").html('取消收藏');
+                $("#food-collect span:last").html('取消收藏');
             }
         });
     });

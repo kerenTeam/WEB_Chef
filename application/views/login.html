@@ -25,23 +25,24 @@
   <div class="logContent">
       <div class="log_ewm">
           <img src="skin/img/erweima.png">
-          <p>手机应该</p>
+          <p>手机应用</p>
       </div>
       <div class="logForm">
-          <form class="am-form">
+          <form class="am-form log_form">
               <h1>登录</h1>
+              <div class="yz_ts"></div>
               <div class="am-form-group am-form-icon">
                   <i class="am-icon-user"></i>
                   <input type="text" class="am-form-field name" placeholder="手机号/邮箱登录">
               </div>
               <div class="am-form-group am-form-icon">
                   <i class="am-icon-lock password"></i>
-                  <input type="password" class="am-form-field" placeholder="密码">
+                  <input type="password" class="am-form-field log_psw" placeholder="密码">
               </div>
               <div class="validate">
-                  <input type="text" class="am-form-field" placeholder="验证码">
-                  <div class=""></div>
-                  <span>看不清<br/>换一张</span>
+                  <input type="text" id="inputCode" class="am-form-field log_code" placeholder="验证码">
+                  <span id="code"></span>
+                  <span id="hyz">看不清<br/>换一张</span>
               </div>
               <div class="group">
                   <label class="am-checkbox am-danger">
@@ -50,7 +51,7 @@
                   </label>
               </div>
               <div class="group">
-                  <input type="submit" value="登 录" class="am-btn am-btn-danger am-radius log_btn" />
+                  <input type="submit" value="登 录" class="am-btn am-btn-danger am-radius log_btn" id="submit" />
               </div>
               <div class="log_link fix">
                   <a href="<?=site_url('welcome/register');?>" class="fl">新用户注册</a>
@@ -61,9 +62,9 @@
                       <p>第三方账号登录</p>
                   </div>
                   <div class="log_qw">
-                      <a href="javascript:;" class="am-icon-btn am-primary am-icon-qq">
+                      <a href="javascript:;" class="am-icon-btn am-primary am-icon-qq" onclick="notLogin();">
                       </a>
-                      <a href="javascript:;" class="am-icon-btn am-success am-icon-weixin">
+                      <a href="javascript:;" class="am-icon-btn am-success am-icon-weixin" onclick="notLogin();">
                       </a>
                       
                   </div>
@@ -85,5 +86,7 @@
 
 <script src="skin/js/jquery.min.js"></script>
 <script src="skin/js/amazeui.min.js"></script>
+<script src="skin/js/js.KinerCode.js"></script>
+<script type="text/javascript" src="skin/js/login.js"></script>
 </body>
 </html>

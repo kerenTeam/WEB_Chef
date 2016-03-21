@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>大厨到家-宴会定制</title>
+    <meta charset="utf-8">
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <base href="<?php echo base_url();?>application/" />
+  	<meta name="description" content="">
+  	<meta name="keywords" content="">
+  	<!-- Set render engine for 360 browser -->
+    <meta name="renderer" content="webkit">
+    <!-- No Baidu Siteapp-->
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <!-- <link rel="icon" type="image/png" href="assets/i/favicon.png"> -->
+    <link rel="stylesheet" href="skin/css/amazeui.min.css">
+    <link rel="stylesheet" type="text/css" href="skin/css/home.css">
+    <link rel="stylesheet" type="text/css" href="skin/css/custom.css">
+</head>
+
+<body>
+<!-- header -->
+<div class="header">
+  <div class="center">
+    <ul class="clear">
+      <li><a href="<?=site_url('welcome/personal');?>">我的订单</a></li>
+      <li><a href="<?=site_url('welcome/personal');?>">我的大厨</a></li>
+      <li><a href="<?=site_url('welcome/personal');?>">最近浏览</a></li>
+      <li><a href="<?=site_url('welcome/personal');?>">购物篮</a></li>
+      <li><a href="<?=site_url('welcome/login');?>">登录</a>/<a href="<?=site_url('welcome/register');?>">注册</a></li>
+    </ul>
+  </div>
+</div>
+<!-- content -->
+<div class="content">
+	<!-- center -->
+      <div class="center">
+		<div class="content-tit clear">
+          <ul class="clear">
+            <li><a href="<?=site_url('welcome/add');?>">所有商品</a></li>
+            <li class="active"><a href="<?=site_url('welcome/custom');?>">宴会定制</a></li>
+            <li><a href="<?=site_url('welcome/price');?>">实时菜价</a></li>
+          </ul>
+        </div>
+
+        <form class="message">
+        	<span class="custom_theme">你的宴会主题</span>
+        	<select data-am-selected>
+			  <option value="a">升学宴</option>
+			  <option value="b" selected>家庭团年宴</option>
+			  <option value="o">寿宴</option>
+			  <option value="m">婚宴</option>
+			  <option value="d">乔迁宴</option>
+			  <option value="g">其他</option>
+			</select><br/>
+        	<input type="text" class="message_input message_input_first am-form-field am-radius" placeholder="请输入你的用餐人数"/><br/>
+        	<input type="text" class="message_input am-form-field am-radius" placeholder="请输入你的用餐时间"/><br/>
+        	<input type="text" class="message_input message_input_last am-form-field am-radius" placeholder="请输入你的联系方式"/><br/>
+			<input type="submit" value="确认" class="am-btn am-btn-danger am-radius" />
+
+        </form>
+
+      </div>
+</div>
+
+<!-- 底部 -->
+<div class="footer">
+    <div class="center">
+      <ul class="am-avg-sm-4">
+        <li>
+          <h1>用户帮助</h1>
+          <p><a href="#">服务中心</a></p>
+          <p><a href="#">常见问题</a></p>
+          <p><a href="#">在线客服</a></p>
+        </li>
+        <li>
+          <h1>商务合作</h1>
+          <p><a href="#">服务中心</a></p>
+          <p><a href="#">常见问题</a></p>
+          <p><a href="#">在线客服</a></p>
+        </li>
+        <li>
+          <h1>关于我们</h1>
+          <p><a href="#">服务中心</a></p>
+          <p><a href="#">常见问题</a></p>
+          <p><a href="#">在线客服</a></p>
+        </li>
+        <li>
+          <div class="erweima">
+            <img src="skin/img/erweima.png">
+            <h2> 下载手机版</h2>
+            <span> 手机订餐方便</span>
+          </div>
+        </li>
+      </ul>
+      <p class="footer-btm">DHFUEGQA UGR(JISFHOOOO</p>
+    </div>
+  </div>      
+<script src="skin/js/jquery.min.js"></script>
+<script src="skin/js/amazeui.min.js"></script>
+</body>
+</html>

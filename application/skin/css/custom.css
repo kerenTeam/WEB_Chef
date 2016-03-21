@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+body{
+	background-color: #f5f2f2;
+}
+/* 宴会定制 */
+.message{
+	margin-left: 100px;
+}
+.message .custom_theme{
+	font-size: 20px;
+}
+.am-selected-btn.am-btn-default ,.am-active>.am-dropdown-content{
+	margin-left: 20px;
+}
+.message .message_input{
+    width: 500px;
+    height: 50px;
+    padding-left: 10px;
+}
+.message .message_input_first{
+	margin-top: 20px;
+}
+.message .message_input_last{
+	width: 350px;
+}
+.am-btn.am-radius{
+	margin-bottom: 200px;
+}
+
+/* 实时菜价 */
+.c_middle .market{
+	display: inline-block;
+    background-color: #fff;
+    padding: 6px 60px 6px 20px;
+    font-size: 18px;
+}
+#market_list{
+	width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    display: block;
+    padding-bottom: 100px;
+}
+#market_list td{
+	text-align:center; 
+	width: 400px;
+}
+#market_list tr{
+	height: 50px;
+	
+}
+#market_list .market_list_first{
+	height: 100px;
+}
+
+
