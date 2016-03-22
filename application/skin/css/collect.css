@@ -1,0 +1,40 @@
+.collect{
+	min-height: 450px;
+}
+.collect>p{
+	margin: 0;
+	text-align: center;
+	color: #999999;
+	padding-top: 20px;
+}
+.collect_list{
+	padding: 10px;
+}
+.collect_list:hover{
+	opacity: .9;
+}
+.collect_list img{
+	display: block;
+	width: 130px;
+	height: 130px;
+}
+.collect_list h2{
+	margin: 0;
+	font-weight: normal;
+	font-size: 18px;
+}
+.collect_list h2 span{
+	color: white;
+    padding: 3px 3px 8px;
+    background: url('../img/pfen_03.png') no-repeat center;
+    background-size: 100% 100%;
+    font-size: 14px;
+
+}
+.collect_list p{
+	margin: 0;
+	font-size: 20px;
+}
+.collect_list p span{
+	color: #ed3d3d;
+}

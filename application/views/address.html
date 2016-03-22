@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>大厨到家-收货地址</title>
+    <meta charset="utf-8">
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <base href="<?php echo base_url();?>application/" />
+  	<meta name="description" content="">
+  	<meta name="keywords" content="">
+  	<!-- Set render engine for 360 browser -->
+    <meta name="renderer" content="webkit">
+    <!-- No Baidu Siteapp-->
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <!-- <link rel="icon" type="image/png" href="assets/i/favicon.png"> -->
+    <link rel="stylesheet" href="skin/css/amazeui.min.css">
+    <link rel="stylesheet" type="text/css" href="skin/css/home.css">
+
+    <link rel="stylesheet" type="text/css" href="skin/css/collect.css">
+</head>
+<body>
+<div class="header">
+    <div class="center">
+      <ul class="clear">
+        <li><a href="<?=site_url('welcome/personal');?>">我的订单</a></li>
+        <li><a href="<?=site_url('welcome/personal');?>">我的大厨</a></li>
+        <li><a href="<?=site_url('welcome/personal');?>">最近浏览</a></li>
+        <li><a href="<?=site_url('welcome/car');?>">购物篮</a></li>
+        <li><a href="<?=site_url('welcome/login');?>">登录</a>/<a href="<?=site_url('welcome/register');?>">注册</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="content">
+      <div class="center">
+        <div class="content-tit clear">
+          <ul class="clear">
+            <li><a href="<?=site_url('welcome/add');?>">所有商品</a></li>
+            <li><a href="<?=site_url('welcome/custom');?>">宴会定制</a></li>
+            <li><a href="<?=site_url('welcome/price');?>">实时菜价</a></li>
+          </ul>
+        </div>
+      <div class="personal clear">
+          <div class="per-pl">
+            <div class="per-nav">
+              <h1><a href="<?=site_url('welcome/personal');?>">我的主页</a></h1>
+            </div>
+            <div class="per-nav">
+              <h1>订单中心</h1>
+              <ul>
+                  <li><a href="javascript:;">我的订单</a></li>
+                  <li><a href="<?=site_url('welcome/collection');?>" class="active">我的收藏</a></li>
+                  <li><a href="javascript:;">我的退款</a></li>
+              </ul>
+            </div>
+            <div class="per-nav">
+              <h1>我的账户</h1>
+              <ul>
+                  <li><a href="javascript:;">我的余额</a></li>
+                  <li><a href="javascript:;">优惠劵</a></li>
+                  <li><a href="javascript:;">会员卡</a></li>
+              </ul>
+            </div>
+            <div class="per-nav per-last">
+              <h1>设置</h1>
+              <ul>
+                  <li><a href="javascript:;">个人信息</a></li>
+                  <li><a href="javascript:;">收货地址</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="per-pr">
+              <!-- 收货地址 -->
+              <div class="address">
+                  <h1>收货地址</h1>
+                  <p>新增收货地址</p>
+                  <form class="am-form am-form-horizontal address_form">
+                      <div class="am-form-group">
+                        <label class="am-u-sm-3 am-form-label"><i>*</i> 所在地区</label>
+                        <div class="am-u-sm-9">
+                            <div class="liandong">
+                                <select name="province"> 
+                                </select>
+                                <select name="city"> 
+                                </select>
+                                <select name="area">
+                                </select>
+                            </div>
+                        </div>
+                      </div>
+
+                      <div class="am-form-group">
+                        <label class="am-u-sm-3 am-form-label"><i>*</i> 详细地址</label>
+                        <div class="am-u-sm-9">
+                          <textarea rows="5"></textarea>
+                        </div>
+                      </div>
+
+                      <div class="am-form-group">
+                        <label class="am-u-sm-3 am-form-label"><i>*</i> 收货人姓名</label>
+                        <div class="am-u-sm-9">
+                            <input type="text" style="width: 50%" />
+                        </div>
+                      </div>
+
+                      <div class="am-form-group">
+                        <label class="am-u-sm-3 am-form-label"><i>*</i> 手机号码</label>
+                        <div class="am-u-sm-9">
+                            <input type="text" style="width: 60%" />
+                        </div>
+                      </div>
+
+                      <div class="am-form-group">
+                        <div class="am-u-sm-offset-3 am-u-sm-9">
+                          <div class="checkbox">
+                            <label class="am-checkbox am-danger" style="padding-top: 0">
+                              <input type="checkbox" data-am-ucheck /> 设置为默认收货地址
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="am-form-group">
+                        <div class="am-u-sm-9 am-u-sm-offset-3">
+                          <button type="submit" class="am-btn am-btn-danger">保存</button>
+                        </div>
+                      </div>
+                  </form>
+                  <p>已保存收货地址</p>
+                  <table class="am-table am-table-striped am-table-hover myback">
+                        <thead>
+                            <tr>
+                                <th>收货人</th>
+                                <th>所在地区</th>
+                                <th>详细地址</th>
+                                <th>手机</th>
+                                <th>操作</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>张某某</td>
+                                <td>成都金牛区</td>
+                                <td>西安路街道20街道某某巷子</td>
+                                <td>15608097597</td>
+                                <td class="adr_cz"><a href="javascript:;">修改</a>/<a href="javascript:;">删除</a></td>
+                            </tr>
+                            <tr>
+                                <td>张某某</td>
+                                <td>成都金牛区</td>
+                                <td>西安路街道20街道某某巷子</td>
+                                <td>15608097597</td>
+                                <td class="adr_cz"><a href="javascript:;">修改</a>/<a href="javascript:;">删除</a></td>
+                            </tr>
+                        </tbody>
+                        </table>
+              </div>
+              
+          </div>
+      </div>
+      </div>
+  </div>
+
+  <div class="footer">
+    <div class="center">
+      <ul class="am-avg-sm-4">
+        <li>
+          <h1>用户帮助</h1>
+          <p><a href="javascript:;">服务中心</a></p>
+          <p><a href="javascript:;">常见问题</a></p>
+          <p><a href="javascript:;">在线客服</a></p>
+        </li>
+        <li>
+          <h1>商务合作</h1>
+          <p><a href="javascript:;">服务中心</a></p>
+          <p><a href="javascript:;">常见问题</a></p>
+          <p><a href="javascript:;">在线客服</a></p>
+        </li>
+        <li>
+          <h1>关于我们</h1>
+          <p><a href="javascript:;">服务中心</a></p>
+          <p><a href="javascript:;">常见问题</a></p>
+          <p><a href="javascript:;">在线客服</a></p>
+        </li>
+        <li>
+          <div class="erweima">
+            <img src="skin/img/erweima.png">
+            <h2> 下载手机版</h2>
+            <span> 手机订餐方便</span>
+          </div>
+        </li>
+      </ul>
+      <p class="footer-btm">DHFUEGQA UGR(JISFHOOOO</p>
+    </div>
+  </div>
+
+<script src="skin/js/jquery.min.js"></script>
+<script src="skin/js/amazeui.min.js"></script>
+<script src="skin/js/address.js"></script>
+<script type="text/javascript">
+    new PCAS("province","city","area","四川省","成都市");
+</script>
+</body>
+</html>

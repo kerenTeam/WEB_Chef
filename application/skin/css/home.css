@@ -344,6 +344,9 @@ body{
 	font-size: 18px;
 	color: #999999;
 }
+.per-basket{
+	min-height: 370px;
+}
 .per-basket>p{
 	padding: 120px 0;
 	text-align: center;
@@ -668,6 +671,136 @@ table.middle>tbody>tr>td{
 .food-pls li p{
 	font-size: 18px;
 }
+.per-pl a.active{
+	color: #ed3d3d;
+}
+.myback th{
+	font-weight: normal;
+	text-align: center;
+}
+.myback td{
+	text-align: center;
+}
+.tkje{
+	color: #ed3d3d;
+}
+.tkzt{
+	color: #165745;
+}
+.balance{
+	padding-top: 80px;
+	padding-left: 30px;
+	font-weight: bold;
+}
+.balance span{
+	font-size: 20px;
+	margin-left: 20px;
+	color: #ed3d3d;
+}
+.balance a{
+	font-weight: normal;
+	color: gray;
+	margin-left: 20px;
+	font-size: 14px;
+}
+.balance a.recharge{
+	margin-left: 40px;
+	
+}
+.member{
+	padding: 30px;
+}
+.member .mem-group{
+	margin-bottom: 15px;
+	font-size: 22px;
+}
+.member .mem-group i{
+	color: #165745;
+}
+.member .mem-group span{
+	color: #ed3d3d;
+	margin-left: 20px;
+}
+.member .mem-group .memcz{
+	margin-left: 100px;
+	font-size: 15px;
+}
+.crr_not{
+	text-align: center;
+	padding-top: 30px;
+	color: #999999;
+	font-size: 20px;
+}
+.coupon ul{
+	padding: 30px 0;
+}
+.coupon_bg{
+	background: url('../img/coupon1.png') no-repeat;
+	background-size: 100% 100%;
+	color: white;
+	padding: 5px;
+	margin: 0 5px;
+}
+.coupon_bg h1{
+	font-weight: normal;
+	margin: 0;
+	font-size: 22px;
+}
+.coupon_bg h1 span{
+	font-size: 30px;
+}
+.coupon_bg p{
+	margin: 3px 0 0;
+	font-size: 14px;
+}
+.coupon_pic2{
+	background: url('../img/coupon2.png') no-repeat;
+	background-size: 100% 100%;
+}
+.coupon_pic3{
+	background: url('../img/coupon3.png') no-repeat;
+	background-size: 100% 100%;
+}
+.coupon_pic4{
+	background: url('../img/coupon4.png') no-repeat;
+	background-size: 100% 100%;
+}
+.address{
+	padding: 15px 0 15px 15px;
+}
+.address h1{
+	font-weight: normal;
+	color: #3c6b92;
+	margin: 0;
+}
+.address p{
+	color: #ed3d3d;
+}
+.address_form{
+	width: 600px;
+}
+.address_form label{
+	font-weight: normal;
+}
+.address_form i{
+	color: red;
+}
+.adr_cz{
+	color: #ffb478;
+}
+.adr_cz a{
+	color: #ffb478;
+}
+.liandong select{
+	width: 32%;
+	display: inline-block;
+}
+
+
+
+
+
+
 
 
 

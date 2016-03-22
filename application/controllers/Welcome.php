@@ -56,4 +56,32 @@ class Welcome extends CI_Controller {
 
 		$this->load->view('price.html');
 	}
+	function collection(){
+
+		$this->load->view('collection.html');
+	}
+	function myorder(){
+
+		$this->load->view('myOrder.html');
+	}
+	function back(){
+
+		$this->load->view('moneyBack.html');
+	}
+	function balance(){
+
+		$this->load->view('balance.html');
+	}
+	function member(){
+
+		$this->load->view('member.html');
+	}
+	function coupon(){
+
+		$this->load->view('coupon.html');
+	}
+	function address(){
+
+		$this->load->view('address.html');
+	}
 }
