@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>大厨到家-个人中心</title>
+    <meta charset="utf-8">
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <base href="<?php echo base_url();?>application/" />
+  	<meta name="description" content="">
+  	<meta name="keywords" content="">
+  	<!-- Set render engine for 360 browser -->
+    <meta name="renderer" content="webkit">
+    <!-- No Baidu Siteapp-->
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <!-- <link rel="icon" type="image/png" href="assets/i/favicon.png"> -->
+    <link rel="stylesheet" href="skin/css/amazeui.min.css">
+    <link rel="stylesheet" type="text/css" href="skin/css/home.css">
+
+</head>
+<body>
+<div class="header">
+    <div class="center">
+      <ul class="clear">
+        <li><a href="<?=site_url('welcome/personal');?>">我的订单</a></li>
+        <li><a href="<?=site_url('welcome/personal');?>">我的大厨</a></li>
+        <li><a href="<?=site_url('welcome/personal');?>">最近浏览</a></li>
+        <li><a href="<?=site_url('welcome/car');?>">购物篮</a></li>
+        <li><a href="<?=site_url('welcome/login');?>">登录</a>/<a href="<?=site_url('welcome/register');?>">注册</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="content">
+      <div class="center">
+        <div class="content-tit clear">
+          <ul class="clear">
+            <li><a href="<?=site_url('welcome/add');?>">所有商品</a></li>
+            <li><a href="<?=site_url('welcome/custom');?>">宴会定制</a></li>
+            <li><a href="<?=site_url('welcome/price');?>">实时菜价</a></li>
+          </ul>
+        </div>
+      <div class="personal clear">
+          <div class="per-pl">
+            <div class="per-nav">
+              <h1>我的主页</h1>
+            </div>
+            <div class="per-nav">
+              <h1>订单中心</h1>
+              <ul>
+                  <li><a href="javascript:;">我的订单</a></li>
+                  <li><a href="javascript:;">我的收藏</a></li>
+                  <li><a href="javascript:;">我的评价</a></li>
+                  <li><a href="javascript:;">我的退款</a></li>
+              </ul>
+            </div>
+            <div class="per-nav">
+              <h1>我的账户</h1>
+              <ul>
+                  <li><a href="javascript:;">我的余额</a></li>
+                  <li><a href="javascript:;">优惠劵</a></li>
+                  <li><a href="javascript:;">会员卡</a></li>
+              </ul>
+            </div>
+            <div class="per-nav per-last">
+              <h1>设置</h1>
+              <ul>
+                  <li><a href="javascript:;">个人信息</a></li>
+                  <li><a href="javascript:;">收货地址</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="per-pr bgc">
+              
+              <!--  个人信息 -->
+              <div class="per-ctt">
+                  <div class="crr-tit clear">
+                    <ul>
+                        <li class="active">个人信息</li>
+                    </ul> 
+                  </div>
+                  <div class="per-center">
+                     <p class="am-margin-top-sm am-margin-left-sm">亲爱的<span class="username">XXX</span>,填写你的信息，增加你的魅力值吧！</p> 
+
+                    <!-- 信息修改表单 -->
+                     <form action="" method="" class="am-form am-u-lg-9" data-am-validator>
+                        <fieldset>
+
+                          <div class="am-form-group">
+                            <label for="doc-vld-ta-2">头像（<span>点击编辑头像</span>）：</label>
+                            <style>
+                               .wx_type_img{
+                                  position: relative;
+                                }
+                                label{
+                                  font-weight:400;
+                                }
+                                .wx_type_img input#imgUpload{
+                                  margin: 0;
+                                  cursor: pointer;
+                                  position: absolute;
+                                  top: 0;
+                                  left: 0;
+                                  height: 100%;
+                                  opacity: 0;
+                                  filter: alpha(opacity=0);
+                                }
+
+
+                            </style>
+                            <div class="wx_type_img">
+                              <input type="file" id="imgUpload" name="img[]" onchange="previewImage(this)" class="upload-add">
+                              <!-- 图片实时预览 -->
+                              <div id="preview"> <img style="border-radius: 3px;" src="skin/img/user.jpg" alt="选择图片"> 
+                               </div>
+                            </div>
+                          </div>
+
+                          <div class="am-form-group">
+                            <label for="doc-vld-name-2">* 昵称</label>
+                            <input type="text" id="doc-vld-name-2" minlength="3" placeholder="输入用户名（至少 3 个字符）" required/>
+                          </div>
+
+                          <div class="am-form-group">
+                            <label for="doc-vld-email-2">真实姓名：</label>
+                            <input type="text" id="doc-vld-email-2" placeholder="真实姓名"/>
+                          </div>
+
+                          <div class="am-form-group">
+                            <label class="am-form-label">菜品爱好：</label>
+                            <label class="am-checkbox-inline">
+                              <input type="checkbox" value="川菜" name="docVlCb"> 川菜
+                            </label>
+                            <label class="am-checkbox-inline">
+                              <input type="checkbox" value="湘菜" name="docVlCb"> 湘菜
+                            </label>
+                            <label class="am-checkbox-inline">
+                              <input type="checkbox" value="豫菜" name="docVlCb"> 豫菜
+                            </label>
+                            <label class="am-checkbox-inline">
+                              <input type="checkbox" value="粤菜" name="docVlCb"> 粤菜
+                            </label>
+                            <label class="am-checkbox-inline">
+                              <input type="checkbox" value="鲁菜" name="docVlCb"> 鲁菜
+                            </label>
+                          </div>
+
+                          <div class="am-form-group">
+                            <label>* 性别： </label>
+                            <label class="am-radio-inline">
+                              <input type="radio"  value="" name="docVlGender" required> 男
+                            </label>
+                            <label class="am-radio-inline">
+                              <input type="radio" name="docVlGender"> 女
+                            </label>
+                          </div>
+
+                          <div class="am-form-group">
+                            <label for="doc-select-1">生日</label>
+                            <p><input type="text" class="am-form-field" placeholder="日期选择" data-am-datepicker="{theme: 'success'}" readonly/></p>
+                            <span class="am-form-caret"></span>
+                          </div>  
+                          <button class="am-btn am-btn-secondary save" type="submit">提交</button>
+                        </fieldset>
+                      </form>
+                  </div>
+              </div> 
+          </div>
+      </div>
+      </div>
+  </div>
+
+  <div class="footer">
+    <div class="center">
+      <ul class="am-avg-sm-4">
+        <li>
+          <h1>用户帮助</h1>
+          <p><a href="javascript:;">服务中心</a></p>
+          <p><a href="javascript:;">常见问题</a></p>
+          <p><a href="javascript:;">在线客服</a></p>
+        </li>
+        <li>
+          <h1>商务合作</h1>
+          <p><a href="javascript:;">服务中心</a></p>
+          <p><a href="javascript:;">常见问题</a></p>
+          <p><a href="javascript:;">在线客服</a></p>
+        </li>
+        <li>
+          <h1>关于我们</h1>
+          <p><a href="javascript:;">服务中心</a></p>
+          <p><a href="javascript:;">常见问题</a></p>
+          <p><a href="javascript:;">在线客服</a></p>
+        </li>
+        <li>
+          <div class="erweima">
+            <img src="skin/img/erweima.png">
+            <h2> 下载手机版</h2>
+            <span> 手机订餐方便</span>
+          </div>
+        </li>
+      </ul>
+      <p class="footer-btm">DHFUEGQA UGR(JISFHOOOO</p>
+    </div>
+  </div>
+
+<script src="skin/js/jquery.min.js"></script>
+<script src="skin/js/amazeui.min.js"></script>
+<script src="skin/js/imgup.js"></script>
+</body>
+</html>

@@ -19,6 +19,18 @@ a,a:link,a:hover,a:visited,a.active{
 body{
 	background-color: #f5f2f2;
 }
+.bgc{
+	background-color:white;
+}
+.save{
+	background: #ED3D3D;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+}
+.save:hover{
+	background: #C0332A; 
+}
 .center{
 	width: 1170px;
 	margin: 0 auto;
@@ -230,6 +242,7 @@ body{
 /*个人中心*/
 .personal{
 	margin-bottom: 20px;
+	    background: #E5E5E5;
 }
 .per-pl{
 	float: left;

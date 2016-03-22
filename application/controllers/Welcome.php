@@ -22,7 +22,10 @@ class Welcome extends CI_Controller {
 	{
 		$this->load->view('welcome_message.html');
 	}
-
+    public function personalcenter()
+	{
+		$this->load->view('personalcenter.html');
+	}
 
 	function add(){
 
@@ -56,4 +59,13 @@ class Welcome extends CI_Controller {
 
 		$this->load->view('price.html');
 	}
+	function order(){
+
+		$this->load->view('order.html');
+	}
+	//个人信息
+	function userInfo(){
+		$this->load->view('userInfo.html');
+	}
+
 }
