@@ -31,6 +31,18 @@ body{
 .save:hover{
 	background: #C0332A; 
 }
+.chart{
+	 width: 100%;
+    background: white;
+    padding: 50px auto;
+    padding: 50px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+}
+.unit{
+	margin-left:12%;
+}
 .center{
 	width: 1170px;
 	margin: 0 auto;

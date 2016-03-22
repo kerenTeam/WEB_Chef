@@ -67,5 +67,9 @@ class Welcome extends CI_Controller {
 	function userInfo(){
 		$this->load->view('userInfo.html');
 	}
+	//实时菜价
+	function priceChart(){
+		$this->load->view('priceChart.html');
+	}
 
 }
