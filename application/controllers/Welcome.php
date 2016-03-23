@@ -95,8 +95,12 @@ class Welcome extends CI_Controller {
 	function userInfo(){
 		$this->load->view('userInfo.html');
 	}
+
 	function defray(){
 		$this->load->view('defray.html');
+	//实时菜价
+	function priceChart(){
+		$this->load->view('priceChart.html');
 	}
 
 }

@@ -64,11 +64,7 @@
 	        		</select>
 	        	</td>
 	        	<td>
-	        		<select data-am-selected>
-	        		  <option value="a">Apple</option>
-	        		  <option value="b" selected>2016-3-15</option>
-	        		  <option value="o">Orange</option>
-	        		  <option value="m">Mango</option>
+	        		<select data-am-selected id="adate">
 	        		</select>
 	        	</td>        	
         	</tr>
@@ -134,6 +130,22 @@
   </div>      
 <script src="skin/js/jquery.min.js"></script>
 <script src="skin/js/amazeui.min.js"></script>
+<script>
+ $(function(){
+     var adate = $('#adate');
+     var html;//定义selec追加的html元素
+     var now = new Date();
+ 
+  for(var i=0;i<7;i++){
+      var date = new Date(now.getTime() - i * 24 * 3600 * 1000);//循环得出每天的日期
+      var month = date.getMonth() + 1;
+      var day = date.getDate();
+      var year = date.getFullYear(); 
+      html+= '<option value="'+year+'-'+month+'-'+day+'">'+year+'-'+month+'-'+day+'</option>';
+     adate.html(html);
+  }
+ })
+</script>
 </body>
 </html>
 
