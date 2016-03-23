@@ -145,6 +145,7 @@ body{
 .order-goods img{
 	float: left;
 	width: 180px;
+	height: 150px;
 }
 .goods-info{
 	margin-left: 185px;
@@ -203,6 +204,11 @@ body{
 	padding: 5px 5px 10px;
 	background: url('../img/pfen_03.png') no-repeat;
 	background-size: 100% 100%;
+}
+.goods-price .goods-pl i{
+	font-style: normal;
+	color: gray;
+	font-size: 14px;
 }
 .goods-pr{
 	float: right;
@@ -928,10 +934,40 @@ table.middle>tbody>tr>td{
 .big-btn{
 	font-size: 20px;
 }
-
-
-
-
-
+.succeed{
+	min-height: 500px;
+	width: 400px;
+	margin: 0 auto;
+	padding: 100px 0;
+}
+.succeed h1{
+	font-weight: normal;
+	font-size: 32px;
+	white-space: nowrap;
+}
+.succeed p{
+	font-size: 18px;
+}
+.succeed a{
+	text-decoration: underline;
+	color: red;
+}
+.logFoot{
+	text-align: center;
+}
+.logFoot ul li{
+	display: inline-block;
+	padding: 0 20px;
+	border-left: 1px solid #e5e5e5;
+}
+.logFoot ul li:first-child{
+	border: none;
+}
+.logFoot ul li a{
+	font-size: 18px;
+}
+.logFoot p{
+	font-size: 18px;
+}
 
 
