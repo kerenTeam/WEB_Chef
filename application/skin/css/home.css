@@ -11,13 +11,33 @@ ul{
 	display: block;
 	height: 0;
 	clear: both;
-	zoom: 1; 
 }
 a,a:link,a:hover,a:visited,a.active{
 	color: #333;
 }
 body{
 	background-color: #f5f2f2;
+}
+.txt-r{
+	text-align: right;
+}
+.txt-l{
+	text-align: left;
+}
+.fr{
+	float: right;
+}
+.bgc{
+	background-color:white;
+}
+.save{
+	background: #ED3D3D;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+}
+.save:hover{
+	background: #C0332A; 
 }
 .center{
 	width: 1170px;
@@ -795,10 +815,107 @@ table.middle>tbody>tr>td{
 	width: 32%;
 	display: inline-block;
 }
-
-
-
-
+.defray{
+	min-height: 400px;
+	padding: 30px 0;
+}
+.defr_tab{
+	border-bottom: 1px solid #e5e5e5;
+}
+.defr_tab th,.defr_tab td{
+	/*text-align: center;*/
+	font-weight: normal;
+	font-size: 18px;
+}
+.defr_sum{
+	color: #ed3d3d;
+}
+.defr_tit{
+	padding: 10px 0;
+}
+.jiajian {
+	display: inline-block;
+	 border: 1px solid #dcdcdc;
+}
+.jiajian img{
+	width: 26px; 
+	margin:0px;
+	height: 28px;
+	vertical-align: top;
+}
+.jiajian input{
+	margin: 0; 
+	width: 26px;
+	border: 0; 
+	text-align: center;
+	outline: none;
+	font-size: 16px;
+	vertical-align: middle;
+}
+.defr_he{
+	margin: 0 0 15px 0;
+	padding: 50px 30px 20px; 
+	font-size: 25px;
+	text-align: right;
+	border-bottom: 1px solid #e5e5e5;
+}
+.defr_he span{
+	color: #ed3d3d;
+	font-size: 30px;
+}
+.defr_he span i{
+	font-style: normal;
+}
+.defr_info{
+	border: 1px solid #e5e5e5;
+	margin-bottom: 10px;
+}
+.defr_info>p{
+	margin: 0;
+	padding: 10px 50px;
+	background-color: #EEE;
+	font-size: 20px;
+	border-bottom: 1px solid #e5e5e5;
+}
+.defr_info>p>a{
+	color: #ed3d3d;
+	font-size: 16px;
+}
+.defr_shouji{
+	padding: 10px 50px;
+}
+.am-form .defr_info input[type=text]{
+	display: inline-block;
+	width: 250px;
+}
+.payment{
+	padding: 15px 0;
+}
+.payment .am-radio{
+	display: inline-block;
+	padding-top: 0; 
+	margin: 0 15px;
+}
+.prompt{
+	display: inline-block;
+	margin-left: 20px;
+	color: red;
+}
+.am-modal-bd{
+	/*overflow-y: scroll;*/
+}
+.am-form .sm-input input[type=text],.am-form .sm-input input[type=tel]{
+	width: 60%;
+}
+.phone~span{
+	display: inline-block;
+	margin-left: 15px;
+	font-size: 14px;
+	color: red;
+}
+.big-btn{
+	font-size: 20px;
+}
 
 
 

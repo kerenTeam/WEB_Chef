@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>大厨到家-个人中心</title>
+	<title>大厨到家-优惠劵</title>
     <meta charset="utf-8">
   	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <base href="<?php echo base_url();?>application/" />
@@ -40,29 +40,29 @@
       <div class="personal clear">
           <div class="per-pl">
             <div class="per-nav">
-              <h1><a href="<?=site_url('welcome/personal');?>" class="active">我的主页</a></h1>
+              <h1><a href="<?=site_url('welcome/personal');?>">我的主页</a></h1>
             </div>
             <div class="per-nav">
               <h1>订单中心</h1>
               <ul>
-                  <li><a href="javascript:;">我的订单</a></li>
+                  <li><a href="<?=site_url('welcome/myorder');?>">我的订单</a></li>
                   <li><a href="<?=site_url('welcome/collection');?>">我的收藏</a></li>
-                  <li><a href="javascript:;">我的退款</a></li>
+                  <li><a href="<?=site_url('welcome/back');?>">我的退款</a></li>
               </ul>
             </div>
             <div class="per-nav">
               <h1>我的账户</h1>
               <ul>
-                  <li><a href="javascript:;">我的余额</a></li>
-                  <li><a href="javascript:;">优惠劵</a></li>
-                  <li><a href="javascript:;">会员卡</a></li>
+                  <li><a href="<?=site_url('welcome/balance');?>">我的余额</a></li>
+                  <li><a href="<?=site_url('welcome/coupon');?>" class="active">优惠劵</a></li>
+                  <li><a href="<?=site_url('welcome/member');?>">会员卡</a></li>
               </ul>
             </div>
             <div class="per-nav per-last">
               <h1>设置</h1>
               <ul>
-                  <li><a href="javascript:;">个人信息</a></li>
-                  <li><a href="javascript:;">收货地址</a></li>
+                  <li><a href="<?=site_url('welcome/userInfo');?>">个人信息</a></li>
+                  <li><a href="<?=site_url('welcome/address');?>">收货地址</a></li>
               </ul>
             </div>
           </div>

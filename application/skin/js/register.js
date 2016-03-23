@@ -37,7 +37,7 @@ $(function(){
 		}else if(!(/^1((3|4|5|8|7){1}\d{1}|70)\d{8}$/.test(phone.val()))){
 			ts.html("<div>请输入正确的手机号</div>");
 		}else{
-			ts.remove();
+			ts.childen("div").remove();
 			gotime();
 		}
 	});

@@ -61,7 +61,7 @@ li{
 	float: right;
 }
 .xunze_right a{
-	margin-right: 100px;
+	margin-right: 110px;
 	 color: #333;
 }
 /* 商品列表 */
@@ -86,6 +86,9 @@ li{
 	vertical-align: middle;
 	font-size: 14px;
 	margin-left: 10px;
+}
+.shangpinlist ul li>span{
+	width: 350px;
 }
 .shangpinlist img{
 	vertical-align: middle;
@@ -118,10 +121,10 @@ li{
 	vertical-align: middle;
 }
 .shangpinlist .p1{
-	margin-left: 180px; color: #ff3333;
+	margin-left: 180px; color: #ff3333;width: 85px;
 }
 .shangpinlist .p2{
-	margin-left: 40px;color: #ff3333;
+	margin-left: 40px;color: #ff3333;width: 90px;
 }
 .shangpinlist a{
     margin-left: 20px; color: #cc9999; font-size: 15px;
@@ -131,7 +134,7 @@ li{
 } 
 /* 结算 */
 .jiesuan{
-    margin: 20px 0px 20px 950px;
+    margin: 50px 0px 20px 900px;
 }
 .jiesuan .p3{
 	margin: 20px; color: #ff3333;
