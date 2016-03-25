@@ -13,6 +13,8 @@
  	var oP2span = document.getElementsByClassName("p2span");
  	var oP3span = document.getElementById("p3span");
 
+ 	// 初始化
+ 	
 	// 加
 	for (var i = 0; i < oJia.length; i++) {
 		oJia[i].i = i;
@@ -41,7 +43,7 @@
 			}
 		// 改变总价
 		var p1shu = parseInt(oP1span[ad].innerHTML);
-		oP2span[ad].innerHTML =  p1shu*valueshu + '.00';
+		oP2span[ad].innerHTML =  (parseFloat(p1shu*valueshu)).toFixed(2);
 			if (p1shu*valueshu<=0) {
 				oP2span[ad].innerHTML = 0+'.00';
 			}
@@ -88,21 +90,22 @@
 	var oCheyouall = document.getElementsByClassName("cheyouall");
 	for (var i = 0; i < oCheyouall.length; i++) {
 		oCheyouall[i].onclick = function(){
-			if (this.className == "cheyouall nihao am-ucheck-checkbox") {
+			
 				for (var k = 0; k < ochecklist.length; k++) {
 					ochecklist[k].checked = this.checked;
-					console.log(123)
+					// console.log(123)
 				}
-			}
+			
 			if (this.checked == false) {
 				n=0;
 			}else if(this.checked == true){
 				n = ochecklist.length;
 			}
-		count();
+		
 		// console.log(n);
 		}
 	}
+	
 
 	// 删除
 	function delet(){

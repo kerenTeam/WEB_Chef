@@ -30,6 +30,9 @@ body{
 .bgc{
 	background-color:white;
 }
+.hcolor{
+	color: #ED3D3D;
+}
 .save{
 	background: #ED3D3D;
     border: none;
@@ -853,7 +856,7 @@ table.middle>tbody>tr>td{
 }
 .jiajian {
 	display: inline-block;
-	 border: 1px solid #dcdcdc;
+	 /*border: 1px solid #dcdcdc;*/
 }
 .jiajian img{
 	width: 26px; 
@@ -969,5 +972,80 @@ table.middle>tbody>tr>td{
 .logFoot p{
 	font-size: 18px;
 }
+.appraise{
+	min-height: 400px;
+}
+.wcolor a{
+	color: white;
+}
+.appraise .lcolor{
+	color: #0e90d2;
+}
+.ops_form{
+	margin-bottom: 30px;
+}
+.orderaps{
+	min-height: 350px;
+	border: 1px solid #e5e5e5;
+	padding: 60px 100px;
+}
+.ops_ord a{
+	display: block;
+}
+.ops_ord a:hover{
+	color: #ed3d3d;
+}
+.ops_ord a img{
+	max-width: 100%;
+}
+.ops_ord a p{
+	margin: 5px 0 0;
+	font-size: 18px;
+}
+.ops_app{
+	padding-left: 30px;
+}
+.ops_star li{
+	margin-bottom: 15px;
+}
+.ops_star li img{
+	width: 20px;
+}
+.ops_star li .number{
+	font-size: 18px;
+	display: inline-block;
+	width: 50px;
+}
+.ops_text{
+	margin-bottom: 30px;
+}
+.ops_text p{
+	margin-bottom: 3px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

@@ -35,9 +35,9 @@ $(function(){
 // 验证码
     var inp = document.getElementById('inputCode');
     var code = document.getElementById('code');
-    var submit = document.getElementById('submit');
+    var submit = document.getElementById('sub');
     document.getElementById('hyz').onclick = function(){
-        c.init(); 
+        c.init();
     }
 
 

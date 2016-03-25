@@ -80,7 +80,7 @@ a,a:link,a:hover,a:visited,a.active{
 	padding-left: 3.75rem !important;
 }
 .yz_ts div{
-	border: 1px solid #ed3d3d;
+	/*border: 1px solid #ed3d3d;*/
 	color: #ed3d3d;
 	/*border-radius: 5px;*/
 	padding: 5px 10px;
@@ -198,14 +198,58 @@ a,a:link,a:hover,a:visited,a.active{
 .am-checkbox.reg_cheb a{
 	color: #ed3d3d;
 }
-
-
-
-
-
-
-
-
+.crr-tit{
+	border-bottom: 2px solid #e5e5e5;
+}
+.crr-tit ul{
+	margin: 0 0 -2px;
+	float: left;
+}
+.crr-tit ul li{
+	padding: 10px;
+	font-size: 25px;
+	/*font-weight: 600;*/
+	color: #999999;
+	display: inline-block;
+}
+.crr-tit ul li.active{
+	border-bottom: 2px solid #ed3d3d;
+	color: #333;
+}
+.crr-tit a{
+	float: right;
+	margin-top: 18px;
+	font-size: 18px;
+	color: #999999;
+}
+.forget{
+	min-height: 500px;
+	padding: 50px 0;
+}
+.forget_step{
+	padding-top: 50px; 
+}
+.forget_step img{
+	width: 100%;
+}
+.forget_form{
+	border: 2px solid #e5e5e5;
+	margin-top: 35px;
+	padding: 80px 0;
+}
+.forget_form form{
+	width: 500px;
+	margin: 0 auto;
+}
+.forget-yzm .validate #code{
+	width: 33%;
+}
+.forget_form label{
+	font-weight: normal;
+}
+.for_step2,.for_step3{
+	display: none;
+}
 
 
 

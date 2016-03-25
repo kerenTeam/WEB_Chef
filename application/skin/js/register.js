@@ -4,7 +4,7 @@ $(function(){
 	$(".reg_sbm").bind("submit",function(){
 		var phone = $("#phone");
 		var psw = $("#password");
-		var code = $("#code");
+		var code = $("#phoneCode");
 		if(phone.val() == ''){
 			ts.html("<div>请输入手机号</div>");
 		}else if(!(/^1((3|4|5|8|7){1}\d{1}|70)\d{8}$/.test(phone.val()))){
@@ -19,7 +19,7 @@ $(function(){
 					ts.html("<div>请输入6~20个字符密码</div>");
 				}else{
 					if($(".reg_check").is(':checked')){
-						ts.remove();
+						ts.children("div").remove();
 						return true;
 					}else{
 						ts.html("<div>请同意用户手册</div>");
@@ -37,7 +37,8 @@ $(function(){
 		}else if(!(/^1((3|4|5|8|7){1}\d{1}|70)\d{8}$/.test(phone.val()))){
 			ts.html("<div>请输入正确的手机号</div>");
 		}else{
-			ts.childen("div").remove();
+			console.log(13);
+			ts.children("div").remove();
 			gotime();
 		}
 	});

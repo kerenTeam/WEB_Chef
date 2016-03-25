@@ -106,4 +106,15 @@ class Welcome extends CI_Controller {
 		$this->load->view('succeed.html');
 	}
 
+	function forget(){
+		$this->load->view('forgetpsw.html');
+	}
+	function appraise(){
+		$this->load->view('appraise.html');
+	}
+	function orderaps(){
+		$this->load->view('orderaps.html');
+	}
+
+
 }

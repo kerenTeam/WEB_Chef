@@ -7,36 +7,36 @@ $(function(){
 	});
 	count();
 });
-// 减
-$(".jian").bind("click",jian);
-// 加
-$(".jia").bind("click",jia);
-function jian(){
-	var num = $(this).next("input").val();
-	var price = $(this).parentsUntil("tbody").find(".price").html();
-	var total = $(this).parentsUntil("tbody").find(".total");
-	if(num < 1){
-		$(this).parentsUntil("tbody").remove();
-	}else if(num < 99){
-		num--;
-		total.html((parseFloat(num*price)).toFixed(2));
-	}
-	$(this).next("input").val(num);
-	count();
-}
-function jia(){
-	var num = $(this).prev("input").val();
-	var price = $(this).parentsUntil("tbody").find(".price").html();
-	var total = $(this).parentsUntil("tbody").find(".total");
-	if(num == 99){
-		$(this).parentsUntil("tbody").remove();
-	}else if(num > 0){
-		num++;
-		total.html((parseFloat(num*price)).toFixed(2));
-	}
-	$(this).prev("input").val(num);
-	count();
-}
+// // 减
+// $(".jian").bind("click",jian);
+// // 加
+// $(".jia").bind("click",jia);
+// function jian(){
+// 	var num = $(this).next("input").val();
+// 	var price = $(this).parentsUntil("tbody").find(".price").html();
+// 	var total = $(this).parentsUntil("tbody").find(".total");
+// 	if(num < 1){
+// 		$(this).parentsUntil("tbody").remove();
+// 	}else if(num < 99){
+// 		num--;
+// 		total.html((parseFloat(num*price)).toFixed(2));
+// 	}
+// 	$(this).next("input").val(num);
+// 	count();
+// }
+// function jia(){
+// 	var num = $(this).prev("input").val();
+// 	var price = $(this).parentsUntil("tbody").find(".price").html();
+// 	var total = $(this).parentsUntil("tbody").find(".total");
+// 	if(num == 99){
+// 		$(this).parentsUntil("tbody").remove();
+// 	}else if(num > 0){
+// 		num++;
+// 		total.html((parseFloat(num*price)).toFixed(2));
+// 	}
+// 	$(this).prev("input").val(num);
+// 	count();
+// }
 // 合计
 function count(){
 	var sum = $("#sum");
