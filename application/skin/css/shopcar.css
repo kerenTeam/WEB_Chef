@@ -35,14 +35,14 @@ li{
 	font-size: 20px; 
 	color: #ff3333;
 } 
-.biaoti .quanbu:after{
+/* .biaoti .quanbu:after{
 	content: "";
 	width: 1px; 
 	height: 15px; 
 	background-color: #999; 
 	display: inline-block; 
 	margin: 0 5px 0 10px; 
-}
+} */
 .quanbu span{
     border-bottom: 2px solid red;
     padding-bottom: 12px;
@@ -53,6 +53,9 @@ li{
 }
 .xunze_left a{
 	margin-left: 30px; color: #333;
+}
+.xunze_left .cheall, #youul .cheall span{
+	margin-left: 20px;
 }
 .xunze_left input{
 	vertical-align: middle;
@@ -106,7 +109,7 @@ li{
 	display: inline-block;
 }
 .jiajian {
-	margin-left: 75px; border: 1px solid #dcdcdc;
+	margin-left: 75px; border: 1px solid #dcdcdc; background-color: #fff;
 }
 .jiajian img{
 	width: 26px; 
@@ -116,11 +119,11 @@ li{
 }
 .jiajian input{
 	margin: 0; 
-	width: 26px;
+	width: 35px;
 	border: 0; 
 	text-align: center;
 	outline: none;
-	font-size: 16px;
+	font-size: 14px;
 	vertical-align: middle;
 }
 .shangpinlist .p1{
@@ -142,6 +145,9 @@ li{
 .shangpinlist li{
 	border-top: 1px solid #c4c2c2;
 } 
+.p2 .p2span{
+	margin-left: 0;
+}
 /* 结算 */
 .jiesuan{
     margin: 50px 0px 20px 900px;
