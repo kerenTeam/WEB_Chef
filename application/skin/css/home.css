@@ -910,7 +910,7 @@ table.middle>tbody>tr>td{
 	width: 250px;
 }
 .payment{
-	padding: 15px 0;
+	padding: 15px;
 }
 .payment .am-radio{
 	display: inline-block;
@@ -1022,17 +1022,65 @@ table.middle>tbody>tr>td{
 .ops_text p{
 	margin-bottom: 3px;
 }
-
-
-
-
-
-
-
-
-
-
-
+.aps_ts{
+	font-style: 16px;
+	color: red;
+	margin-bottom: 10px;
+}
+.show-btn{
+	display: inline-block;
+	margin-right: 15px;
+}
+.show-img{
+	display: inline-block;
+	vertical-align: top;
+}
+.show-img img{
+	width: 40px;
+	height: 40px;
+	/*margin: 0 10px;*/
+}
+.ord_buy a{
+	font-size: 14px;
+	color: #ed3d3d;
+}
+.home_buy{
+	margin-top: 35px;
+}
+.home_buy>p{
+	border-bottom: 2px solid #e5e5e5;
+	font-size: 22px;
+}
+.home_buy>p span{
+	color: #999;
+	display: inline-block;
+	padding: 10px 20px;
+	margin-bottom: -2px;
+	border: 2px solid #e5e5e5;
+	border-bottom: 2px solid white;
+}
+.home_buy ul li{
+	padding: 0 5px;
+}
+.am-form-horizontal .xz_yhj{
+	display: inline-block;
+	margin: 20px 25px 10px;
+	padding-top: 0;
+	/*font-size: 18px;*/
+}
+.xz_yhj>span{
+	vertical-align: middle;
+	margin-top: 5px;
+}
+.xz_yhj>p{
+	display: inline-block;
+	margin-top: 0;
+	border: 1px solid #e5e5e5;
+	padding: 5px;
+}
+.xz_yhj>p>img{
+	margin-right: 5px;
+}
 
 
 

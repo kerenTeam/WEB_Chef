@@ -1,0 +1,152 @@
+ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+a,a:link,a:hover,a:visited,a.active{
+	color: #333;
+}
+.fix:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.txt-l{
+	text-align: left;
+}
+.txt-r{
+	text-align: right;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+[class*=am-u-]+[class*=am-u-]:last-child{
+	float: left;
+}
+.banner{
+	background: url("../img/home_bg_01.png") no-repeat center;
+	height: 947px;
+	min-width: 1214px;
+}
+.header{
+	width: 1214px;
+	margin: 0 auto;
+	padding: 65px 15px;
+}
+.header a img{
+	width: 265px;
+}
+.head-nav{
+	float: right;
+}
+.head-nav li{
+	float: left;
+}
+.head-nav li a{
+	display: block;
+	color: white;
+	background-color: #c50b0b;
+	padding: 8px 45px;
+	font-size: 20px;
+}
+.head-nav li a:hover{
+	background-color: #fcb121;
+}
+.content{
+	background: #d10505 url("../img/home-flower_02.png") no-repeat center top;
+	background-size: 1420px;
+	color: #fff;
+	min-width: 1214px;
+}
+.content a{
+	color: #fff;
+}
+.center{
+	width: 1214px;
+	margin: 0 auto;
+}
+.zx_cx ul{
+	padding: 0 50px 0 15px;
+}
+.zx_cx ul li{
+	border-bottom: 1px dashed #fff;
+	padding: 7px 0;
+}
+.ban-time{
+	background: url("../img/sbtime_04.png") no-repeat;
+	width: 244px;
+	height: 240px;
+	margin: 40px auto;
+	padding: 110px 0 0 59px;
+	color: #c50b0b;
+	font-size: 17px;
+	font-weight: bold;
+}
+.cen-nav{
+	text-align: center;
+	font-size: 22px;
+}
+.cen-nav li{
+	margin-bottom: 23px;
+}
+.cen-nav li a{
+	display: inline-block;
+	width: 140px;
+	padding: 8px;
+	padding-right: 20px;
+	background: url("../img/quan_07.png") no-repeat right center;
+	border: 2px solid transparent;
+
+}
+.cen-nav li a:hover{
+	color: #f9a71f;
+	border: 2px solid #f9a71f;
+	background: none;
+}
+.bf_pic{
+	border-radius: 10px;
+	position: relative;
+	overflow: hidden;
+}
+.bf_pic img{
+	width: 100%;
+	/*height: 189px;*/
+	display: block;
+}
+.bf_pic p{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	margin: 0;
+	padding: 5px;
+	background: rgba(0,0,0,.5);
+	text-align: center;
+	opacity: 0;
+}
+.bf_pic:hover p{
+	opacity: 1;
+}
+.footer{
+	/*background-color: #d10505;*/
+	padding: 60px;
+	text-align: center;
+	color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
