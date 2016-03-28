@@ -38,14 +38,9 @@
 	// 小计
 	function subtotal(index){
 		var oNumbernode = index.parentNode.parentNode.getElementsByClassName("shuzhi")[0];
-		var oNumber = oNumbernode.value;
+		var oNumber = parseInt(oNumbernode.value);
 		var subprice = index.parentNode.parentNode.getElementsByClassName("p1span")[0].innerHTML;
 		var subcountnode = index.parentNode.parentNode.getElementsByClassName("p2span")[0];
-
-		if (isNaN(oNumber) || oNumber < 1) {
-			oNumber = 1;
-	 	}
-	 	oNumbernode.value = oNumber;
 		subcountnode.innerHTML = (parseFloat(subprice*oNumber)).toFixed(2);
 	}
 
@@ -79,10 +74,17 @@
  	for (var i = 0; i < oValue.length; i++) {
  		oValue[i].onkeyup = function(){
  		var oNumbernode = this.parentNode.parentNode.getElementsByClassName("shuzhi")[0];
- 		var oNumber = oNumbernode.value;
+ 		var oNumber = parseInt(oNumbernode.value);
+ 			if ( isNaN(oNumber) || oNumber <= 0) {
+ 				oNumber = 1;
+ 		 	}
+ 		 	if (oNumbernode.value != oNumber) {
+                oNumbernode.value = oNumber;
+            }
 			if (oNumber >= 1000) {
 				oNumbernode.value = 1000;
 			}
+
  		// 调用小计
  		subtotal(this);
  		// 调用合计
