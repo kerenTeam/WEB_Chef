@@ -35,14 +35,14 @@ li{
 	font-size: 20px; 
 	color: #ff3333;
 } 
-.biaoti .quanbu:after{
+/* .biaoti .quanbu:after{
 	content: "";
 	width: 1px; 
 	height: 15px; 
 	background-color: #999; 
 	display: inline-block; 
 	margin: 0 5px 0 10px; 
-}
+} */
 .quanbu span{
     border-bottom: 2px solid red;
     padding-bottom: 12px;
@@ -53,6 +53,9 @@ li{
 }
 .xunze_left a{
 	margin-left: 30px; color: #333;
+}
+.xunze_left .cheyouall, #youul .cheyouall span{
+	margin-left: 20px;
 }
 .xunze_left input{
 	vertical-align: middle;
@@ -106,7 +109,7 @@ li{
 	display: inline-block;
 }
 .jiajian {
-	margin-left: 75px; border: 1px solid #dcdcdc;
+	margin-left: 75px; border: 1px solid #dcdcdc; background-color: #fff;
 }
 .jiajian img{
 	width: 26px; 
