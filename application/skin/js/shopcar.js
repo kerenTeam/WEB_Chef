@@ -1,3 +1,4 @@
+
 /**
  * 
  * @authors Your Name (you@example.org)
@@ -12,48 +13,10 @@
  	var oP1span = document.getElementsByClassName("p1span");	
  	var oP2span = document.getElementsByClassName("p2span");
  	var oP3span = document.getElementById("p3span");
+ 	var oInput = document.getElementsByClassName("shuzhi");
+ 	var ochecklist = document.getElementById("youul").getElementsByClassName("cheyou");
 
- 	// 初始化
- 	
-	// 加
-	for (var i = 0; i < oJia.length; i++) {
-		oJia[i].i = i;
-		oJia[i].onclick = function(){
-			ad = this.i;
-			var valueshu = ++oValue[ad].value;
-				if (valueshu >= 99) {
-					oValue[ad].value = 99;
-				}
-			// 改变总价
-			var p1shu = parseFloat(oP1span[ad].innerHTML);
-			oP2span[ad].innerHTML =  (parseFloat(p1shu*valueshu)).toFixed(2);
-			// 调用合计
-			count();
-		
-			}
-		}
-	// 减
-	for (var i = 0; i < oJian.length; i++) {
-	oJian[i].i = i;
-	oJian[i].onclick = function(){
-		ad = this.i;
-		var valueshu = --oValue[ad].value;
-			if (valueshu <= 0) {
-				oValue[ad].value = 0;
-			}
-		// 改变总价
-		var p1shu = parseInt(oP1span[ad].innerHTML);
-		oP2span[ad].innerHTML =  (parseFloat(p1shu*valueshu)).toFixed(2);
-			if (p1shu*valueshu<=0) {
-				oP2span[ad].innerHTML = 0+'.00';
-			}
-			// 调用合计
-			count();
-		}		
-	}
-
-	var ochecklist = document.getElementById("youul").getElementsByClassName("cheyou");
-	// 合计 计算
+ 	// 合计 计算
 	function count(){
 		var total = 0;
 		for (var i = 0; i < oP2span.length; i++) {
@@ -63,6 +26,71 @@
 		}
 		oP3span.innerHTML = total.toFixed(2);
 	}
+	// 小计
+	function subtotal(index){
+		var valueshu = parseInt(oValue[index].value);
+		var p1shu = parseFloat(oP1span[index].innerHTML);
+		if (isNaN(valueshu) || valueshu < 1) {
+			valueshu = 1;
+		}
+		// 确保输入为数字 ，因为oValue[index].value 中的value 必须为数字
+		oValue[index].value = valueshu;
+		oP2span[index].innerHTML =  (parseFloat(p1shu*valueshu)).toFixed(2);
+			if (p1shu*valueshu<=0) {
+				oP2span[index].innerHTML = 0+'.00';
+			}
+	}
+
+	// 初始化
+ 	for (var i = 0; i < oP2span.length; i++) {
+ 		oP2span[i].innerHTML = parseFloat(oValue[i].value*oP1span[i].innerHTML).toFixed(2);
+ 		count();
+ 	}
+
+	// 加
+	for (var i = 0; i < oJia.length; i++) {
+		oJia[i].i = i;
+		oJia[i].onclick = function(){
+			ad = this.i;
+			var valueshu = ++oValue[ad].value;
+				if (valueshu >= 1000) {
+					oValue[ad].value = 1000;
+				}
+			// 调用小计
+			subtotal(ad);
+			// 调用合计
+			count();
+			}
+		}
+	// 减
+	for (var i = 0; i < oJian.length; i++) {
+	oJian[i].i = i;
+	oJian[i].onclick = function(){
+		ad = this.i;
+		var valueshu = --oValue[ad].value;
+			// 调用小计
+			subtotal(ad);
+			// 调用合计
+			count();
+		}		
+	}
+
+	// 输入事件
+ 	for (var i = 0; i < oInput.length; i++) {
+ 		oInput[i].i = i;
+ 		oInput[i].onkeyup = function(){
+ 		var ad = this.i;
+ 		var valueshu = oValue[ad].value;
+			if (valueshu >= 1000) {
+				oValue[ad].value = 1000;
+			}
+ 		// 调用小计
+ 		subtotal(ad);
+ 		// 调用合计
+ 		count();
+ 		}
+ 	}
+
 	// 遍历输入框,不包括全选按钮
 	var n=0;
 	for (var i = 0; i < ochecklist.length; i++) {
@@ -90,7 +118,6 @@
 	var oCheyouall = document.getElementsByClassName("cheyouall");
 	for (var i = 0; i < oCheyouall.length; i++) {
 		oCheyouall[i].onclick = function(){
-			
 				for (var k = 0; k < ochecklist.length; k++) {
 					ochecklist[k].checked = this.checked;
 					// console.log(123)
@@ -106,7 +133,6 @@
 		}
 	}
 	
-
 	// 删除
 	function delet(){
 		var oUl = document.getElementById("youul");
@@ -125,7 +151,6 @@
 		}
 	}
 	delet();
-
 
 } 
 
