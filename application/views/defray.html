@@ -8,6 +8,7 @@
 <meta name="keywords" content="">
 <base href="<?php echo base_url();?>application/" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="icon" type="image/png" href="skin/img/LOGO-ug_03.png">
 <link rel="stylesheet" href="skin/css/amazeui.min.css">
 <link rel="stylesheet" type="text/css" href="skin/css/home.css">
 
@@ -18,7 +19,7 @@
       <ul class="clear">
         <li><a href="<?=site_url('welcome/personal');?>">我的订单</a></li>
 		<li><a href="<?=site_url('welcome/personal');?>">我的大厨</a></li>
-		<li><a href="<?=site_url('welcome/personal');?>">最近浏览</a></li>
+		<li><a href="<?=site_url('welcome/personal');?>">联系我们</a></li>
 		<li><a href="<?=site_url('welcome/car');?>">购物篮</a></li>
 		<li><a href="<?=site_url('welcome/login');?>">登录</a>/<a href="<?=site_url('welcome/register');?>">注册</a></li>
       </ul>
@@ -64,7 +65,6 @@
 							</tr>
 						</tbody>
 					</table>
-					<p class="defr_he">应付金额: <span>￥<i id="sum">60.59</i></span></p>
 					<!-- <div class="defr_info clear">
 						<p>您的手机</p>
 						<div class="defr_shouji">
@@ -93,7 +93,7 @@
 						  </div>
 						</div>
 					</div> -->
-					<div class="defr_info clear">
+					<!-- <div class="defr_info clear">
 						<p>选择支付方式</p>
 						<div class="payment">
 							<label class="am-radio am-danger">
@@ -105,6 +105,44 @@
 							<label class="am-radio am-danger">
 							  	<input type="radio" name="price" value="" data-am-ucheck checked> 货到付款
 							</label>							
+						</div>
+					</div> -->
+					<div class="home_buy">
+						<p><span>预约上门付款</span></p>
+						<label class="am-checkbox am-danger xz_yhj">
+						  <input type="checkbox" value="" data-am-ucheck> <p><img src="skin/img/xzzf_03.png">您有三张优惠券可用</p>
+						</label>
+						<div class="payment">
+							<ul class="am-avg-sm-5">
+								<li>
+                                      <div class="coupon_bg coupon_pic1">
+                                          <h1>￥<span>5</span></h1>
+                                          <p>菜品: 套餐系列</p>
+                                          <p>使用条件: 满30.00</p>
+                                          <p>有效时间: 2016.3.21-2016.3.24</p>
+                                      </div>
+									
+								</li>
+								<li>
+                                      <div class="coupon_bg coupon_pic1">
+                                          <h1>￥<span>5</span></h1>
+                                          <p>菜品: 套餐系列</p>
+                                          <p>使用条件: 满30.00</p>
+                                          <p>有效时间: 2016.3.21-2016.3.24</p>
+                                      </div>
+									
+								</li>
+								<li>
+                                      <div class="coupon_bg coupon_pic1">
+                                          <h1>￥<span>5</span></h1>
+                                          <p>菜品: 套餐系列</p>
+                                          <p>使用条件: 满30.00</p>
+                                          <p>有效时间: 2016.3.21-2016.3.24</p>
+                                      </div>
+									
+								</li>
+							</ul>
+
 						</div>
 					</div>
 					<div class="defr_info clear">
@@ -150,8 +188,11 @@
                         	</table>
 						</div>
 					</div>
-					<p class="txt-r">
-						<input type="submit" value="去付款" class="am-btn am-btn-danger am-radius big-btn" />
+					<p class="defr_he">应付金额: <span>￥<i id="sum">60.59</i></span></p>
+					<p class="txt-r ord_buy">
+						<input type="submit" value="完成" class="am-btn am-btn-danger am-radius big-btn" />
+						<br/>
+						<a href="javascript:;">返回修改订单</a>
 					</p>
 				</form>
 			</div>
@@ -294,10 +335,10 @@
 <script src="skin/js/jquery.min.js"></script>
 <script src="skin/js/amazeui.min.js"></script>
 <script type="text/javascript" src="skin/js/defray.js"></script>
-<script src="skin/js/address.js"></script>
+<!-- <script src="skin/js/address.js"></script> -->
 <script type="text/javascript">
-    new PCAS("province","city","area","四川省","成都市","金牛区");
-    new PCAS("province1","city1","area1","四川省","成都市","金牛区");
+    // new PCAS("province","city","area","四川省","成都市","金牛区");
+    // new PCAS("province1","city1","area1","四川省","成都市","金牛区");
 </script>
 </body>
 </html>

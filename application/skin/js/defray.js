@@ -42,7 +42,7 @@ function count(){
 	var sum = $("#sum");
 	var count = 0;
 	$(".total").each(function(i){
-		console.log(parseFloat($(this).html()));
+		// console.log(parseFloat($(this).html()));
 		count += parseFloat($(this).html());
 		sum.html(count.toFixed(2));
 	});

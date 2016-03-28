@@ -115,6 +115,9 @@ class Welcome extends CI_Controller {
 	function orderaps(){
 		$this->load->view('orderaps.html');
 	}
+	function home(){
+		$this->load->view('home.html');
+	}
 
 
 }
