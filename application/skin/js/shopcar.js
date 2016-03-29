@@ -20,8 +20,16 @@
 	// 删除
 	for (var i = 0; i < oLi_a.length; i++) {
 		oLi_a[i].onclick = function(){
+			 var conf = confirm('确定要删除吗？');
+			 if (conf) {
 			 oUl.removeChild(this.parentNode);
+			 if (oLi_a.length == 0) {
+			 	oCheyouall[0].setAttribute("disabled","disabled");
+			 	oCheyouall[0].checked = false;
+			 }
 			 count();
+			 n--;
+			}
 		}
 	}
 
@@ -63,6 +71,9 @@
 	oJian[i].onclick = function(){
 		var oNumbernode = this.parentNode.parentNode.getElementsByClassName("shuzhi")[0];
 		var oNumber = --oNumbernode.value;
+		if (oNumber <=0) {
+			oNumbernode.value = 1; 
+		}
 			// 调用小计
 			subtotal(this);
 			// 调用合计
@@ -137,7 +148,6 @@
  	}
 	oCheyouall[0].checked = true;
  	oCheyouall[0].onclick();
- 	count();
 } 
 
 
