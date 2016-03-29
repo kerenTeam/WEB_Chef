@@ -1081,8 +1081,14 @@ table.middle>tbody>tr>td{
 .xz_yhj>p>img{
 	margin-right: 5px;
 }
-
-
+.index_search{
+	width: 300px;
+}
+.index_search button{
+	border: none;
+	outline: none;
+	background-color: transparent;
+}
 
 
 
