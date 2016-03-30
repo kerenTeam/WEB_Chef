@@ -86,25 +86,18 @@ a,a:link,a:hover,a:visited,a.active{
 	font-weight: bold;
 }
 .cen-nav{
-	text-align: center;
-	font-size: 22px;
+	font-size: 17px;
+	list-style: decimal-leading-zero;
+	padding-left: 30px;
 }
 .cen-nav li{
-	margin-bottom: 23px;
+	margin-bottom: 10px;
 }
 .cen-nav li a{
 	display: inline-block;
-	width: 140px;
-	padding: 8px;
-	padding-right: 20px;
-	background: url("../img/quan_07.png") no-repeat right center;
-	border: 2px solid transparent;
-
 }
 .cen-nav li a:hover{
 	color: #f9a71f;
-	border: 2px solid #f9a71f;
-	background: none;
 }
 .bf_pic{
 	border-radius: 10px;
