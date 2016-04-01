@@ -34,30 +34,150 @@
 <div class="content">
 	<!-- center -->
       <div class="center">
-		<div class="content-tit clear">
-          <ul class="clear">
-            <li><a href="<?=site_url('welcome/add');?>">所有商品</a></li>
-            <li class="active"><a href="<?=site_url('welcome/custom');?>">宴会定制</a></li>
-            <li><a href="<?=site_url('welcome/price');?>">实时菜价</a></li>
-          </ul>
-        </div>
+  		<div class="content-tit clear">
+            <ul class="clear">
+              <li><a href="<?=site_url('welcome/add');?>">所有商品</a></li>
+              <li class="active"><a href="<?=site_url('welcome/custom');?>">宴会定制</a></li>
+              <li><a href="<?=site_url('welcome/price');?>">实时菜价</a></li>
+            </ul>
+          </div>
 
-        <form class="message">
-        	<span class="custom_theme">你的宴会主题</span>
-        	<select data-am-selected>
-			  <option value="a">升学宴</option>
-			  <option value="b" selected>家庭团年宴</option>
-			  <option value="o">寿宴</option>
-			  <option value="m">婚宴</option>
-			  <option value="d">乔迁宴</option>
-			  <option value="g">其他</option>
-			</select><br/>
-        	<input type="text" class="message_input message_input_first am-form-field am-radius" placeholder="请输入你的用餐人数"/><br/>
-        	<input type="text" class="message_input am-form-field am-radius" placeholder="请输入你的用餐时间"/><br/>
-        	<input type="text" class="message_input message_input_last am-form-field am-radius" placeholder="请输入你的联系方式"/><br/>
-			<input type="submit" value="确认" class="am-btn am-btn-danger am-radius" />
+          <form class="custom">
+              <div class="am-g">
+            	   <div class="am-u-sm-2">
+                      <h2 class="cus_tit">宴会类型</h2> 
+                 </div>
+                 <div class="am-u-sm-10">
+                      <hr data-am-widget="divider" style="" class="am-divider am-divider-dotted" />
+                      <div class="cus_pic">
+                          
+                            <div data-am-widget="slider" class="am-slider am-slider-default" data-am-slider='{&quot;animation&quot;:&quot;slide&quot;,&quot;animationLoop&quot;:false,&quot;itemWidth&quot;:350,&quot;itemMargin&quot;:5}' >
+                            <ul class="am-slides">
+                                <li>
+                                    <div class="cus_img">
+                                        <img src="skin/img/images/cus_pic_03.png">
+                                        <label class="cus_zc"> 
+                                            <p>欢乐家庭 • 宴</p>
+                                            <div></div>
+                                            <input type="radio" name="img" checked />
+                                        </label>                                    
+                                    </div>
 
-        </form>
+                                </li>
+                                <li>
+                                    <div class="cus_img">
+                                        <img src="skin/img/images/cus_pic_03.png">
+                                        <label class="cus_zc"> 
+                                            <p>欢乐家庭 • 宴</p>
+                                            <div></div>
+                                            <input type="radio" name="img"/>
+                                        </label>                                    
+                                    </div>
+
+                                </li>
+                                <li>
+                                    <div class="cus_img">
+                                        <img src="skin/img/images/cus_pic_03.png">
+                                        <label class="cus_zc"> 
+                                            <p>欢乐家庭 • 宴</p>
+                                            <div></div>
+                                            <input type="radio" name="img"/>
+                                        </label>                                    
+                                    </div>
+
+                                </li>
+                                <li>
+                                    <div class="cus_img">
+                                        <img src="skin/img/images/cus_pic_03.png">
+                                        <label class="cus_zc"> 
+                                            <p>欢乐家庭 • 宴</p>
+                                            <div></div>
+                                            <input type="radio" name="img"/>
+                                        </label>                                    
+                                    </div>
+
+                                </li>
+                                <li>
+                                    <div class="cus_img">
+                                        <img src="skin/img/images/cus_pic_03.png">
+                                        <label class="cus_zc"> 
+                                            <p>欢乐家庭 • 宴</p>
+                                            <div></div>
+                                            <input type="radio" name="img"/>
+                                        </label>                                    
+                                    </div>
+
+                                </li>
+                                <li>
+                                    <div class="cus_img">
+                                        <img src="skin/img/images/cus_pic_03.png">
+                                        <label class="cus_zc"> 
+                                            <p>欢乐家庭 • 宴</p>
+                                            <div></div>
+                                            <input type="radio" name="img"/>
+                                        </label>                                    
+                                    </div>
+
+                                </li>
+                                <li>
+                                    <div class="cus_img">
+                                        <img src="skin/img/images/cus_pic_03.png">
+                                        <label class="cus_zc"> 
+                                            <p>欢乐家庭 • 宴</p>
+                                            <div></div>
+                                            <input type="radio" name="img"/>
+                                        </label>                                    
+                                    </div>
+
+                                </li>
+                            </ul>
+                          </div>
+                      </div>
+                 </div>
+              </div>
+              <div class="am-g">
+                  <div class="am-u-sm-2">
+                      <h2 class="cus_tit">用餐时间</h2> 
+                 </div>
+                 <div class="am-u-sm-10">
+                      <hr data-am-widget="divider" style="" class="am-divider am-divider-dotted" />
+                       <div class="cus_pic">         
+                      <input type="text" class=" am-form-field am-radius" data-am-datepicker="{theme: 'success'}" readonly style="width: 400px;height: 50px;" placeholder="请输入你的用餐时间" required />
+                      </div>
+                 </div>
+              </div>
+              <div class="am-g">
+                  <div class="am-u-sm-2">
+                      <h2 class="cus_tit">用餐数量</h2> 
+                 </div>
+                 <div class="am-u-sm-10">
+                      <hr data-am-widget="divider" style="" class="am-divider am-divider-dotted" />
+                      <div class="cus_pic">  
+                      <input type="text" class=" am-form-field am-radius" style="width: 400px;height: 50px;" placeholder="请输入你的用餐人数" required />
+                      </div>
+                 </div>
+              </div>
+              <div class="am-g">
+                  <div class="am-u-sm-2">
+                      <h2 class="cus_tit">联系方式</h2> 
+                 </div>
+                 <div class="am-u-sm-10">
+                      <hr data-am-widget="divider" style="" class="am-divider am-divider-dotted" />
+                      <div class="cus_pic">  
+                      <input type="text" id="phone" class=" am-form-field am-radius" style="width: 400px;height: 50px;" placeholder="请输入你的联系方式" required />
+                      <p class="color-gray">确认后，我们稍后会跟你联系</p>
+                      </div>
+                 </div>
+              </div>
+              <div class="am-g">
+                  <div class="am-u-sm-2"></div>
+                  <div class="am-u-sm-10">
+                      <input type="submit" value="确认" class="am-btn am-btn-danger am-radius" />
+                  </div>
+              </div>
+  			
+
+          </form>
 
       </div>
 </div>
@@ -92,10 +212,28 @@
           </div>
         </li>
       </ul>
-      <p class="footer-btm">DHFUEGQA UGR(JISFHOOOO</p>
+      <p class="footer-btm">&copy; 2012 成都可人软件有限公司&nbsp;&nbsp;&nbsp;蜀ICP备12007958号-1&nbsp;&nbsp;&nbsp;Powered By DeepTime</p>
     </div>
   </div>      
 <script src="skin/js/jquery.min.js"></script>
 <script src="skin/js/amazeui.min.js"></script>
+<script type="text/javascript">
+  $(function(){
+    $("input[type=radio]:checked").parent().addClass("active");
+    $("input[type=radio]").click(function(){
+        $(".cus_zc").removeClass("active");
+        $(this).parent().addClass("active");
+    });
+    $(".custom").bind("submit",function(){
+        var phone = $("#phone");
+        if(!(/^1((3|4|5|8|7){1}\d{1}|70)\d{8}$/.test(phone.val()))){
+            alert("请输入正确的手机号");
+        }else{
+          return true;
+        }
+        return false;
+    })
+  })
+</script>
 </body>
 </html>

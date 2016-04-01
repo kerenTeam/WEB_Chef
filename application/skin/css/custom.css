@@ -3,42 +3,137 @@
 body{
 	background-color: #f5f2f2;
 }
+h1,h2,h3,h4,h5,h6{
+	font-weight: normal;
+	margin: 0;
+}
+.color-gray{
+	color: #999;
+}
+.custom{
+	margin-bottom: 50px;
+}
+.cus_img img{
+	/*max-width: 100%;*/
+	width: 300px;
+}
+.cus_pic{
+	padding: 20px 0;
+}
+.am-slider-default{
+	border: none;
+	box-shadow: none;
+	/*margin: 40px 0;*/
+}
 /* 宴会定制 */
-.message{
-	margin-left: 100px;
+.cus_tit{
+	text-align: right;
+	padding-right: 20px;
+	font-size: 23px;
+	color: #999;
 }
-.message .custom_theme{
-	font-size: 20px;
+.cus_img{
+	position: relative;
+	border-radius: 8px;
+	overflow: hidden;
+	margin: 0 25px;
 }
-.am-selected-btn.am-btn-default ,.am-active>.am-dropdown-content{
-	margin-left: 20px;
+.cus_img:hover>.cus_zc{
+	opacity: 1;
 }
-.message .message_input{
-    width: 500px;
-    height: 50px;
-    padding-left: 10px;
+.am-slider-default .am-direction-nav .am-prev{
+	left: -30px;
 }
-.message .message_input_first{
+.am-slider-default .am-direction-nav .am-next{
+	right: -30px;
+}
+.cus_zc{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,.3);
+	opacity: 0;
+	overflow: hidden;
+	border-radius: 5px;
+	display: block;
+}
+.cus_zc p{
+	position: absolute;
+	top: 40%;
+	left: 0;
+	text-align: center;
+	width: 100%;
+	color: white;
+	font-size: 22px;
+	font-weight: normal;
+}
+.cus_zc div{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 45px;
+	height: 51px;
+	/*background: url(../img/cus_icon_no.png);*/
+}
+.cus_zc.active{
+	opacity: 1;
+}
+.cus_zc.active div{
+	background: url(../img/cus_icon.png);
+}
+.cus_zc input{
+	opacity: 0;
+}
+/*input[type=radio]:checked+div{
+	background: url(../img/cus_icon.png);
+}*/
+/* 实时菜价 */
+.price_bg{
+	background: url(../img/images/priceBg_01.jpg);
+	background-size: cover;
+	min-width: 1170px;
+}
+.price_hd{
+	background-color: rgba(237,61,61,.5);
+}
+.price_tit{
+	background-color: transparent;
+}
+.c_middle{
+	min-height: 550px;
+	margin-bottom: 30px;
+	margin-top: 100px;
+}
+.pc_middle{
 	margin-top: 20px;
 }
-.message .message_input_last{
-	width: 350px;
-}
-.am-btn.am-radius{
-	margin-bottom: 200px;
-}
-
-/* 实时菜价 */
 .c_middle .market{
 	display: inline-block;
     background-color: #fff;
     padding: 6px 60px 6px 20px;
     font-size: 18px;
 }
+.c_middle h3{
+	text-align: center;
+	font-size: 25px;
+	color: #fff;
+}
+.c_middle h3 span{
+	display: inline-block;
+	padding: 0 20px;
+	border-top: 2px solid #fff;
+	border-bottom: 2px solid #fff;
+}
+.c_middle p{
+	color: #fff;
+	text-align: center;
+}
 #market_list{
 	width: 1200px;
     margin: 0 auto;
-    background-color: #fff;
+    background-color: rgba(255,255,255,.9);
     display: block;
     padding-bottom: 100px;
 }

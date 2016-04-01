@@ -45,7 +45,7 @@ body{
 }
 .chart{
 	 width: 100%;
-    background: white;
+    background: rgba(255,255,255,.9);
     padding: 50px auto;
     padding: 50px 0;
     border: 1px solid #ccc;
@@ -79,6 +79,7 @@ body{
 }
 .content-tit{
 	background-color: #fff;
+	margin-bottom: 25px;
 }
 .content-tit ul{
 	float: left;
@@ -132,9 +133,10 @@ body{
 	padding: 3px 25px;
 }
 .content-nav ul li a.am-active{
-	background-color: #ed3d3d;
-	color: white;
-	border-radius: 8px;
+	/*background-color: #ed3d3d;*/
+	color: #ed3d3d;
+	font-weight: bold;
+	/*border-radius: 8px;*/
 }
 .order-goods{
 	margin-bottom: 30px;
@@ -231,17 +233,17 @@ body{
 	border-top: 1px solid gainsboro;
 }
 .footer ul{
-	padding: 50px 0;
+	padding: 15px 0;
 }
 .footer ul li h1{
-	font-size: 20px;
-	margin-bottom: 15px;
+	font-size: 18px;
+	margin-bottom: 10px;
 }
 .footer ul li p{
-	margin: 10px 0;
+	margin: 0;
 }
 .footer ul li a{
-	font-size: 18px;
+	font-size: 16px;
 }
 .footer-btm{
 	text-align: center;
@@ -249,17 +251,17 @@ body{
 }
 .erweima {
 	margin-left: -50px;
-	padding: 20px 0 20px 50px;
+	padding: 10px 0 10px 50px;
 	border-left: 1px solid #bfbfbf;
 }
 .erweima img{
-	width: 120px;
-	height: 120px;
+	width: 100px;
+	height: 100px;
 	float: left;
-	margin-right: 10px;
+	margin-right: 30px;
 }
 .erweima h2{
-	margin-top: 20px;
+	margin-top: 10px;
 	font-weight: normal;
 	font-size: 20px;
 }
@@ -267,7 +269,7 @@ body{
 	color: #bfbfbf;
 	font-size: 17px;
 	display: inline-block;
-	margin-bottom: 20px;
+	/*margin-bottom: 20px;*/
 }
 /*个人中心*/
 .personal{
@@ -1084,6 +1086,10 @@ table.middle>tbody>tr>td{
 }
 .index_search{
 	width: 300px;
+	padding-top: 8px;
+}
+.index_search div{
+	margin: 0;
 }
 .index_search button{
 	border: none;
@@ -1096,14 +1102,14 @@ table.middle>tbody>tr>td{
 }
 .recommend>h2{
 	font-weight: normal;
-	font-size: 22px;
-	margin-bottom: 20px;
+	font-size: 25px;
 }
 .chef_pic{
 	position: relative;
 	width: 355px;
 	float: left;
 	height: 442px;
+	margin-bottom: 50px;
 }
 .chef_pic img{
 	width: 100%;
@@ -1284,9 +1290,27 @@ a.arrow{
 	font-size: 20px;
 	margin: -50px 0 0 -50px;
 }
+.rec_tit{
+	text-align: center;
+	margin: 15px auto 60px;
+	width: 1000px;
+	border-bottom: 1px solid #333;
+	height: 23px;
+}
+.rec_tit span{
+	background-color: white;
+	display: inline-block;
+	padding: 0 50px;
+}
 
-
-
-
+.chef_nsc li{
+	text-align: center;
+	margin-bottom: 15px;
+	font-size: 22px;
+	
+}
+.chef_nsc li a{
+	color: #999;
+}
 
 

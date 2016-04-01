@@ -165,15 +165,19 @@ a,a:link,a:hover,a:visited,a.active{
 	border-top: 1px solid #e5e5e5;
 	border-bottom: 1px solid #e5e5e5;
 	width: 1000px;
-	margin: 50px auto;
+	margin: 50px auto 200px;
 	padding: 50px 25px;
 }
 .reg_content h1{
 	font-weight: normal;
 	font-size: 25px;
 }
-.reg_r{
+.reg_r div{
 	/*padding-top: 2px;*/
+	/*text-align: center;*/
+}
+.reg_r div a{
+	margin: 0 20px;
 }
 .reg_r h1{
 	font-weight: normal;
@@ -224,7 +228,7 @@ a,a:link,a:hover,a:visited,a.active{
 }
 .forget{
 	min-height: 500px;
-	padding: 50px 0;
+	padding: 50px 0 120px;
 }
 .forget_step{
 	padding-top: 50px; 
