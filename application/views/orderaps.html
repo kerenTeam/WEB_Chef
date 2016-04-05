@@ -14,6 +14,7 @@
     <link rel="icon" type="image/png" href="skin/img/LOGO-ug_03.png">
     <link rel="stylesheet" href="skin/css/amazeui.min.css">
     <link rel="stylesheet" type="text/css" href="skin/css/home.css">
+    <link rel="stylesheet" href="skin/css/zyUpload.css" type="text/css">
 
 </head>
 <body>
@@ -31,7 +32,7 @@
 <!-- 评价 -->
 <div class="content">
     <div class="center">
-        <div class="crr-tit clear">
+        <div class="crr-tit clear aps_tit">
             <ul>
                 <li class="active">商品评价</li>
             </ul>
@@ -140,11 +141,12 @@
                             <div class="ops_text">
                                 <p>添加评论</p>
                                 <textarea placeholder="来分享一下你的感受吧！" rows="5"></textarea>
-                                <div class="am-form-group am-form-file show-btn">
+                                <!-- <div class="am-form-group am-form-file show-btn">
                                   <button type="button" class="am-btn am-btn-default am-btn-sm show-btn">
                                     <i class="am-icon-cloud-upload"></i> 电脑晒图</button>
                                   <input type="file" multiple>
-                                </div>
+                                </div> -->
+                                <div id="demo" class="demo"></div>
                                 <div class="show-img">
                                     <!-- <img src="skin/img/jian.png">
                                     <img src="skin/img/jia.jpg"> -->
@@ -179,6 +181,12 @@
 <script src="skin/js/jquery.min.js"></script>
 <script src="skin/js/amazeui.min.js"></script>
 <script type="text/javascript" src="skin/js/star.js"></script>
+<!-- 引用核心层插件 -->
+<script src="skin/js/zyFile.js"></script>
+<!-- 引用控制层插件 -->
+<script src="skin/js/zyUpload.js"></script>
+<!-- 引用初始化JS -->
+<script src="skin/js/jq22.js"></script>
 <script type="text/javascript">
     $(".ops_form").bind("submit",function(){
         if($("#rating").val() < 1){
