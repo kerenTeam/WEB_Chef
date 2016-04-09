@@ -20,9 +20,10 @@
   <div class="header">
     <div class="center">
       <ul class="clear">
+        <li><a href="<?=site_url('welcome/home');?>">首页</a></li>
         <li><a href="<?=site_url('welcome/personal');?>">我的订单</a></li>
-        <li><a href="<?=site_url('welcome/personal');?>">我的大厨</a></li>
-        <li><a href="<?=site_url('welcome/personal');?>">联系我们</a></li>
+        <li><a href="<?=site_url('welcome/recommend');?>">我的大厨</a></li>
+        <li><a href="<?=site_url('welcome/help');?>">联系我们</a></li>
         <li><a href="<?=site_url('welcome/car');?>">购物篮</a></li>
         <li><a href="<?=site_url('welcome/login');?>">登录</a>/<a href="<?=site_url('welcome/register');?>">注册</a></li>
       </ul>
@@ -31,6 +32,8 @@
   <div class="content">
       <div class="center">
           <div class="content-tit clear">
+          <!-- 指引 -->
+          <p class="blog"><a href="<?=site_url('welcome/home');?>">首页</a> > <a href="<?=site_url('welcome/add');?>">点菜</a> > <span>菜品详情</span></p>
           <ul class="clear">
             <li><a href="<?=site_url('welcome/add');?>">所有商品</a></li>
             <li><a href="<?=site_url('welcome/custom');?>">宴会定制</a></li>
@@ -78,7 +81,8 @@
                         </div>
                         <ul class="buy-food">
                             <li>
-                                <button class="am-btn am-btn-danger am-radius buy-sbm">立即购买</button>
+                                <!-- <button class="am-btn am-btn-danger am-radius buy-sbm">立即购买</button> -->
+                                <a href="<?=site_url('welcome/car');?>" class="am-btn am-btn-danger am-radius buy-sbm">立即购买</a>
                             </li>
                             <li>
                                 <a class="am-btn am-btn-default am-radius join-car" href="javascript:;">

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>大厨到家-宴会定制</title>
+	<title>大厨到家-实时菜价</title>
     <meta charset="utf-8">
   	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <base href="<?php echo base_url();?>application/" />
@@ -22,9 +22,10 @@
 <div class="header price_hd">
   <div class="center">
     <ul class="clear">
+        <li><a href="<?=site_url('welcome/home');?>">首页</a></li>
       <li><a href="<?=site_url('welcome/personal');?>">我的订单</a></li>
-      <li><a href="<?=site_url('welcome/personal');?>">我的大厨</a></li>
-      <li><a href="<?=site_url('welcome/personal');?>">联系我们</a></li>
+      <li><a href="<?=site_url('welcome/recommend');?>">我的大厨</a></li>
+      <li><a href="<?=site_url('welcome/help');?>">联系我们</a></li>
       <li><a href="<?=site_url('welcome/car');?>">购物篮</a></li>
       <li><a href="<?=site_url('welcome/login');?>">登录</a>/<a href="<?=site_url('welcome/register');?>">注册</a></li>
     </ul>
@@ -35,6 +36,8 @@
 	<!-- center -->
       <div class="center">
 		<div class="content-tit price_tit clear">
+          <!-- 指引 -->
+          <p class="blog"><a href="<?=site_url('welcome/home');?>">首页</a> > <span>实时菜价</span></p>
           <ul class="clear">
             <li><a href="<?=site_url('welcome/add');?>">所有商品</a></li>
             <li><a href="<?=site_url('welcome/custom');?>">宴会定制</a></li>

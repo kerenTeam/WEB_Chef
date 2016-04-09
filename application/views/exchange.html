@@ -17,43 +17,10 @@
 
 </head>
 <body class="bgcolor">
-<div class="order_hd">
-	<div class="header price_hd">
-		<div class="center">
-			<ul class="clear">
-				<li><a href="<?=site_url('welcome/home');?>">首页</a></li>
-				<li><a href="<?=site_url('welcome/personal');?>">我的订单</a></li>
-				<li><a href="<?=site_url('welcome/recommend');?>">我的大厨</a></li>
-				<li><a href="<?=site_url('welcome/help');?>">联系我们</a></li>
-				<li><a href="<?=site_url('welcome/car');?>">购物篮</a></li>
-				<li><a href="<?=site_url('welcome/login');?>">登录</a>/<a href="<?=site_url('welcome/register');?>">注册</a></li>
-			</ul>
-		</div>
-	</div>
-	<div class="center clear">
-		<form class="am-form fr index_search">
-			<div class="am-form-group am-form-icon am-form-feedback">
-				<input type="search" placeholder="搜索">
-				<button type="submit" class="am-icon-search"></button>
-			</div>
-		</form>
-	</div>
-</div>
 	<div class="content">
-	<div class="content-tit">
-		<div class="center clear">
-		<!-- 指引 -->
-		<p class="blog"><a href="<?=site_url('welcome/home');?>">首页</a> > <span>点菜</span></p>
-				<ul class="clear">
-		            <li class="active"><a href="<?=site_url('welcome/add');?>">所有商品</a></li>
-		            <li><a href="<?=site_url('welcome/custom');?>">宴会定制</a></li>
-		            <li><a href="<?=site_url('welcome/price');?>">实时菜价</a></li>
-				</ul>
-			</div>
-		</div>
 		<div class="center">
 			
-			<div class="content-nav">
+			<!-- <div class="content-nav">
 				<nav class="scrollspy-nav" data-am-scrollspy-nav="{offsetTop: 45}" data-am-sticky>
 				<ul class="clear">
 					<li><a class="active" href="#cold">凉菜</a></li>
@@ -65,13 +32,17 @@
 					<li><a href="#meal">套餐</a></li>
 				</ul>
 				</nav>
+			</div> -->
+			<div class="exchange_tit am-cf">
+				<p class="am-fl am-text-xl am-text-danger">请选择你想换的菜品</p>
+				<a href="<?=site_url('welcome/car');?>" class="am-fr am-btn am-btn-secondary">返回</a>
 			</div>
 			<div class="order-goods">
 				<h2 id="cold">凉菜</h2>
-				<ul class="am-avg-sm-2">
+				<ul class="am-avg-sm-3">
 					<li>
 						<div class="order-goods">
-							<a href="<?=site_url('welcome/info');?>"><img src="skin/img/lc (1).jpg"></a>
+							<a href="<?=site_url('welcome/car');?>"><img src="skin/img/lc (1).jpg">
 							<div class="goods-info">
 								<h1>鲜椒拌贡菜</h1>
 								<p>推荐指数 <span class="index-num"><i></i></span></p>
@@ -80,16 +51,14 @@
 										<p><span>4.5</span> 评分</p>
 										<div>价格： ￥<span>28.00</span> <i>/ 1份</i></div>
 									</div>
-									<div class="goods-pr">
-										<a href="javascript:;">加入购物车</a>
-									</div>
 								</div>
 							</div>
+							</a>
 						</div>
 					</li>
 					<li>
 						<div class="order-goods">
-							<a href="<?=site_url('welcome/info');?>"><img src="skin/img/lc (2).jpg"></a>
+							<a href="<?=site_url('welcome/car');?>"><img src="skin/img/lc (2).jpg">
 							<div class="goods-info">
 								<h1>韭香双仁</h1>
 								<p>推荐指数 <span class="index-num"><i></i></span></p>
@@ -98,16 +67,14 @@
 										<p><span>4.5</span> 评分</p>
 										<div>价格： ￥<span>32.00</span></div>
 									</div>
-									<div class="goods-pr">
-										<a href="javascript:;">加入购物车</a>
-									</div>
 								</div>
 							</div>
+							</a>
 						</div>
 					</li>
 					<li>
 						<div class="order-goods">
-							<a href="<?=site_url('welcome/info');?>"><img src="skin/img/lc (3).jpg"></a>
+							<a href="<?=site_url('welcome/car');?>"><img src="skin/img/lc (3).jpg">
 							<div class="goods-info">
 								<h1>炝拌凤尾</h1>
 								<p>推荐指数 <span class="index-num"><i></i></span></p>
@@ -116,16 +83,14 @@
 										<p><span>4.5</span> 评分</p>
 										<div>价格： ￥<span>22.00</span></div>
 									</div>
-									<div class="goods-pr">
-										<a href="javascript:;">加入购物车</a>
-									</div>
 								</div>
 							</div>
+							</a>
 						</div>
 					</li>
 					<li>
 						<div class="order-goods">
-							<a href="<?=site_url('welcome/info');?>"><img src="skin/img/lc (4).jpg"></a>
+							<a href="<?=site_url('welcome/car');?>"><img src="skin/img/lc (4).jpg">
 							<div class="goods-info">
 								<h1>泰式刺身虾</h1>
 								<p>推荐指数 <span class="index-num"><i></i></span></p>
@@ -134,16 +99,14 @@
 										<p><span>4.5</span> 评分</p>
 										<div>价格： ￥<span>88.00</span></div>
 									</div>
-									<div class="goods-pr">
-										<a href="javascript:;">加入购物车</a>
-									</div>
 								</div>
 							</div>
+							</a>
 						</div>
 					</li>
 					<li>
 						<div class="order-goods">
-							<a href="<?=site_url('welcome/info');?>"><img src="skin/img/lc (7).jpg"></a>
+							<a href="<?=site_url('welcome/car');?>"><img src="skin/img/lc (7).jpg">
 							<div class="goods-info">
 								<h1>田七拌桃仁</h1>
 								<p>推荐指数 <span class="index-num"><i></i></span></p>
@@ -152,19 +115,17 @@
 										<p><span>4.5</span> 评分</p>
 										<div>价格： ￥<span>38.00</span></div>
 									</div>
-									<div class="goods-pr">
-										<a href="javascript:;">加入购物车</a>
-									</div>
 								</div>
 							</div>
+							</a>
 						</div>
 					</li>
 				</ul>
 				<h2 id="hot">热菜</h2>
-				<ul class="am-avg-sm-2">
+				<ul class="am-avg-sm-3">
 					<li>
 						<div class="order-goods">
-							<a href="<?=site_url('welcome/info');?>"><img src="skin/img/rc (1).jpg"></a>
+							<a href="<?=site_url('welcome/car');?>"><img src="skin/img/rc (1).jpg">
 							<div class="goods-info">
 								<h1>蓉记姜葱香辣蟹</h1>
 								<p>推荐指数 <span class="index-num"><i></i></span></p>
@@ -173,16 +134,14 @@
 										<p><span>4.5</span> 评分</p>
 										<div>价格： ￥<span>168.00</span></div>
 									</div>
-									<div class="goods-pr">
-										<a href="javascript:;">加入购物车</a>
-									</div>
 								</div>
 							</div>
+							</a>
 						</div>
 					</li>
 					<li>
 						<div class="order-goods">
-							<a href="<?=site_url('welcome/info');?>"><img src="skin/img/rc (2).jpg"></a>
+							<a href="<?=site_url('welcome/car');?>"><img src="skin/img/rc (2).jpg">
 							<div class="goods-info">
 								<h1>渝记精品毛血旺</h1>
 								<p>推荐指数 <span class="index-num"><i></i></span></p>
@@ -191,16 +150,14 @@
 										<p><span>4.5</span> 评分</p>
 										<div>价格： ￥<span>58.00</span></div>
 									</div>
-									<div class="goods-pr">
-										<a href="javascript:;">加入购物车</a>
-									</div>
 								</div>
 							</div>
+							</a>
 						</div>
 					</li>
 					<li>
 						<div class="order-goods">
-							<a href="<?=site_url('welcome/info');?>"><img src="skin/img/rc (3).jpg"></a>
+							<a href="<?=site_url('welcome/car');?>"><img src="skin/img/rc (3).jpg">
 							<div class="goods-info">
 								<h1>烂肉豇豆</h1>
 								<p>推荐指数 <span class="index-num"><i></i></span></p>
@@ -209,20 +166,18 @@
 										<p><span>4.5</span> 评分</p>
 										<div>价格： ￥<span>28.00</span></div>
 									</div>
-									<div class="goods-pr">
-										<a href="javascript:;">加入购物车</a>
-									</div>
 								</div>
 							</div>
+							</a>
 						</div>
 					</li>
 				</ul>
 
 				<h2 id="soup">汤</h2>
-				<ul class="am-avg-sm-2">
+				<ul class="am-avg-sm-3">
 					<li>
 						<div class="order-goods">
-							<a href="<?=site_url('welcome/info');?>"><img src="skin/img/t (1).jpg"></a>
+							<a href="<?=site_url('welcome/car');?>"><img src="skin/img/t (1).jpg">
 							<div class="goods-info">
 								<h1>金银萝卜炖排骨</h1>
 								<p>推荐指数 <span class="index-num"><i></i></span></p>
@@ -231,16 +186,14 @@
 										<p><span>4.5</span> 评分</p>
 										<div>价格： ￥<span>48.00</span></div>
 									</div>
-									<div class="goods-pr">
-										<a href="javascript:;">加入购物车</a>
-									</div>
 								</div>
 							</div>
+							</a>
 						</div>
 					</li>
 					<li>
 						<div class="order-goods">
-							<a href="<?=site_url('welcome/info');?>"><img src="skin/img/t (2).jpg"></a>
+							<a href="<?=site_url('welcome/car');?>"><img src="skin/img/t (2).jpg">
 							<div class="goods-info">
 								<h1>清炖滋补甲鱼汤</h1>
 								<p>推荐指数 <span class="index-num"><i></i></span></p>
@@ -249,16 +202,14 @@
 										<p><span>4.5</span> 评分</p>
 										<div>价格： ￥<span>88.00</span></div>
 									</div>
-									<div class="goods-pr">
-										<a href="javascript:;">加入购物车</a>
-									</div>
 								</div>
 							</div>
+							</a>
 						</div>
 					</li>
 					<li>
 						<div class="order-goods">
-							<a href="<?=site_url('welcome/info');?>"><img src="skin/img/t (3).jpg"></a>
+							<a href="<?=site_url('welcome/car');?>"><img src="skin/img/t (3).jpg">
 							<div class="goods-info">
 								<h1>松茸乳鸽盅</h1>
 								<p>推荐指数 <span class="index-num"><i></i></span></p>
@@ -267,20 +218,18 @@
 										<p><span>4.5</span> 评分</p>
 										<div>价格： ￥<span>12.00</span></div>
 									</div>
-									<div class="goods-pr">
-										<a href="javascript:;">加入购物车</a>
-									</div>
 								</div>
 							</div>
+							</a>
 						</div>
 					</li>
 					
 				</ul>
 				<h2 id="snack">小吃</h2>
-				<ul class="am-avg-sm-2">
+				<ul class="am-avg-sm-3">
 					<li>
 						<div class="order-goods">
-							<a href="<?=site_url('welcome/info');?>"><img src="skin/img/xc (1).jpg"></a>
+							<a href="<?=site_url('welcome/car');?>"><img src="skin/img/xc (1).jpg">
 							<div class="goods-info">
 								<h1>寿桃</h1>
 								<p>推荐指数 <span class="index-num"><i></i></span></p>
@@ -289,16 +238,14 @@
 										<p><span>4.5</span> 评分</p>
 										<div>价格： ￥<span>28.00</span></div>
 									</div>
-									<div class="goods-pr">
-										<a href="javascript:;">加入购物车</a>
-									</div>
 								</div>
 							</div>
+							</a>
 						</div>
 					</li>
 					<li>
 						<div class="order-goods">
-							<a href="<?=site_url('welcome/info');?>"><img src="skin/img/xc (2).jpg"></a>
+							<a href="<?=site_url('welcome/car');?>"><img src="skin/img/xc (2).jpg">
 							<div class="goods-info">
 								<h1>瓜仁香芋饼</h1>
 								<p>推荐指数 <span class="index-num"><i></i></span></p>
@@ -307,16 +254,14 @@
 										<p><span>4.5</span> 评分</p>
 										<div>价格： ￥<span>28.00</span></div>
 									</div>
-									<div class="goods-pr">
-										<a href="javascript:;">加入购物车</a>
-									</div>
 								</div>
 							</div>
+							</a>
 						</div>
 					</li>
 					<li>
 						<div class="order-goods">
-							<a href="<?=site_url('welcome/info');?>"><img src="skin/img/xc (3).jpg"></a>
+							<a href="<?=site_url('welcome/car');?>"><img src="skin/img/xc (3).jpg">
 							<div class="goods-info">
 								<h1>鲜木瓜千层酥</h1>
 								<p>推荐指数 <span class="index-num"><i></i></span></p>
@@ -325,19 +270,17 @@
 										<p><span>4.5</span> 评分</p>
 										<div>价格： ￥<span>48.00</span></div>
 									</div>
-									<div class="goods-pr">
-										<a href="javascript:;">加入购物车</a>
-									</div>
 								</div>
 							</div>
+							</a>
 						</div>
 					</li>
 				</ul>
 				<h2 id="ycb">燕翅鲍</h2>
-				<ul class="am-avg-sm-2">
+				<ul class="am-avg-sm-3">
 					<li>
 						<div class="order-goods">
-							<a href="<?=site_url('welcome/info');?>"><img src="skin/img/ybc (1).jpg"></a>
+							<a href="<?=site_url('welcome/car');?>"><img src="skin/img/ybc (1).jpg">
 							<div class="goods-info">
 								<h1>红花汁扣辽参</h1>
 								<p>推荐指数 <span class="index-num"><i></i></span></p>
@@ -346,16 +289,14 @@
 										<p><span>4.5</span> 评分</p>
 										<div>价格： ￥<span>208.00</span></div>
 									</div>
-									<div class="goods-pr">
-										<a href="javascript:;">加入购物车</a>
-									</div>
 								</div>
 							</div>
+							</a>
 						</div>
 					</li>
 					<li>
 						<div class="order-goods">
-							<a href="<?=site_url('welcome/info');?>"><img src="skin/img/ybc (2).bmp"></a>
+							<a href="<?=site_url('welcome/car');?>"><img src="skin/img/ybc (2).bmp">
 							<div class="goods-info">
 								<h1>清汤竹荪炖血燕</h1>
 								<p>推荐指数 <span class="index-num"><i></i></span></p>
@@ -364,16 +305,14 @@
 										<p><span>4.5</span> 评分</p>
 										<div>价格： ￥<span>388.00</span></div>
 									</div>
-									<div class="goods-pr">
-										<a href="javascript:;">加入购物车</a>
-									</div>
 								</div>
 							</div>
+							</a>
 						</div>
 					</li>
 					<li>
 						<div class="order-goods">
-							<a href="<?=site_url('welcome/info');?>"><img src="skin/img/ybc (3).jpg"></a>
+							<a href="<?=site_url('welcome/car');?>"><img src="skin/img/ybc (3).jpg">
 							<div class="goods-info">
 								<h1>清汤竹荪炖血燕</h1>
 								<p>推荐指数 <span class="index-num"><i></i></span></p>
@@ -382,20 +321,18 @@
 										<p><span>4.5</span> 评分</p>
 										<div>价格： ￥<span>888.00</span></div>
 									</div>
-									<div class="goods-pr">
-										<a href="javascript:;">加入购物车</a>
-									</div>
 								</div>
 							</div>
+							</a>
 						</div>
 					</li>
 					
 				</ul>
 				<h2 id="seafood">海河鲜</h2>
-				<ul class="am-avg-sm-2">
+				<ul class="am-avg-sm-3">
 					<li>
 						<div class="order-goods">
-							<a href="<?=site_url('welcome/info');?>"><img src="skin/img/hhx (1).jpg"></a>
+							<a href="<?=site_url('welcome/car');?>"><img src="skin/img/hhx (1).jpg">
 							<div class="goods-info">
 								<h1>泰式涮多宝</h1>
 								<p>推荐指数 <span class="index-num"><i></i></span></p>
@@ -404,16 +341,14 @@
 										<p><span>4.5</span> 评分</p>
 										<div>价格： ￥<span>188.00</span></div>
 									</div>
-									<div class="goods-pr">
-										<a href="javascript:;">加入购物车</a>
-									</div>
 								</div>
 							</div>
+							</a>
 						</div>
 					</li>
 					<li>
 						<div class="order-goods">
-							<a href="<?=site_url('welcome/info');?>"><img src="skin/img/hhx (2).jpg"></a>
+							<a href="<?=site_url('welcome/car');?>"><img src="skin/img/hhx (2).jpg">
 							<div class="goods-info">
 								<h1>双椒多宝鱼</h1>
 								<p>推荐指数 <span class="index-num"><i></i></span></p>
@@ -422,16 +357,14 @@
 										<p><span>4.5</span> 评分</p>
 										<div>价格： ￥<span>128.00</span></div>
 									</div>
-									<div class="goods-pr">
-										<a href="javascript:;">加入购物车</a>
-									</div>
 								</div>
 							</div>
+							</a>
 						</div>
 					</li>
 					<li>
 						<div class="order-goods">
-							<a href="<?=site_url('welcome/info');?>"><img src="skin/img/hhx (3).jpg"></a>
+							<a href="<?=site_url('welcome/car');?>"><img src="skin/img/hhx (3).jpg">
 							<div class="goods-info">
 								<h1>清蒸鲈鱼</h1>
 								<p>推荐指数 <span class="index-num"><i></i></span></p>
@@ -440,16 +373,14 @@
 										<p><span>4.5</span> 评分</p>
 										<div>价格： ￥<span>68.00</span></div>
 									</div>
-									<div class="goods-pr">
-										<a href="javascript:;">加入购物车</a>
-									</div>
 								</div>
 							</div>
+							</a>
 						</div>
 					</li>
 					<li>
 						<div class="order-goods">
-							<a href="<?=site_url('welcome/info');?>"><img src="skin/img/hhx (4).jpg"></a>
+							<a href="<?=site_url('welcome/car');?>"><img src="skin/img/hhx (4).jpg">
 							<div class="goods-info">
 								<h1>豉椒江团</h1>
 								<p>推荐指数 <span class="index-num"><i></i></span></p>
@@ -458,20 +389,18 @@
 										<p><span>4.5</span> 评分</p>
 										<div>价格： ￥<span>88.00</span></div>
 									</div>
-									<div class="goods-pr">
-										<a href="javascript:;">加入购物车</a>
-									</div>
 								</div>
 							</div>
+							</a>
 						</div>
 					</li>
 				</ul>
 
-				<h2 id="meal">日常套餐</h2>
+				<!-- <h2 id="meal">日常套餐</h2>
 				<ul class="am-avg-sm-2">
 					<li>
 						<div class="order-goods">
-							<a href="<?=site_url('welcome/info');?>"><img src="skin/img/rctc1.jpg"></a>
+							<a href="<?=site_url('welcome/car');?>"><img src="skin/img/rctc1.jpg"></a>
 							<div class="goods-info">
 								<h1>589系列</h1>
 								<p>推荐指数 <span class="index-num"><i></i></span></p>
@@ -492,7 +421,7 @@
 				<ul class="am-avg-sm-2">
 					<li>
 						<div class="order-goods">
-							<a href="<?=site_url('welcome/info');?>"><img src="skin/img/hytc1.jpg"></a>
+							<a href="<?=site_url('welcome/car');?>"><img src="skin/img/hytc1.jpg"></a>
 							<div class="goods-info">
 								<h1>1314系列</h1>
 								<p>推荐指数 <span class="index-num"><i></i></span></p>
@@ -513,7 +442,7 @@
 				<ul class="am-avg-sm-2">
 					<li>
 						<div class="order-goods">
-							<a href="<?=site_url('welcome/info');?>"><img src="skin/img/sytc1.jpg"></a>
+							<a href="<?=site_url('welcome/car');?>"><img src="skin/img/sytc1.jpg"></a>
 							<div class="goods-info">
 								<h1>1086系列</h1>
 								<p>推荐指数 <span class="index-num"><i></i></span></p>
@@ -534,7 +463,7 @@
 				<ul class="am-avg-sm-2">
 					<li>
 						<div class="order-goods">
-							<a href="<?=site_url('welcome/info');?>"><img src="skin/img/tbytc1.jpg"></a>
+							<a href="<?=site_url('welcome/car');?>"><img src="skin/img/tbytc1.jpg"></a>
 							<div class="goods-info">
 								<h1>899系列</h1>
 								<p>推荐指数 <span class="index-num"><i></i></span></p>
@@ -550,43 +479,11 @@
 							</div>
 						</div>
 					</li>
-				</ul>
+				</ul> -->
 			</div>
 		</div>
 	</div>
-	<div class="footer">
-		<div class="center">
-			<ul class="am-avg-sm-4">
-				<li>
-					<h1>用户帮助</h1>
-					<p><a href="javascript:;">服务中心</a></p>
-					<p><a href="javascript:;">常见问题</a></p>
-					<p><a href="javascript:;">在线客服</a></p>
-				</li>
-				<li>
-					<h1>商务合作</h1>
-					<p><a href="javascript:;">服务中心</a></p>
-					<p><a href="javascript:;">常见问题</a></p>
-					<p><a href="javascript:;">在线客服</a></p>
-				</li>
-				<li>
-					<h1>关于我们</h1>
-					<p><a href="javascript:;">服务中心</a></p>
-					<p><a href="javascript:;">常见问题</a></p>
-					<p><a href="javascript:;">在线客服</a></p>
-				</li>
-				<li>
-					<div class="erweima">
-						<img src="skin/img/erweima.png">
-						<h2> 下载手机版</h2>
-						<span> 手机订餐方便</span>
-					</div>
-				</li>
-			</ul>
-			<p class="footer-btm">&copy; 2012 成都可人软件有限公司&nbsp;&nbsp;&nbsp;蜀ICP备12007958号-1&nbsp;&nbsp;&nbsp;Powered By DeepTime</p>
-		</div>
-	</div>
-	
+
     <script src="skin/js/jquery.min.js"></script>
     <script src="skin/js/amazeui.min.js"></script>
     <script type="text/javascript">

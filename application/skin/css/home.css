@@ -19,6 +19,9 @@ a,a:link,a:hover,a:visited,a.active{
 body{
 	background-color: #f5f2f2;
 }
+.am-form-horizontal .am-checkbox{
+	padding-top: 0;
+}
 .txt-r{
 	text-align: right;
 }
@@ -784,6 +787,7 @@ table.middle>tbody>tr>td{
 	color: white;
 	padding: 5px;
 	margin: 0 5px;
+	width: 212px;
 }
 .coupon_bg h1{
 	font-weight: normal;
@@ -1089,7 +1093,10 @@ table.middle>tbody>tr>td{
 }
 .index_search{
 	width: 300px;
-	padding-top: 8px;
+	padding: 20px 0;
+}
+.index_search input[type=search]{
+	background-color: rgba(255,255,255,0.5);
 }
 .index_search div{
 	margin: 0;
@@ -1315,5 +1322,75 @@ a.arrow{
 .chef_nsc li a{
 	color: #999;
 }
+.order_hd{
+	background: url(../img/images/order_hd_bg_02.jpg) no-repeat;
+	background-size: cover;
+}
+.price_hd{
+	background-color: rgba(237,61,61,.5);
+}
+.exchange_tit{
+	padding: 15px 35px 0;
+	background-color: #e5e5e5;
+}
+.search_ctt{
+	min-height: 700px;
+	padding: 50px 0;
+}
+.blog{
+	margin: 10px 0;
+	font-size: 15px;
+}
+.blog a:hover{
+	color: #ed3d3d;
+}
+.blog span{
+	color: #999;
+}
+.help{
+	min-height: 700px;
+	padding: 20px 0 30px;
+}
+.help_left{
+	width: 250px;
+	float: left;
+}
+.help_right{
+	margin-left: 250px;
+	padding: 0 30px;
+}
+.help_left .am-panel>a{
+	font-size: 18px;
+	padding-left: 30px;
+	font-weight: 600;
+	color: #999;
 
-
+}
+.help_left .am-panel>.am-list>li>a{
+	padding-left: 60px;
+}
+.admin-sidebar-sub a.active{
+	background-color: #fff;
+	color: #0e90d2;
+	border: none;
+	font-weight: bold;
+}
+.help_right>h1{
+	font-weight: normal;
+	font-size: 18px;
+	background-color: #e5e5e5;
+	/* color: #fff; */
+	padding: 8px 15px;
+}
+.help_right_ctt{
+	padding: 15px 30px;
+}
+.help_right_ctt>h2{
+	margin: 10px 0;
+}
+.help_right_ctt>ul{
+	padding-left: 20px;
+}
+.help_right_ctt>ul>li{
+	margin-bottom: 10px; 
+}

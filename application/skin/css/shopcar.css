@@ -65,6 +65,7 @@ li{
 }
 .xunze_right{
 	float: right;
+	padding-right: 40px;
 }
 .xunze_right a{
 	margin-right: 110px;
@@ -109,7 +110,7 @@ li{
 	display: inline-block;
 }
 .jiajian {
-	margin-left: 75px; border: 1px solid #dcdcdc; background-color: #fff;
+	margin-left: 60px; border: 1px solid #dcdcdc; background-color: #fff;
 }
 .jiajian img{
 	width: 26px; 
@@ -127,7 +128,7 @@ li{
 	vertical-align: middle;
 }
 .shangpinlist .p1{
-	margin-left: 180px; color: #ff3333;width: 85px;
+	margin-left: 150px; color: #ff3333;width: 85px;
 }
 .shangpinlist .p2{
 	margin-left: 40px;color: #ff3333;width: 90px;
@@ -197,4 +198,10 @@ li{
     width: 80px;
     height: 41px;
     border: 0;
+}
+#youul li h4{
+	margin: 0;
+	padding-left: 50px;
+	font-size: 20px;
+	font-weight: normal;
 }

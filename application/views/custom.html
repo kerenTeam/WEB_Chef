@@ -22,9 +22,10 @@
 <div class="header">
   <div class="center">
     <ul class="clear">
+        <li><a href="<?=site_url('welcome/home');?>">首页</a></li>
       <li><a href="<?=site_url('welcome/personal');?>">我的订单</a></li>
-      <li><a href="<?=site_url('welcome/personal');?>">我的大厨</a></li>
-      <li><a href="<?=site_url('welcome/personal');?>">联系我们</a></li>
+      <li><a href="<?=site_url('welcome/recommend');?>">我的大厨</a></li>
+      <li><a href="<?=site_url('welcome/help');?>">联系我们</a></li>
       <li><a href="<?=site_url('welcome/car');?>">购物篮</a></li>
       <li><a href="<?=site_url('welcome/login');?>">登录</a>/<a href="<?=site_url('welcome/register');?>">注册</a></li>
     </ul>
@@ -35,6 +36,8 @@
 	<!-- center -->
       <div class="center">
   		<div class="content-tit clear">
+          <!-- 指引 -->
+          <p class="blog"><a href="<?=site_url('welcome/home');?>">首页</a> > <span>宴会定制</span></p>
             <ul class="clear">
               <li><a href="<?=site_url('welcome/add');?>">所有商品</a></li>
               <li class="active"><a href="<?=site_url('welcome/custom');?>">宴会定制</a></li>
@@ -153,7 +156,7 @@
                  <div class="am-u-sm-10">
                       <hr data-am-widget="divider" style="" class="am-divider am-divider-dotted" />
                       <div class="cus_pic">  
-                      <input type="text" class=" am-form-field am-radius" style="width: 400px;height: 50px;" placeholder="请输入你的用餐人数" required />
+                      <input type="text" class=" am-form-field am-radius shuzhi" style="width: 400px;height: 50px;" placeholder="请输入你的用餐人数" required />
                       </div>
                  </div>
               </div>
@@ -234,6 +237,23 @@
         return false;
     })
   })
+  // 输入事件
+  var oValue = document.getElementsByClassName("shuzhi")
+  for (var i = 0; i < oValue.length; i++) {
+    oValue[i].onkeyup = function(){
+    var oNumbernode = this.parentNode.parentNode.getElementsByClassName("shuzhi")[0];
+    var oNumber = parseInt(oNumbernode.value);
+      if ( isNaN(oNumber) || oNumber <= 0) {
+        oNumber = '';
+      }
+      if (oNumbernode.value != oNumber) {
+                oNumbernode.value = oNumber;
+            }
+      if (oNumber >= 1000) {
+        oNumbernode.value = 1000;
+      }
+    }
+  }
 </script>
 </body>
 </html>

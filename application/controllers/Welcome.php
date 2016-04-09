@@ -147,6 +147,16 @@ class Welcome extends CI_Controller {
 	function activity(){
 		$this->load->view('activity.html');
 	}
-
-
+	// 换一换
+	function exchange(){
+		$this->load->view('exchange.html');
+	}
+	// 搜索
+	function search(){
+		$this->load->view('search.html');
+	}
+	// 帮助中心
+	function help(){
+		$this->load->view('help.html');
+	}
 }
