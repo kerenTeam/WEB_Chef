@@ -37,6 +37,9 @@ body{
 .hcolor{
 	color: #ED3D3D;
 }
+.grey{
+	color: #999;
+}
 .save{
 	background: #ED3D3D;
     border: none;
@@ -429,13 +432,13 @@ body{
 }
 .per-table h2{
 	margin: 0;
-	font-size: 20px;
+	font-size: 18px;
 }
 .per-table p{
-	font-size: 18px;
+	font-size: 16px;
 }
 .per-table a{
-	font-size: 18px;
+	font-size: 16px;
 }
 table.middle>tbody>tr>td{
 	vertical-align: middle;
@@ -1393,4 +1396,18 @@ a.arrow{
 }
 .help_right_ctt>ul>li{
 	margin-bottom: 10px; 
+}
+.order-tit ul li{
+	float: left;
+	padding: 10px 0;
+	font-size: 18px;
+}
+.order-tit ul li.active{
+	color: #ed3d3d;
+	border-bottom: 2px solid #ed3d3d;
+}
+.order-tit ul li a{
+	color: inherit;
+	padding: 0 30px;
+	border-right: 1px solid #999;
 }

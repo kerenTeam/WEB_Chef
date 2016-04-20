@@ -98,6 +98,7 @@ li{
 	width: 350px;
 }
 .shangpinlist img{
+	display: inline-block;
 	vertical-align: middle;
 	width: 110px;
 	margin-left: 30px;
@@ -158,6 +159,13 @@ li{
 }
 .p3 span{
 	color: #ff3333;font-size: 18px;
+}
+.jiesuan .service{
+	font-size: 14px;
+	margin: 0 20px;
+}
+.jiesuan .service span{
+	font-size: 14px;
 }
 .jiesuan input{
 	font-size: 20px;

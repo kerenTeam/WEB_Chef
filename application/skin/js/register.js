@@ -59,9 +59,6 @@ $(function(){
 	            1000)  
 	        }  
 	    }  
-
-	
-
 });
 function notLogin(){
     alert('暂未开通');
