@@ -156,24 +156,24 @@ body{
 }
 .order-goods img{
 	float: left;
-	width: 180px;
-	height: 150px;
+	width: 100px;
+	height: 100px;
 }
 .goods-info{
-	margin-left: 185px;
+	margin-left: 110px;
 }
 .goods-info>h1{
-	font-size: 35px;
+	font-size: 20px;
 	font-weight: normal;
-	line-height: 40px;
+	line-height: 20px;
 	margin: 0;
 }
 .goods-info>h1>a:hover{
 	color: #ed3d3d;
 }
 .goods-info>p{
-	margin: 10px 0;
-	font-size: 20px;
+	margin: 5px 0;
+	font-size: 18px;
 	line-height: 25px;
 }
 .index-num{
@@ -208,12 +208,13 @@ body{
 	float: left;
 }
 .goods-price .goods-pl p{
-	margin-bottom: 10px;
+	margin-bottom: 5px;
 	color: #ffcf40;
+	font-size: 14px;
 }
 .goods-price .goods-pl p span{
 	color: white;
-	padding: 5px 5px 10px;
+	padding: 0px 5px 8px 5px;
 	background: url('../img/pfen_03.png') no-repeat;
 	background-size: 100% 100%;
 }
@@ -222,18 +223,21 @@ body{
 	color: gray;
 	font-size: 14px;
 }
+.goods-price .goods-pl>div{
+	font-size: 15px;
+}
 .goods-pr{
 	float: right;
 }
 .goods-pr a{
 	display: inline-block;
-	padding: 3px 15px;
+	padding: 3px 10px;
 	border-radius: 45px;
 	background-color: #ed3d3d;
 	color: white;
-	font-size: 20px;
-	margin-right: 60px;
-	margin-top: 10px;
+	font-size: 12px;
+	margin-right: 20px;
+	margin-top: 20px;
 }
 .footer{
 	border-top: 1px solid gainsboro;
@@ -1053,7 +1057,10 @@ table.middle>tbody>tr>td{
 	height: 40px;
 	/*margin: 0 10px;*/
 }
-.ord_buy a{
+.ord_buy a:first-child{
+	color: #fff;
+}
+.ord_buy a:last-child{
 	font-size: 14px;
 	color: #ed3d3d;
 }
