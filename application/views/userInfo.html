@@ -105,7 +105,9 @@
                                   opacity: 0;
                                   filter: alpha(opacity=0);
                                 }
-
+                                .am-checkbox-inline,.am-radio-inline{
+                                  margin-top: 0;
+                                }
 
                             </style>
                             <div class="wx_type_img">
@@ -128,30 +130,30 @@
 
                           <div class="am-form-group">
                             <label class="am-form-label">菜品爱好：</label>
-                            <label class="am-checkbox-inline">
-                              <input type="checkbox" value="川菜" name="docVlCb"> 川菜
+                            <label class="am-checkbox-inline am-checkbox">
+                              <input type="checkbox" value="川菜" name="docVlCb" data-am-ucheck> 川菜
                             </label>
-                            <label class="am-checkbox-inline">
-                              <input type="checkbox" value="湘菜" name="docVlCb"> 湘菜
+                            <label class="am-checkbox-inline am-checkbox">
+                              <input type="checkbox" value="湘菜" name="docVlCb" data-am-ucheck> 湘菜
                             </label>
-                            <label class="am-checkbox-inline">
-                              <input type="checkbox" value="豫菜" name="docVlCb"> 豫菜
+                            <label class="am-checkbox-inline am-checkbox">
+                              <input type="checkbox" value="豫菜" name="docVlCb" data-am-ucheck> 豫菜
                             </label>
-                            <label class="am-checkbox-inline">
-                              <input type="checkbox" value="粤菜" name="docVlCb"> 粤菜
+                            <label class="am-checkbox-inline am-checkbox">
+                              <input type="checkbox" value="粤菜" name="docVlCb" data-am-ucheck> 粤菜
                             </label>
-                            <label class="am-checkbox-inline">
-                              <input type="checkbox" value="鲁菜" name="docVlCb"> 鲁菜
+                            <label class="am-checkbox-inline am-checkbox">
+                              <input type="checkbox" value="鲁菜" name="docVlCb" data-am-ucheck> 鲁菜
                             </label>
                           </div>
 
                           <div class="am-form-group">
                             <label>* 性别： </label>
-                            <label class="am-radio-inline">
-                              <input type="radio"  value="" name="docVlGender" required> 男
+                            <label class="am-radio-inline am-radio">
+                              <input type="radio"  value="" name="docVlGender" data-am-ucheck checked required> 男
                             </label>
-                            <label class="am-radio-inline">
-                              <input type="radio" name="docVlGender"> 女
+                            <label class="am-radio-inline am-radio">
+                              <input type="radio" name="docVlGender" data-am-ucheck> 女
                             </label>
                           </div>
 

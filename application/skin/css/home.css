@@ -65,6 +65,9 @@ body{
 	width: 1170px;
 	margin: 0 auto;
 }
+.min-center .center{
+	width: 960px;
+}
 .header{
 	height: 40px;
 	background-color: #ed3d3d;
@@ -146,6 +149,7 @@ body{
 }
 .order-goods{
 	margin-bottom: 30px;
+	padding: 0 10px;
 }
 .order-goods h2{
 	font-size: 20px;
@@ -155,12 +159,14 @@ body{
     display: inline-block;
 }
 .order-goods img{
-	float: left;
-	width: 100px;
-	height: 100px;
+	/* float: left; */
+	width: 210px;
+	height: 210px;
+	margin-bottom: 10px;
+
 }
 .goods-info{
-	margin-left: 110px;
+	/* margin-left: 110px; */
 }
 .goods-info>h1{
 	font-size: 20px;
@@ -233,11 +239,15 @@ body{
 	display: inline-block;
 	padding: 3px 10px;
 	border-radius: 45px;
-	background-color: #ed3d3d;
 	color: white;
 	font-size: 12px;
-	margin-right: 20px;
-	margin-top: 20px;
+	margin-top: 23px;
+	background-color: #999;
+	color: #fff;
+}
+.goods-pr a.joined{
+	background-color: #ed3d3d;
+	color: #fff;
 }
 .footer{
 	border-top: 1px solid gainsboro;
@@ -431,6 +441,31 @@ body{
 	width: 120px;
 	margin: 20px 0;
 }
+.foodBanner li{
+	padding: 0;
+}
+.viewMenu{
+	position: absolute;
+	right: 20px;
+	bottom: 160px;
+	background-color: rgba(0,0,0,.5);
+	padding: .5rem 1.5rem;
+	color: #fff;
+	cursor: pointer;
+	z-index: 100;
+}
+.infoMadel{
+	max-height: 100%;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+.infoMadel h2{
+	font-size: 1.8rem;
+	margin: 15px 0 10px 0;
+}
+.infoMadel p{
+	margin: 0 0 5px 0;
+}
 .per-table{
 	color: #999999;
 }
@@ -487,7 +522,7 @@ table.middle>tbody>tr>td{
 	border-bottom: 1px solid #e5e5e5;
 	padding: 15px 0;
 	color: #999999;
-	font-size: 18px;
+	font-size: 16px;
 	text-align: center;
 }
 .food-assess li:not(:first-child){
@@ -499,7 +534,7 @@ table.middle>tbody>tr>td{
 .food-num{
 	padding-left: 50px;
 	margin-top: 50px;
-	font-size: 25px;
+	font-size: 20px;
 	color: #999999;
 }
 .food-num div{
@@ -514,7 +549,7 @@ table.middle>tbody>tr>td{
 .num-btn input{
 	border: none;
 	outline: none;
-	width: 30px;
+	width: 40px;
 	color: #333;
 	text-align: center;
 	height: 100%;
@@ -522,7 +557,7 @@ table.middle>tbody>tr>td{
 }
 .num-btn span{
 	display: inline-block;
-	width: 40px;
+	width: 35px;
 	background-color: #DCDCDC;
 	cursor: pointer;
 	line-height: 0;
@@ -530,7 +565,7 @@ table.middle>tbody>tr>td{
 }
 .num-btn span img{
 	width: 100%;
-	height: 44px;
+	height: 35px;
 	display: inline-block;
 }
 .buy-food{
@@ -542,21 +577,21 @@ table.middle>tbody>tr>td{
 	vertical-align: middle;
 }
 .buy-sbm{
-	font-size: 20px;
-	margin-right: 10px;
+	font-size: 18px;
+	margin-right: 5px;
 }
 .join-car{
 	background-color: #999999;
-	margin-right: 20px;
+	margin-right: 10px;
 }
 .join-car img{
-	height: 30px;
+	height: 25px;
 }
 .food-collect{
 	display: block;
 	font-size: 20px;
 	color: #999999;
-	margin-right: 20px;
+	margin-right: 8px;
 }
 .food-collect span{
 	vertical-align: middle;
@@ -1100,6 +1135,13 @@ table.middle>tbody>tr>td{
 }
 .xz_yhj>p>img{
 	margin-right: 5px;
+}
+.index_address{
+	color: #fff;
+	float: left;
+	padding: 20px 0;
+	font-size: 2rem;
+	margin: 0;
 }
 .index_search{
 	width: 300px;

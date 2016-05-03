@@ -145,14 +145,14 @@
                                 <td>成都金牛区</td>
                                 <td>西安路街道20街道某某巷子</td>
                                 <td>15608097597</td>
-                                <td class="adr_cz"><a href="javascript:;">修改</a>/<a href="javascript:;">删除</a></td>
+                                <td class="adr_cz"><a href="javascript:;" data-am-modal="{target: '#doc-modal-2', closeViaDimmer: 0, width: 800}">修改</a>/<a href="javascript:;">删除</a></td>
                             </tr>
                             <tr>
                                 <td>张某某</td>
                                 <td>成都金牛区</td>
                                 <td>西安路街道20街道某某巷子</td>
                                 <td>15608097597</td>
-                                <td class="adr_cz"><a href="javascript:;">修改</a>/<a href="javascript:;">删除</a></td>
+                                <td class="adr_cz"><a href="javascript:;" data-am-modal="{target: '#doc-modal-2', closeViaDimmer: 0, width: 800}">修改</a>/<a href="javascript:;">删除</a></td>
                             </tr>
                         </tbody>
                         </table>
@@ -195,12 +195,61 @@
       <p class="footer-btm">&copy; 2012 成都可人软件有限公司&nbsp;&nbsp;&nbsp;蜀ICP备12007958号-1&nbsp;&nbsp;&nbsp;Powered By DeepTime</p>
     </div>
   </div>
-
+<!-- 修改地址弹出框 -->
+<div class="am-modal am-modal-no-btn" tabindex="-1" id="doc-modal-2">
+  <div class="am-modal-dialog">
+    <div class="am-modal-hd txt-l"> <b>添加地址</b>
+      <a href="javascript: void(0)" class="am-close am-close-spin" data-am-modal-close>&times;</a>
+    </div>
+    <div class="am-modal-bd">
+      <form class=" am-form clear phone_yz">
+        <div class="am-form-group clear">
+          <label class="am-u-sm-3 am-form-label txt-r"> 姓名</label>
+          <div class="am-u-sm-9 txt-l sm-input">
+            <input type="text" required value="张某某" />
+          </div>
+        </div>
+        <div class="am-form-group clear">
+          <label class="am-u-sm-3 am-form-label txt-r"> 所在地区</label>
+          <div class="am-u-sm-9 txt-l">
+            <div class="liandong">
+              <select name="province1">
+              </select>
+              <select name="city1">
+              </select>
+              <select name="area1" required>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="am-form-group clear">
+          <label class="am-u-sm-3 am-form-label txt-r"> 详细地址</label>
+          <div class="am-u-sm-9 txt-l">
+            <textarea rows="5" required>西安路街道20街道某某巷子</textarea>
+          </div>
+        </div>
+        <div class="am-form-group clear">
+          <label class="am-u-sm-3 am-form-label txt-r"> 手机号</label>
+          <div class="am-u-sm-9 txt-l sm-input">
+            <input type="tel" required value="15608097597" class="phone" />
+            <span></span>
+          </div>
+        </div>
+        <div class="am-form-group">
+          <div class="am-u-sm-9 am-u-sm-offset-3 txt-l">
+            <button type="submit" class="am-btn am-btn-secondary">保存</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
 <script src="skin/js/jquery.min.js"></script>
 <script src="skin/js/amazeui.min.js"></script>
 <script src="skin/js/address.js"></script>
 <script type="text/javascript">
     new PCAS("province","city","area","四川省","成都市");
+    new PCAS("province1","city1","area1","四川省","成都市");
 </script>
 </body>
 </html>
