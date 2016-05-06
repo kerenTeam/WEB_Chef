@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>大厨大家</title>
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<base href="<?php echo base_url();?>application/" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<link rel="icon" type="image/png" href="skin/img/LOGO-ug_03.png">
+		<link rel="stylesheet" href="skin/css/amazeui.min.css">
+		<link rel="stylesheet" type="text/css" href="skin/css/home.css">
+	</head>
+	<body>
+		<div class="header">
+			<div class="center">
+				<ul class="clear">
+					<li><a href="<?=site_url('welcome/home');?>">首页</a></li>
+					<li><a href="<?=site_url('welcome/personal');?>">我的订单</a></li>
+					<li><a href="<?=site_url('welcome/recommend');?>">我的大厨</a></li>
+					<li><a href="<?=site_url('welcome/help');?>">联系我们</a></li>
+					<li><a href="<?=site_url('welcome/car');?>">购物篮</a></li>
+					<li><a href="<?=site_url('welcome/login');?>">登录</a>/<a href="<?=site_url('welcome/register');?>">注册</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="content">
+	<div class="content-tit">
+			<div class="center">
+				 <!-- 指引 -->
+          <ol class="am-breadcrumb am-margin-bottom-0">
+          <li><a href="<?=site_url('welcome/home');?>">首页</a></li>
+          <li class="am-active">服务</li>
+        </ol>
+        <ul class="clear">
+                <li><a href="<?=site_url('welcome/add');?>">点菜</a></li>
+                <li><a href="<?=site_url('welcome/custom');?>">宴席</a></li>
+                <li><a href="<?=site_url('welcome/vegetable');?>">净菜</a></li>
+                <li class="active"><a href="javascript:;">特色服务 <i class="am-icon-sort-desc"></i></a>
+                  <div class="subMenu">
+                    <a class="active" href="<?=site_url('welcome/service');?>" title="">服务</a>
+                    <a href="<?=site_url('welcome/elegance');?>" title="">伴餐</a>
+                    <a href="<?=site_url('welcome/ceremonyType');?>" title="">庆典</a>
+                    <a href="<?=site_url('welcome/price');?>" title="">菜价</a>
+                  </div>
+                </li>
+        </ul>
+				</div>
+				</div>
+				<div class="center">
+          		<div class="service">
+          			<div class="am-g">
+          				<div class="am-u-sm-8">
+          					<div class="am-slider am-slider-default" data-am-flexslider id="demo-slider-0">
+							  <ul class="am-slides">
+							    <li><a href="<?=site_url('welcome/lifeInfo2');?>" title=""><img src="skin/img/banner1.png" /></a></li>
+							    <li><a href="<?=site_url('welcome/lifeInfo2');?>" title=""><img src="skin/img/banner2.png" /></a></li>
+							    <li><a href="<?=site_url('welcome/lifeInfo2');?>" title=""><img src="skin/img/banner3.png" /></a></li>
+							  </ul>
+							</div>
+          				</div>
+          				<div class="am-u-sm-4">
+          					<div class="serviceForm">
+	          					<form class="am-form">
+	          						<h3>服务员<span class="red am-icon-cny fr">80<span class="gray"> /位</span></span></h3>
+	          						<p>微笑、速度、诚信、技巧、专业</p>
+	          						<div class="am-g am-text-center">
+										<div class="am-u-sm-6">
+											<img src="skin/img/boy.png">
+											<div class="num-btn">
+												<span class="subtract"><img src="skin/img/jian.png"></span>
+												<input value="0">
+												<span class="plus"><img src="skin/img/jia.jpg"></span>
+											</div>
+										</div>
+	          							<div class="am-u-sm-6">
+	          								<img src="skin/img/girl.png">
+											<div class="num-btn">
+												<span class="subtract"><img src="skin/img/jian.png"></span>
+												<input value="0">
+												<span class="plus"><img src="skin/img/jia.jpg"></span>
+											</div>
+	          							</div>
+	          						</div>
+	          						<button type="button" class="am-btn am-btn-danger">加入购物车</button>
+	          					</form>
+          					</div>
+          				</div>
+          			</div>
+          			<!-- content -->
+          			<div class="serviceCtt">
+          				<h2>服务标准</h2>
+          				<p>1. 接到跟单安排时，跟单人员积极热情</p>
+          				<p>2．客户进入展厅，跟单人员立即微笑迎上去 </p>
+          				<p>3．跟单人员应主动与客户交流，了解客户需求 </p>
+          				<p>4．在跟单过程中，应做到热情、周到、大方</p>
+          				<h2>服务流程</h2>
+          				<p>1．迎客—服务员应微笑点头问好</p>
+          				<p>2．点菜—详细仔细服务 </p>
+          				<p>3．餐桌服务—详细服务顾客的饮食习惯 </p>
+          				<p>4．餐后整理—顾客用餐后，服务员善后</p>
+          			</div>
+
+          		<!-- 评价 -->
+          		<div class="food-appraise-tit clear">
+                  <h2>消费评价</h2>
+              	</div>
+              	<div class="pingjia">
+				<div class="am-shadow">
+					<header class="am-comment-hd">
+						<!--<h3 class="am-comment-title">评论标题</h3>-->
+						<div class="am-comment-meta">
+							<a href="#link-to-user" class="am-comment-author"><img src="skin/img/user.jpg" class="am-circle comimg" alt="">157****4450</a>
+							<span class="am-fr"><time datetime="2013-07-27T04:54:29-07:00" title="2013年7月27日 下午7:54 格林尼治标准时间+0800">2014-7-12</time></span>
+						</div>
+					</header>
+					<div class="am-comment-bd am-text-xs combo">
+						味道很不错,服务人员很耐心
+					</div>
+					<ul data-am-widget="gallery" class="am-gallery am-avg-sm-12 am-gallery-default am-no-layout" data-am-gallery="{ pureview: true }">
+						<li>
+							<div class="am-gallery-item">
+								<a href="skin/img/food_info_03.png" class="">
+									<img src="skin/img/food_info_03.png">
+								</a>
+							</div>
+						</li>
+						<li>
+							<div class="am-gallery-item">
+								<a href="skin/img/food_info_03.png" class="">
+									<img src="skin/img/food_info_03.png">
+								</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+          		</div>
+          		</div>
+			</div>
+		</div>
+
+
+<div class="footer">
+	<div class="center">
+		<ul class="am-avg-sm-4">
+			<li>
+				<h1>用户帮助</h1>
+				<p><a href="javascript:;">服务中心</a></p>
+				<p><a href="javascript:;">常见问题</a></p>
+				<p><a href="javascript:;">在线客服</a></p>
+			</li>
+			<li>
+				<h1>商务合作</h1>
+				<p><a href="javascript:;">服务中心</a></p>
+				<p><a href="javascript:;">常见问题</a></p>
+				<p><a href="javascript:;">在线客服</a></p>
+			</li>
+			<li>
+				<h1>关于我们</h1>
+				<p><a href="javascript:;">服务中心</a></p>
+				<p><a href="javascript:;">常见问题</a></p>
+				<p><a href="javascript:;">在线客服</a></p>
+			</li>
+			<li>
+				<div class="erweima">
+					<img src="skin/img/erweima.png">
+					<h2> 下载手机版</h2>
+					<span> 手机订餐方便</span>
+				</div>
+			</li>
+		</ul>
+		<p class="footer-btm">&copy; 2012 成都可人软件有限公司&nbsp;&nbsp;&nbsp;蜀ICP备12007958号-1&nbsp;&nbsp;&nbsp;Powered By DeepTime</p>
+	</div>
+</div>
+<script src="skin/js/jquery.min.js"></script>
+<script src="skin/js/amazeui.min.js"></script>
+<script type="text/javascript">
+    $(function(){
+        var remove = $(".subtract");
+        var add = $(".plus");
+        var num = $('.num-btn input')
+        remove.bind('click',nums);
+        add.bind('click',nums);
+        function nums(){
+            var count = $(this).parent().parent().find('input').val();
+            if($(this).attr('class') == "subtract"){
+                if(count <= 0){
+                    return false;
+                }else{
+                  count--;
+                }
+            }else{
+                if(count >= 99){
+                    return false;
+                }else{
+                    count++;
+                }
+            }
+            $(this).parent().parent().find('input').val(count);
+        }
+        num.keyup(function(){
+          var oNumber = $(this).val();
+            if ($(this).val() != oNumber) {
+              $(this).val(oNumber);
+            }
+            if ( isNaN(oNumber) || oNumber <= 0) {
+              $(this).val(1);
+            }
+            if (oNumber >= 1000) {
+              $(this).val(1000);
+            }
+        })
+    });
+</script>
+</body>
+</html>

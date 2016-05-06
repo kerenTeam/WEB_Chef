@@ -14,9 +14,20 @@
     <link rel="icon" type="image/png" href="skin/img/LOGO-ug_03.png">
     <link rel="stylesheet" href="skin/css/amazeui.min.css">
     <link rel="stylesheet" type="text/css" href="skin/css/home.css">
+
+
+
+
+    <link href="skin/css/city.css" rel="stylesheet" type="text/css" />
     <style type="text/css">
       .am-slider-default .am-control-thumbs li{
         width: 16.66%;
+      }
+      .am-slider-default .am-viewport{
+        height: 424px;
+      }
+      .viewMenu{
+        bottom: 110px;
       }
     </style>
 </head>
@@ -37,10 +48,10 @@
       <div class="center">
           <div class="content-tit clear">
           <!-- 指引 -->
-          <ol class="am-breadcrumb am-margin-bottom-0">
+        <ol class="am-breadcrumb am-margin-bottom-0">
           <li><a href="<?=site_url('welcome/home');?>">首页</a></li>
-          <li><a href="<?=site_url('welcome/add');?>">点菜</a></li>
-          <li class="am-active">菜品详情</li>
+          <li><a href="<?=site_url('welcome/custom');?>">宴席</a></li>
+          <li class="am-active">宴会详情</li>
         </ol>
         <ul class="clear">
                 <li><a href="<?=site_url('welcome/add');?>">点菜</a></li>
@@ -59,8 +70,8 @@
         <!-- info -->
         <div class="food-info">
           <div class="info-tit">
-              <h1>尖椒回锅肉</h1>
-              <p>特点:<span>口味独特，色泽红亮，肥而不腻入口浓香.</span></p>
+              <h1>聚会套餐套餐 989元系列</h1>
+              <p><span>海河鲜类较多，是喜欢吃这类菜品的人群首选，菜品口味多。即高大上又不贵。</span></p>
           </div>
           <ul class="am-g foodBanner">
               <li class="am-u-sm-8">
@@ -68,20 +79,14 @@
                     class="am-slider am-slider-default info-pics"
                     data-am-flexslider="{controlNav: 'thumbnails', directionNav: false, slideshow: false, animationSpeed: 400}">
                     <ul class="am-slides">
-                      <li data-thumb="skin/img/food_info_03.png">
-                        <img src="skin/img/food_info_03.png" /></li>
-                      <li data-thumb="skin/img/food_info_03.png">
-                        <img src="skin/img/food_info_03.png" /></li>
-                      <li data-thumb="skin/img/food_info_03.png">
-                        <img src="skin/img/food_info_03.png" /></li>
-                      <li data-thumb="skin/img/food_info_03.png">
-                        <img src="skin/img/food_info_03.png" /></li>
-                      <li data-thumb="skin/img/food_info_03.png">
-                        <img src="skin/img/food_info_03.png" /></li>
-                      <li data-thumb="skin/img/food_info_03.png">
-                        <img src="skin/img/food_info_03.png" /></li>
-                      <li data-thumb="skin/img/food_info_03.png">
-                        <img src="skin/img/food_info_03.png" /></li>
+                      <li data-thumb="skin/img/lc (1).jpg">
+                        <img src="skin/img/lc (1).jpg" /></li>
+                      <li data-thumb="skin/img/lc (2).jpg">
+                        <img src="skin/img/lc (2).jpg" /></li>
+                      <li data-thumb="skin/img/lc (3).jpg">
+                        <img src="skin/img/lc (3).jpg" /></li>
+                      <li data-thumb="skin/img/lc (4).jpg">
+                        <img src="skin/img/lc (4).jpg" /></li>
                     </ul>
                   <div class="viewMenu" data-am-modal="{target: '#doc-modal-1', closeViaDimmer: 1, width: 400, height: 600}">
                     <i class="am-icon-leanpub"></i> 查看菜单
@@ -89,26 +94,40 @@
                     <div class="am-modal am-modal-no-btn" tabindex="-1" id="doc-modal-1">
                       <div class="am-modal-dialog">
                         <div class="am-modal-hd">
-                          <img src="skin/img/food_info_03.png" style="width: 100%;height: 200px;">
+                          <img src="skin/img/lc (1).jpg" style="width: 100%;height: 200px;">
                           <a href="javascript: void(0)" class="am-close am-close-spin" data-am-modal-close>&times;</a>
                         </div>
                         <div class="am-modal-bd infoMadel" style="max-height: 380px;">
-                          <h2>主料</h2>
-                          <p>五花肉；尖椒。</p>
-                          <h2>辅料</h2>
-                          <p>白糖；豆瓣酱；洋葱；芹菜；酱油；鸡精；花生油。</p>
-                          <h2>主料</h2>
-                          <p>五花肉；尖椒。</p>
-                          <h2>辅料</h2>
-                          <p>白糖；豆瓣酱；洋葱；芹菜；酱油；鸡精；花生油。</p>
-                          <h2>主料</h2>
-                          <p>五花肉；尖椒。</p>
-                          <h2>辅料</h2>
-                          <p>白糖；豆瓣酱；洋葱；芹菜；酱油；鸡精；花生油。</p>
-                          <h2>主料</h2>
-                          <p>五花肉；尖椒。</p>
-                          <h2>辅料</h2>
-                          <p>白糖；豆瓣酱；洋葱；芹菜；酱油；鸡精；花生油。</p>
+                          <h2>菜单</h2>
+                          <h3>凉菜</h3>
+                          <p class="am-text-xs">老成都拌土鸡元</p>
+                          <p class="am-text-xs">辣鲜手剥笋</p>
+                          <p class="am-text-xs">捞汁珊瑚蜇头</p>
+                          <p class="am-text-xs">田七伴桃仁</p>
+                          <p class="am-text-xs">客家卤汁九香鸭</p>
+                          <p class="am-text-xs">酸辣汁黑木耳</p>
+                          <p class="am-text-xs">巴蜀豆花</p>
+                          <h3>热菜</h3>
+                          <p class="am-text-xs">白灼基围虾</p>
+                          <p class="am-text-xs">百年全家福</p>
+                          <p class="am-text-xs">双椒蒸江团</p>
+                          <p class="am-text-xs">山地土豆烧甲鱼</p>
+                          <p class="am-text-xs">馋嘴呱呱叫</p>
+                          <p class="am-text-xs">石锅酱仔排</p>
+                          <p class="am-text-xs">香辣仔兔</p>
+                          <p class="am-text-xs">川味小炒肉</p>
+                          <p class="am-text-xs">豆豉鲮鱼油麦菜</p>
+                          <p class="am-text-xs">百合苡仁老南瓜</p>
+                          <p class="am-text-xs">腊味荷兰豆</p>
+                          <p class="am-text-xs">清炒时蔬</p>
+                          <h3>汤</h3>
+                          <p class="am-text-xs">酸萝卜老鸭汤</p>
+                          <h3>小吃</h3>
+                          <p class="am-text-xs">波记小丝煎饺</p>
+                          <p class="am-text-xs">冰糖银耳羹</p>
+                          <h3>主食</h3>
+                          <p class="am-text-xs">米饭</p>
+
                         </div>
                       </div>
                     </div>
@@ -167,25 +186,87 @@
               <p>主料：<span>五花肉；尖椒。</span></p>
               <p>辅料：<span>白糖；豆瓣酱；洋葱；芹菜；酱油；鸡精；花生油。<span></p>
           </div>
-          <div class="food-image-text">
-              <h1>简介：<span>快炒家常菜。</span></h1>
-              <p>
-                属于优质蛋白质.回锅肉的营养非常全面，除了蛋白质、脂肪等主要营养成分。含有钙
-                铁、锌等人体必备元素。方便快捷，家常菜。便利好操作。属于优质蛋白质.回锅肉的营养非常全面，除了蛋白质、脂肪等主要营养成分。含有钙铁、锌等人体必备元素。方便快捷，家常菜。便利好操作。
-            </p>
-            <p>
-                属于优质蛋白质.回锅肉的营养非常全面，除了蛋白质、脂肪等主要营养成分。含有钙
-                铁、锌等人体必备元素。方便快捷，家常菜。便利好操作。属于优质蛋白质.回锅肉的营养非常全面，除了蛋白质、脂肪等主要营养成分。含有钙铁、锌等人体必备元素。方便快捷，家常菜。便利好操作。
-            </p>
-            <img src="skin/img/food_info_03.png">
-            <img src="skin/img/food_info_03.png">
-          </div>
+          <form class="custom am-form am-form-horizontal">
+          <div class="am-g">
+              <hr data-am-widget="divider" style="" class="am-divider am-divider-dotted" />
+            <div class="am-u-sm-10">
+              
+              <div class="customBanner">
+                <img src="skin/img/custom.png" alt="">
+              </div>
+              <form class="am-form am-form-horizontal customForm">
+                <div class="am-form-group">
+                  <label class="am-u-sm-2 am-text-right">区域</label>
+                  <div class="am-u-sm-10 customAdd" style="margin-top:-0.5rem;">
+                    
+                    <div class="demo">
+                      <div class="infolist">
+                        <div class="liststyle">
+                          <span id="Province" style="display:none;">
+                            <i>请选择省份</i>
+                            <ul>
+                              <li><a href="javascript:void(0)" alt="请选择省份">请选择省份</a></li>
+                            </ul>
+                            <input type="hidden" name="cho_Province" value="请选择省份">
+                          </span>
+                          <span id="City">
+                            <i>请选择城市</i>
+                            <ul>
+                              <li><a href="javascript:void(0)" alt="请选择城市">请选择城市</a></li>
+                            </ul>
+                            <input type="hidden" name="cho_City" value="请选择城市">
+                          </span>
+                          <span id="Area">
+                            <i>请选择地区</i>
+                            <ul>
+                              <li><a href="javascript:void(0)" alt="请选择地区">请选择地区</a></li>
+                            </ul>
+                            <input type="hidden" name="cho_Area" value="请选择地区">
+                          </span>
+                          <span id="Insurer">
+                            <i>请选择乡镇街道</i>
+                            <ul>
+                              <li><a href="javascript:void(0)" alt="请选择乡镇街道">请选择乡镇街道</a></li>
+                            </ul>
+                            <input type="hidden" name="cho_Insurer" value="请选择乡镇街道">
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="am-form-group">
+                  <label class="am-u-sm-2 am-text-right">桌数</label>
+                  <div class="am-u-sm-10">
+                    <select class="am-radius" style="width: 400px">
+                      <option>请选择您的用餐桌数</option>
+                      <option>10桌以下</option>
+                      <option>10~20桌</option>
+                      <option>20~30桌</option>
+                      <option>30桌以上</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="am-form-group">
+                  <label class="am-u-sm-2 am-text-right">电话</label>
+                  <div class="am-u-sm-10">
+                    <input id="phone" style="width: 400px" class="am-radius" type="tel" placeholder="请输入你的联系电话">
+                    <p class="customP">输入电话，客服稍后会给您回电</p>
+                  </div>
+                  <div class="am-u-sm-1"></div>
+                </div>
+                <div class="am-form-group">
+                  <div class="am-u-sm-offset-2">
+                    <button type="button" class="btn am-btn am-btn-danger customSubmit">提 交</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
           <!-- 消费评论 -->
-          <div class="food-appraise">
+          <div class="food-appraise borBtm">
               <div class="food-appraise-tit clear">
                   <h2>消费评价</h2>
-                  <span>我买过单，<a href="javascript:;">我要评价</a></span>
-                  
               </div>
               <ul class="am-avg-sm-3 consume">
                   <li>
@@ -248,7 +329,7 @@
               </ul>
           </div>
           <!-- 评价 -->
-          <div class="food-btm">
+<!--           <div class="food-btm">
               <ul class="clear food-btm-nav">
                   <li class="active">全部</li>
                   <li>晒图</li>
@@ -310,7 +391,65 @@
 
   </ul>
               </div>
+          </div> -->
+        <div class="pingjia">
+        <div class="am-shadow borBtm">
+          <header class="am-comment-hd">
+            <!--<h3 class="am-comment-title">评论标题</h3>-->
+            <div class="am-comment-meta">
+              <a href="#link-to-user" class="am-comment-author"><img src="skin/img/user.jpg" class="am-circle comimg" alt="">157****4450</a>
+              <span class="am-fr"><time datetime="2013-07-27T04:54:29-07:00" title="2013年7月27日 下午7:54 格林尼治标准时间+0800">2014-7-12</time></span>
+            </div>
+          </header>
+          <div class="am-comment-bd am-text-xs combo">
+            味道很不错,服务人员很耐心
           </div>
+          <ul data-am-widget="gallery" class="am-gallery am-avg-sm-12 am-gallery-default am-no-layout" data-am-gallery="{ pureview: true }">
+            <li>
+              <div class="am-gallery-item">
+                <a href="skin/img/food_info_03.png" class="">
+                  <img src="skin/img/food_info_03.png">
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="am-gallery-item">
+                <a href="skin/img/food_info_03.png" class="">
+                  <img src="skin/img/food_info_03.png">
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="am-shadow borBtm">
+          <header class="am-comment-hd">
+            <!--<h3 class="am-comment-title">评论标题</h3>-->
+            <div class="am-comment-meta">
+              <a href="#link-to-user" class="am-comment-author"><img src="skin/img/user.jpg" class="am-circle comimg" alt="">157****4450</a>
+              <span class="am-fr"><time datetime="2013-07-27T04:54:29-07:00" title="2013年7月27日 下午7:54 格林尼治标准时间+0800">2014-7-12</time></span>
+            </div>
+          </header>
+          <div class="am-comment-bd am-text-xs combo">
+            味道很不错,服务人员很耐心
+          </div>
+          <ul data-am-widget="gallery" class="am-gallery am-avg-sm-12 am-gallery-default am-no-layout" data-am-gallery="{ pureview: true }">
+            <li>
+              <div class="am-gallery-item">
+                <a href="skin/img/food_info_03.png" class="">
+                  <img src="skin/img/food_info_03.png">
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="am-gallery-item">
+                <a href="skin/img/food_info_03.png" class="">
+                  <img src="skin/img/food_info_03.png">
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+              </div>
         </div>
       </div>
   </div>
@@ -350,8 +489,29 @@
       <p class="footer-btm">&copy; 2012 成都可人软件有限公司&nbsp;&nbsp;&nbsp;蜀ICP备12007958号-1&nbsp;&nbsp;&nbsp;Powered By DeepTime</p>
     </div>
   </div>
-<script src="skin/js/jquery.min.js"></script>
+
+<script type="text/javascript" src="skin/js/jquery-1.8.0.min.js"></script>
 <script src="skin/js/amazeui.min.js"></script>
+<script type="text/javascript" src="skin/js/city4.city.js"></script>
+<script type="text/javascript" src="skin/js/city4.js"></script>
+<script type="text/javascript">
+$(function(){
+$('.liststyle ul').css('overflow','scroll');
+$('.customSubmit').live('click',function(){
+var phone = $("#phone");
+if(phone.val() == ''){
+alert("请输入手机号");
+}else if(!(/^1((3|4|5|8|7){1}\d{1}|70)\d{8}$/.test(phone.val()))){
+alert("请输入正确的手机号");
+}else{
+
+$('#doc-modal-1').modal('open');
+return false;
+}
+return false;
+})
+})
+</script>
 <script type="text/javascript">
     $(function(){
         var remove = $("#subtract");

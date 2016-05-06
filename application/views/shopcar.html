@@ -31,7 +31,11 @@
 	<!-- main -->
 	<div class="main">
           <!-- 指引 -->
-          <p class="blog"><a href="<?=site_url('welcome/home');?>">首页</a> > <a href="<?=site_url('welcome/add');?>">点菜</a> > <span>购物车</span></p>
+          <ol class="am-breadcrumb am-margin-bottom-0">
+          <li><a href="<?=site_url('welcome/home');?>">首页</a></li>
+          <li><a href="<?=site_url('welcome/add');?>">点菜</a></li>
+          <li class="am-active">购物车</li>
+        </ol>
 		<!-- biaoti -->
 		<div class="biaoti">
 			<a class="quanbu" href="javascript:;"><span>全部商品</span></a>

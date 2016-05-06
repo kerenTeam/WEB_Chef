@@ -42,12 +42,16 @@
 <div class="content">
 	<div class="center">
           <!-- 指引 -->
-          <p class="blog"><a href="<?=site_url('welcome/home');?>">首页</a> > <a href="<?=site_url('welcome/personal');?>">所有商品</a> > <span>搜索结果</span></p>
+          <ol class="am-breadcrumb am-margin-bottom-0">
+          <li><a href="<?=site_url('welcome/home');?>">首页</a></li>
+          <li><a href="<?=site_url('welcome/add');?>">点菜</a></li>
+          <li class="am-active">搜索结果</li>
+        </ol>
 		<div class="search_ctt">
 		<!-- 搜索结果没有 -->
 			<p class="am-text-center am-text-lg am-link-muted">没有搜到相关菜品！！</p>
 		<!-- 搜索到的菜品 -->
-			<ul class="am-avg-sm-2">
+			<ul class="am-avg-sm-5">
 				<li>
 					<div class="order-goods">
 						<a href="<?=site_url('welcome/info');?>"><img src="skin/img/lc (1).jpg"></a>
@@ -60,7 +64,7 @@
 									<div>价格： ￥<span>28.00</span> <i>/ 1份</i></div>
 								</div>
 								<div class="goods-pr">
-									<a href="javascript:;">加入购物车</a>
+									<a href="javascript:;"><i class="am-icon-opencart"></i></a>
 								</div>
 							</div>
 						</div>
@@ -78,7 +82,7 @@
 									<div>价格： ￥<span>32.00</span></div>
 								</div>
 								<div class="goods-pr">
-									<a href="javascript:;">加入购物车</a>
+									<a href="javascript:;"><i class="am-icon-opencart"></i></a>
 								</div>
 							</div>
 						</div>
@@ -96,7 +100,7 @@
 									<div>价格： ￥<span>22.00</span></div>
 								</div>
 								<div class="goods-pr">
-									<a href="javascript:;">加入购物车</a>
+									<a href="javascript:;"><i class="am-icon-opencart"></i></a>
 								</div>
 							</div>
 						</div>
@@ -114,7 +118,7 @@
 									<div>价格： ￥<span>88.00</span></div>
 								</div>
 								<div class="goods-pr">
-									<a href="javascript:;">加入购物车</a>
+									<a href="javascript:;"><i class="am-icon-opencart"></i></a>
 								</div>
 							</div>
 						</div>
@@ -132,7 +136,7 @@
 									<div>价格： ￥<span>38.00</span></div>
 								</div>
 								<div class="goods-pr">
-									<a href="javascript:;">加入购物车</a>
+									<a href="javascript:;"><i class="am-icon-opencart"></i></a>
 								</div>
 							</div>
 						</div>
@@ -187,11 +191,5 @@
 	
     <script src="skin/js/jquery.min.js"></script>
     <script src="skin/js/amazeui.min.js"></script>
-    <script type="text/javascript">
-    	$(".goods-pr a").bind("click",function(){
-
-    		$(this).html("已加入购物车").css("backgroundColor","#999");
-    	})
-    </script>
 </body>
 </html>

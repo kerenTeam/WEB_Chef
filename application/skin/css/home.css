@@ -70,7 +70,7 @@ body{
 }
 .header{
 	height: 40px;
-	background-color: #ed3d3d;
+	background-color: #F85554;
 }
 .header div ul{
 	float: right;
@@ -111,12 +111,19 @@ body{
 	float: left;
 	padding: 10px 20px;
 	position: relative;
+	height: 52px;
 }
-.content-tit ul li.active a{
+.content-tit ul li:hover>.subMenu{
+	height: 160px;
+}
+.content-tit ul li.active>a{
 	border-bottom: 2px solid #ed3d3d;
 	color: #ed3d3d;
 }
-.content-tit ul li a{
+.content-tit ul li .active{
+	color: #ed3d3d;
+}
+.content-tit ul li>a{
 	font-size: 20px;
 	padding-bottom: 10px;
 }
@@ -169,17 +176,25 @@ body{
 	/* margin-left: 110px; */
 }
 .goods-info>h1{
-	font-size: 20px;
+	font-size: 16px;
 	font-weight: normal;
-	line-height: 20px;
+	line-height: 14px;
 	margin: 0;
+}
+.goods-info>h1>b{
+	font-size: 14px;
+	padding: 1px;
+	display: inline-block;
+	border: 1px solid #999;
+	border-radius: 50%;
+	color: #999;
 }
 .goods-info>h1>a:hover{
 	color: #ed3d3d;
 }
 .goods-info>p{
-	margin: 5px 0;
-	font-size: 18px;
+	margin: 0;
+	font-size: 14px;
 	line-height: 25px;
 }
 .index-num{
@@ -1375,7 +1390,7 @@ a.arrow{
 	color: #999;
 }
 .order_hd{
-	background: url(../img/images/order_hd_bg_02.jpg) no-repeat;
+	background: url(../img/images/order_hd_bg_02.png) no-repeat;
 	background-size: cover;
 }
 .price_hd{
@@ -1384,6 +1399,7 @@ a.arrow{
 .exchange_tit{
 	padding: 15px 35px 0;
 	background-color: #e5e5e5;
+	margin-bottom: 30px;
 }
 .search_ctt{
 	min-height: 700px;
@@ -1398,6 +1414,25 @@ a.arrow{
 }
 .blog span{
 	color: #999;
+}
+.subMenu{
+	background-color: #fff;
+	width: 100%;
+	height: 0;
+	overflow: hidden;
+	position: absolute;
+	left: 0;
+	top: 52px;
+	transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
+	z-index: 1000;
+}
+.subMenu a{
+	display: block;
+	text-align: center;
+	border-bottom: 1px solid #e5e5e5;
+	font-size: 16px;
+	padding: 5px 0;
 }
 .help{
 	min-height: 700px;
@@ -1459,4 +1494,197 @@ a.arrow{
 	color: inherit;
 	padding: 0 30px;
 	border-right: 1px solid #999;
+}
+/* 服务 */
+.service{
+	min-height: 600px;
+	margin-bottom: 50px;
+	padding-top: 60px;
+}
+.service img{
+	max-width: 100%;
+}
+.serviceCtt{
+	margin-top: 20px;
+	padding-left: 15px;
+	border-top: 1px solid #e5e5e5;
+}
+.serviceForm h3{
+	margin-bottom: 10px;
+}
+.serviceForm p{
+	color: #999;
+}
+.serviceForm .num-btn{
+	float: left;
+	margin: 10px 0 0 20px;
+}
+.serviceForm .am-btn{
+	margin-top: 15px;
+	width: 100%;
+}
+.comimg{
+	width: 50px;
+	height: 50px;
+	margin-right: 10px;
+}
+.am-shadow .combo{
+	padding: 3px 10px;
+}
+/* 伴餐 */
+.elegance{
+	padding-top: 60px;
+	margin-bottom: 50px;
+	min-height: 600px;
+}
+.elegance img{
+	max-width: 100%;
+}
+.eleBanner{
+	text-align: center;
+	height: 200px;
+	margin-bottom: 30px;
+}
+.eleBanner img{
+	height: 200px;
+}
+.eleganceCtt .goods-pr>a{
+	margin: 0;
+}
+.eleganceCtt .goods-info p{
+	color: #999;
+	line-height: 20px;
+	margin: 5px 0;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.am-popover{
+	width: 250px;
+}
+/* 庆典 */
+.gray{
+	color: #ccc;
+}
+.red{
+	color: red;
+}
+.CmType{
+	width: 100%;
+	box-shadow: 0px 2px 11px rgba(8, 13, 14, 0.5);
+}
+.CmType img{
+	max-width: 100%;
+	height: 282px;
+}
+.CmType figcaption{
+	padding: 5px 10px;
+}
+.ceremonyCtt{
+	padding: 50px 200px;
+}
+.cereForm{
+	max-height: 300px;
+}
+.cereForm form{
+	background-color: #fff;
+	padding-bottom: 15px;
+}
+.cereBtn{
+	border: 1px solid #e5e5e5;
+}
+.cereForm h2{
+	background-color: #fff;
+	padding: 5px;
+}
+.CmNum {
+    position: relative!important;
+    right: 0.5rem!important;
+    top: -0.3rem;
+}
+.reduce {
+    /* display: none; */
+    color: #FF9800;
+    cursor: pointer;
+    font-size: 1.4em;
+    transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+.numTxt, .serinput, .serinput2 {
+    /* display: none; */
+    background: none;
+    width: 3.2rem;
+    text-align: center;
+    border: 1px solid #eee;
+    border-radius: 3px;
+    font-size: 1.5rem;
+    margin-top: -0.6rem;
+    transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+.add {
+    color: #4CAF50;
+    cursor: pointer;
+    font-size: 1.4em;
+}
+.gsf .price {
+    position: absolute;
+    right: 10rem;
+}
+.tk {
+    position: fixed;
+    z-index: 1999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .3);
+}
+.tktxt2 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.green {
+    color: #4AB162!important;
+}
+.bno {
+    background: none;
+    border: none;
+    padding: 10px;
+    border-top: 1px solid #eee;
+    outline: none;
+}
+.tkvip{
+	width: 300px;
+	margin: -120px 0 0 -15px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
+.qgray{
+	background-color: #e5e5e5;
+}
+.cereForm h2 a{
+	font-weight: normal;
+	color: red;
+}
+.smCtt{
+	width: 800px;
+	min-height: 600px;
+	margin: 0 auto;
+	padding-top: 60px;
+	margin-bottom: 50px;
+}
+.smCtt img{
+	width: 100%;
+}
+.borBtm{
+	border-bottom: 1px solid #e5e5e5;
 }

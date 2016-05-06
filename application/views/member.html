@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>大厨到家-会员卡</title>
+	<title>大厨到家</title>
     <meta charset="utf-8">
   	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <base href="<?php echo base_url();?>application/" />
@@ -33,12 +33,24 @@
       <div class="center">
         <div class="content-tit clear">
           <!-- 指引 -->
-          <p class="blog"><a href="<?=site_url('welcome/home');?>">首页</a> > <a href="<?=site_url('welcome/personal');?>">个人中心</a> > <span>会员卡</span></p>
-          <ul class="clear">
-            <li><a href="<?=site_url('welcome/add');?>">所有商品</a></li>
-            <li><a href="<?=site_url('welcome/custom');?>">宴会定制</a></li>
-            <li><a href="<?=site_url('welcome/price');?>">实时菜价</a></li>
-          </ul>
+          <ol class="am-breadcrumb am-margin-bottom-0">
+          <li><a href="<?=site_url('welcome/home');?>">首页</a></li>
+          <li><a href="<?=site_url('welcome/personal');?>">个人中心</a></li>
+          <li class="am-active">会员卡</li>
+        </ol>
+        <ul class="clear">
+                <li><a href="<?=site_url('welcome/add');?>">点菜</a></li>
+                <li><a href="<?=site_url('welcome/custom');?>">宴席</a></li>
+                <li><a href="<?=site_url('welcome/vegetable');?>">净菜</a></li>
+                <li><a href="javascript:;">特色服务 <i class="am-icon-sort-desc"></i></a>
+                  <div class="subMenu">
+                    <a href="<?=site_url('welcome/service');?>" title="">服务</a>
+                    <a href="<?=site_url('welcome/elegance');?>" title="">伴餐</a>
+                    <a href="<?=site_url('welcome/ceremonyType');?>" title="">庆典</a>
+                    <a href="<?=site_url('welcome/price');?>" title="">菜价</a>
+                  </div>
+                </li>
+        </ul>
         </div>
       <div class="personal clear">
           <div class="per-pl">

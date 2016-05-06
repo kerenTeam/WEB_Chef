@@ -159,4 +159,36 @@ class Welcome extends CI_Controller {
 	function help(){
 		$this->load->view('help.html');
 	}
+	// 净菜
+	function vegetable(){
+		$this->load->view('vegetable.html');
+	}
+	// 服务
+	function service(){
+		$this->load->view('service.html');
+	}
+	// 服务详情
+	function lifeInfo2(){
+		$this->load->view('lifeInfo2.html');
+	}
+	// 伴餐
+	function elegance(){
+		$this->load->view('elegance.html');
+	}
+	// 庆典
+	function ceremonyType(){
+		$this->load->view('ceremonyType.html');
+	}
+	// 庆典详情
+	function Ceremony(){
+		$this->load->view('Ceremony.html');
+	}
+	// 客服
+	function customServ(){
+		$this->load->view('customServ.html');
+	}
+	// 宴会定制详情
+	function partyInfo(){
+		$this->load->view('partyInfo.html');
+	}
 }

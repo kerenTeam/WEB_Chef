@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>大厨到家-宴会定制</title>
+  <head>
+    <title>大厨到家</title>
     <meta charset="utf-8">
-  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <base href="<?php echo base_url();?>application/" />
-  	<meta name="description" content="">
-  	<meta name="keywords" content="">
-  	<!-- Set render engine for 360 browser -->
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <!-- Set render engine for 360 browser -->
     <meta name="renderer" content="webkit">
     <!-- No Baidu Siteapp-->
     <meta http-equiv="Cache-Control" content="no-siteapp"/>
@@ -15,245 +15,209 @@
     <link rel="stylesheet" href="skin/css/amazeui.min.css">
     <link rel="stylesheet" type="text/css" href="skin/css/home.css">
     <link rel="stylesheet" type="text/css" href="skin/css/custom.css">
-</head>
-
-<body>
-<!-- header -->
-<div class="header">
-  <div class="center">
-    <ul class="clear">
-        <li><a href="<?=site_url('welcome/home');?>">首页</a></li>
-      <li><a href="<?=site_url('welcome/personal');?>">我的订单</a></li>
-      <li><a href="<?=site_url('welcome/recommend');?>">我的大厨</a></li>
-      <li><a href="<?=site_url('welcome/help');?>">联系我们</a></li>
-      <li><a href="<?=site_url('welcome/car');?>">购物篮</a></li>
-      <li><a href="<?=site_url('welcome/login');?>">登录</a>/<a href="<?=site_url('welcome/register');?>">注册</a></li>
-    </ul>
-  </div>
-</div>
-<!-- content -->
-<div class="content">
-	<!-- center -->
+  </head>
+  <body>
+    <!-- header -->
+    <div class="header">
       <div class="center">
-  		<div class="content-tit clear">
-          <!-- 指引 -->
-          <p class="blog"><a href="<?=site_url('welcome/home');?>">首页</a> > <span>宴会定制</span></p>
-            <ul class="clear">
-              <li><a href="<?=site_url('welcome/add');?>">所有商品</a></li>
-              <li class="active"><a href="<?=site_url('welcome/custom');?>">宴会定制</a></li>
-              <li><a href="<?=site_url('welcome/price');?>">实时菜价</a></li>
-            </ul>
-          </div>
-
-          <form class="custom">
-              <div class="am-g">
-            	   <div class="am-u-sm-2">
-                      <h2 class="cus_tit">宴会类型</h2> 
-                 </div>
-                 <div class="am-u-sm-10">
-                      <hr data-am-widget="divider" style="" class="am-divider am-divider-dotted" />
-                      <div class="cus_pic">
-                          
-                            <div data-am-widget="slider" class="am-slider am-slider-default" data-am-slider='{&quot;animation&quot;:&quot;slide&quot;,&quot;animationLoop&quot;:false,&quot;itemWidth&quot;:350,&quot;itemMargin&quot;:5, slideshow: false}' >
-                            <ul class="am-slides">
-                                <li>
-                                    <div class="cus_img">
-                                        <img src="skin/img/images/cus_pic_03.png">
-                                        <label class="cus_zc"> 
-                                            <p>欢乐家庭 • 宴</p>
-                                            <div></div>
-                                            <input type="radio" name="img" checked />
-                                        </label>                                    
-                                    </div>
-
-                                </li>
-                                <li>
-                                    <div class="cus_img">
-                                        <img src="skin/img/images/cus_pic_03.png">
-                                        <label class="cus_zc"> 
-                                            <p>欢乐家庭 • 宴</p>
-                                            <div></div>
-                                            <input type="radio" name="img"/>
-                                        </label>                                    
-                                    </div>
-
-                                </li>
-                                <li>
-                                    <div class="cus_img">
-                                        <img src="skin/img/images/cus_pic_03.png">
-                                        <label class="cus_zc"> 
-                                            <p>欢乐家庭 • 宴</p>
-                                            <div></div>
-                                            <input type="radio" name="img"/>
-                                        </label>                                    
-                                    </div>
-
-                                </li>
-                                <li>
-                                    <div class="cus_img">
-                                        <img src="skin/img/images/cus_pic_03.png">
-                                        <label class="cus_zc"> 
-                                            <p>欢乐家庭 • 宴</p>
-                                            <div></div>
-                                            <input type="radio" name="img"/>
-                                        </label>                                    
-                                    </div>
-
-                                </li>
-                                <li>
-                                    <div class="cus_img">
-                                        <img src="skin/img/images/cus_pic_03.png">
-                                        <label class="cus_zc"> 
-                                            <p>欢乐家庭 • 宴</p>
-                                            <div></div>
-                                            <input type="radio" name="img"/>
-                                        </label>                                    
-                                    </div>
-
-                                </li>
-                                <li>
-                                    <div class="cus_img">
-                                        <img src="skin/img/images/cus_pic_03.png">
-                                        <label class="cus_zc"> 
-                                            <p>欢乐家庭 • 宴</p>
-                                            <div></div>
-                                            <input type="radio" name="img"/>
-                                        </label>                                    
-                                    </div>
-
-                                </li>
-                                <li>
-                                    <div class="cus_img">
-                                        <img src="skin/img/images/cus_pic_03.png">
-                                        <label class="cus_zc"> 
-                                            <p>欢乐家庭 • 宴</p>
-                                            <div></div>
-                                            <input type="radio" name="img"/>
-                                        </label>                                    
-                                    </div>
-
-                                </li>
-                            </ul>
-                          </div>
-                      </div>
-                 </div>
-              </div>
-              <div class="am-g">
-                  <div class="am-u-sm-2">
-                      <h2 class="cus_tit">用餐时间</h2> 
-                 </div>
-                 <div class="am-u-sm-10">
-                      <hr data-am-widget="divider" style="" class="am-divider am-divider-dotted" />
-                       <div class="cus_pic">         
-                      <input type="text" class=" am-form-field am-radius" data-am-datepicker="{theme: 'success'}" readonly style="width: 400px;height: 50px;" placeholder="请输入你的用餐时间" required />
-                      </div>
-                 </div>
-              </div>
-              <div class="am-g">
-                  <div class="am-u-sm-2">
-                      <h2 class="cus_tit">用餐数量</h2> 
-                 </div>
-                 <div class="am-u-sm-10">
-                      <hr data-am-widget="divider" style="" class="am-divider am-divider-dotted" />
-                      <div class="cus_pic">  
-                      <input type="text" class=" am-form-field am-radius shuzhi" style="width: 400px;height: 50px;" placeholder="请输入你的用餐人数" required />
-                      </div>
-                 </div>
-              </div>
-              <div class="am-g">
-                  <div class="am-u-sm-2">
-                      <h2 class="cus_tit">联系方式</h2> 
-                 </div>
-                 <div class="am-u-sm-10">
-                      <hr data-am-widget="divider" style="" class="am-divider am-divider-dotted" />
-                      <div class="cus_pic">  
-                      <input type="text" id="phone" class=" am-form-field am-radius" style="width: 400px;height: 50px;" placeholder="请输入你的联系方式" required />
-                      <p class="color-gray">确认后，我们稍后会跟你联系</p>
-                      </div>
-                 </div>
-              </div>
-              <div class="am-g">
-                  <div class="am-u-sm-2"></div>
-                  <div class="am-u-sm-10">
-                      <input type="submit" value="确认" class="am-btn am-btn-danger am-radius" />
-                  </div>
-              </div>
-  			
-
-          </form>
-
+        <ul class="clear">
+          <li><a href="<?=site_url('welcome/home');?>">首页</a></li>
+          <li><a href="<?=site_url('welcome/personal');?>">我的订单</a></li>
+          <li><a href="<?=site_url('welcome/recommend');?>">我的大厨</a></li>
+          <li><a href="<?=site_url('welcome/help');?>">联系我们</a></li>
+          <li><a href="<?=site_url('welcome/car');?>">购物篮</a></li>
+          <li><a href="<?=site_url('welcome/login');?>">登录</a>/<a href="<?=site_url('welcome/register');?>">注册</a></li>
+        </ul>
       </div>
-</div>
-
-<!-- 底部 -->
-<div class="footer">
-    <div class="center">
-      <ul class="am-avg-sm-4">
-        <li>
-          <h1>用户帮助</h1>
-          <p><a href="#">服务中心</a></p>
-          <p><a href="#">常见问题</a></p>
-          <p><a href="#">在线客服</a></p>
-        </li>
-        <li>
-          <h1>商务合作</h1>
-          <p><a href="#">服务中心</a></p>
-          <p><a href="#">常见问题</a></p>
-          <p><a href="#">在线客服</a></p>
-        </li>
-        <li>
-          <h1>关于我们</h1>
-          <p><a href="#">服务中心</a></p>
-          <p><a href="#">常见问题</a></p>
-          <p><a href="#">在线客服</a></p>
-        </li>
-        <li>
-          <div class="erweima">
-            <img src="skin/img/erweima.png">
-            <h2> 下载手机版</h2>
-            <span> 手机订餐方便</span>
-          </div>
-        </li>
-      </ul>
-      <p class="footer-btm">&copy; 2012 成都可人软件有限公司&nbsp;&nbsp;&nbsp;蜀ICP备12007958号-1&nbsp;&nbsp;&nbsp;Powered By DeepTime</p>
     </div>
-  </div>      
-<script src="skin/js/jquery.min.js"></script>
-<script src="skin/js/amazeui.min.js"></script>
-<script type="text/javascript">
-  $(function(){
-    $("input[type=radio]:checked").parent().addClass("active");
-    $("input[type=radio]").click(function(){
-        $(".cus_zc").removeClass("active");
-        $(this).parent().addClass("active");
-    });
-    $(".custom").bind("submit",function(){
-        var phone = $("#phone");
-        if(!(/^1((3|4|5|8|7){1}\d{1}|70)\d{8}$/.test(phone.val()))){
-            alert("请输入正确的手机号");
-        }else{
-          return true;
-        }
-        return false;
-    })
-  })
-  // 输入事件
-  var oValue = document.getElementsByClassName("shuzhi")
-  for (var i = 0; i < oValue.length; i++) {
-    oValue[i].onkeyup = function(){
-    var oNumbernode = this.parentNode.parentNode.getElementsByClassName("shuzhi")[0];
-    var oNumber = parseInt(oNumbernode.value);
-      if ( isNaN(oNumber) || oNumber <= 0) {
-        oNumber = '';
-      }
-      if (oNumbernode.value != oNumber) {
-                oNumbernode.value = oNumber;
-            }
-      if (oNumber >= 1000) {
-        oNumbernode.value = 1000;
-      }
-    }
-  }
-</script>
-</body>
-</html>
+    <!-- content -->
+    <div class="content">
+      <!-- center -->
+      <div class="center">
+        <div class="content-tit clear">
+          <!-- 指引 -->
+          <ol class="am-breadcrumb am-margin-bottom-0">
+          <li><a href="<?=site_url('welcome/home');?>">首页</a></li>
+          <li class="am-active">宴席</li>
+        </ol>
+        <ul class="clear">
+                <li><a href="<?=site_url('welcome/add');?>">点菜</a></li>
+                <li class="active"><a href="<?=site_url('welcome/custom');?>">宴席</a></li>
+                <li><a href="<?=site_url('welcome/vegetable');?>">净菜</a></li>
+                <li><a href="javascript:;">特色服务 <i class="am-icon-sort-desc"></i></a>
+                  <div class="subMenu">
+                    <a href="<?=site_url('welcome/service');?>" title="">服务</a>
+                    <a href="<?=site_url('welcome/elegance');?>" title="">伴餐</a>
+                    <a href="<?=site_url('welcome/ceremonyType');?>" title="">庆典</a>
+                    <a href="<?=site_url('welcome/price');?>" title="">菜价</a>
+                  </div>
+                </li>
+        </ul>
+        </div>
+        <!-- <form class="custom am-form am-form-horizontal"> -->
+          <div class="am-g">
+            <div class="am-u-sm-2">
+              <h2 class="cus_tit">宴会类型</h2>
+            </div>
+            <div class="am-u-sm-10">
+              <hr data-am-widget="divider" style="" class="am-divider am-divider-dotted" />
+              <div class="cus_pic">
+                
+                <div data-am-widget="slider" class="am-slider am-slider-default" data-am-slider='{&quot;animation&quot;:&quot;slide&quot;,&quot;animationLoop&quot;:false,&quot;itemWidth&quot;:350,&quot;itemMargin&quot;:5, slideshow: false}' >
+                  <ul class="am-slides">
+                    <li>
+                      <div class="cus_img">
+                        <img src="skin/img/party1.png">
+                        <a href="<?=site_url('welcome/partyInfo');?>" class="cus_zc">
+                          <p>聚会套餐989系列</p>
+                        </a>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="cus_img">
+                        <img src="skin/img/party1.png">
+                        <a href="<?=site_url('welcome/partyInfo');?>" class="cus_zc">
+                          <p>商务套餐599系列</p>
+                        </a>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="cus_img">
+                        <img src="skin/img/party1.png">
+                        <a href="<?=site_url('welcome/partyInfo');?>" class="cus_zc">
+                          <p>温馨家宴1299系列</p>
+                        </a>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="cus_img">
+                        <img src="skin/img/party1.png">
+                        <a href="<?=site_url('welcome/partyInfo');?>" class="cus_zc">
+                          <p>喜宴套餐989系列</p>
+                        </a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        <!--   <div class="am-g">
+            <div class="am-u-sm-2">
+              <h2 class="cus_tit">联系客服</h2>
+            </div>
+            <div class="am-u-sm-10">
+              <hr data-am-widget="divider" style="" class="am-divider am-divider-dotted" />
+              
+              <div class="customBanner">
+                <img src="skin/img/custom.png" alt="">
+              </div>
+              <form class="am-form am-form-horizontal customForm">
+                <div class="am-form-group">
+                  <label class="am-u-sm-2 am-text-right">区域</label>
+                  <div class="am-u-sm-10 customAdd" style="margin-top:-0.5rem;">
+                    
+                    <div class="demo">
+                      <div class="infolist">
+                        <div class="liststyle">
+                          <span id="Province" style="display:none;">
+                            <i>请选择省份</i>
+                            <ul>
+                              <li><a href="javascript:void(0)" alt="请选择省份">请选择省份</a></li>
+                            </ul>
+                            <input type="hidden" name="cho_Province" value="请选择省份">
+                          </span>
+                          <span id="City">
+                            <i>请选择城市</i>
+                            <ul>
+                              <li><a href="javascript:void(0)" alt="请选择城市">请选择城市</a></li>
+                            </ul>
+                            <input type="hidden" name="cho_City" value="请选择城市">
+                          </span>
+                          <span id="Area">
+                            <i>请选择地区</i>
+                            <ul>
+                              <li><a href="javascript:void(0)" alt="请选择地区">请选择地区</a></li>
+                            </ul>
+                            <input type="hidden" name="cho_Area" value="请选择地区">
+                          </span>
+                          <span id="Insurer">
+                            <i>请选择乡镇街道</i>
+                            <ul>
+                              <li><a href="javascript:void(0)" alt="请选择乡镇街道">请选择乡镇街道</a></li>
+                            </ul>
+                            <input type="hidden" name="cho_Insurer" value="请选择乡镇街道">
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="am-form-group">
+                  <label class="am-u-sm-2 am-text-right">桌数</label>
+                  <div class="am-u-sm-10">
+                    <select class="am-radius" style="width: 400px">
+                      <option>请选择您的用餐桌数</option>
+                      <option>10桌以下</option>
+                      <option>10~20桌</option>
+                      <option>20~30桌</option>
+                      <option>30桌以上</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="am-form-group">
+                  <label class="am-u-sm-2 am-text-right">电话</label>
+                  <div class="am-u-sm-10">
+                    <input id="phone" style="width: 400px" class="am-radius" type="tel" placeholder="请输入你的联系电话">
+                    <p class="customP">输入电话，客服稍后会给您回电</p>
+                  </div>
+                  <div class="am-u-sm-1"></div>
+                </div>
+                <div class="am-form-group">
+                  <div class="am-u-sm-offset-2">
+                    <button type="button" class="btn am-btn am-btn-danger customSubmit">提 交</button>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+            
+          <!-- </form> -->
+        </div>
+      </div>
+      <!-- 底部 -->
+      <div class="footer">
+        <div class="center">
+          <ul class="am-avg-sm-4">
+            <li>
+              <h1>用户帮助</h1>
+              <p><a href="#">服务中心</a></p>
+              <p><a href="#">常见问题</a></p>
+              <p><a href="#">在线客服</a></p>
+            </li>
+            <li>
+              <h1>商务合作</h1>
+              <p><a href="#">服务中心</a></p>
+              <p><a href="#">常见问题</a></p>
+              <p><a href="#">在线客服</a></p>
+            </li>
+            <li>
+              <h1>关于我们</h1>
+              <p><a href="#">服务中心</a></p>
+              <p><a href="#">常见问题</a></p>
+              <p><a href="#">在线客服</a></p>
+            </li>
+            <li>
+              <div class="erweima">
+                <img src="skin/img/erweima.png">
+                <h2> 下载手机版</h2>
+                <span> 手机订餐方便</span>
+              </div>
+            </li>
+          </ul>
+          <p class="footer-btm">&copy; 2012 成都可人软件有限公司&nbsp;&nbsp;&nbsp;蜀ICP备12007958号-1&nbsp;&nbsp;&nbsp;Powered By DeepTime</p>
+        </div>
+      </div>
+      <script type="text/javascript" src="skin/js/jquery.min.js"></script>
+      <script src="skin/js/amazeui.min.js"></script>
+    </body>
+  </html>
