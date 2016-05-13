@@ -260,6 +260,18 @@
                     <button type="button" class="btn am-btn am-btn-danger customSubmit">提 交</button>
                   </div>
                 </div>
+                <!-- 客服弹出框 -->
+                    <div class="am-modal am-modal-no-btn" tabindex="-1" id="doc-modal-2">
+                      <div class="am-modal-dialog am-radius">
+                        <div class="am-modal-hd am-text-danger">提 示
+                          <a href="javascript: void(0)" class="am-close am-close-spin" data-am-modal-close>&times;</a>
+                        </div>
+                        <div class="am-modal-bd customBtn">
+                          <p class="customModalP">客服正在处理。<br>请留意我们给您的去电(400-820-1790)</p>
+                          <a href="javascript:;" class="btn am-btn am-btn-sm am-btn-danger am-radius" data-am-modal-close>好</a>
+                        </div>
+                      </div>
+                    </div>
               </div>
             </div>
           </form>
@@ -505,7 +517,7 @@ alert("请输入手机号");
 alert("请输入正确的手机号");
 }else{
 
-$('#doc-modal-1').modal('open');
+$('#doc-modal-2').modal('open');
 return false;
 }
 return false;

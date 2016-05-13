@@ -155,7 +155,7 @@ li{
     margin: 50px 0px 20px 900px;
 }
 .jiesuan .p3{
-	margin: 20px; color: #ff3333;
+	margin: 20px; color: #ff3333;background: transparent;
 }
 .p3 span{
 	color: #ff3333;font-size: 18px;
@@ -163,6 +163,8 @@ li{
 .jiesuan .service{
 	font-size: 14px;
 	margin: 0 20px;
+	min-height: 30px;
+	padding-top: 0;
 }
 .jiesuan .service span{
 	font-size: 14px;

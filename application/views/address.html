@@ -16,6 +16,17 @@
     <link rel="stylesheet" type="text/css" href="skin/css/home.css">
 
     <link rel="stylesheet" type="text/css" href="skin/css/collect.css">
+
+
+    <link href="skin/css/city.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        .infolist .liststyle span{
+          width: 30%;
+        }
+        .liststyle>span>i{
+          color: #494949;
+        }
+    </style>
 </head>
 <body>
 <div class="header">
@@ -31,9 +42,9 @@
     </div>
   </div>
   <div class="content">
-      <div class="center">
         <div class="content-tit clear">
           <!-- 指引 -->
+      <div class="center">
         <ol class="am-breadcrumb am-margin-bottom-0">
           <li><a href="<?=site_url('welcome/home');?>">首页</a></li>
           <li><a href="<?=site_url('welcome/personal');?>">个人中心</a></li>
@@ -53,6 +64,8 @@
                 </li>
         </ul>
         </div>
+        </div>
+      <div class="center">
       <div class="personal clear">
           <div class="per-pl">
             <div class="per-nav">
@@ -92,14 +105,40 @@
                       <div class="am-form-group">
                         <label class="am-u-sm-3 am-form-label"><i>*</i> 所在地区</label>
                         <div class="am-u-sm-9">
-                            <div class="liandong">
-                                <select name="province"> 
-                                </select>
-                                <select name="city"> 
-                                </select>
-                                <select name="area">
-                                </select>
+                          <div class="demo">
+                            <div class="infolist">
+                              <div class="liststyle">
+                                <span id="Province" style="display:none;">
+                                  <i>请选择省份</i>
+                                  <ul>
+                                    <li><a href="javascript:void(0)" alt="请选择省份">请选择省份</a></li>
+                                  </ul>
+                                  <input type="hidden" name="cho_Province" value="请选择省份">
+                                </span>
+                                <span id="City">
+                                  <i>请选择城市</i>
+                                  <ul>
+                                    <li><a href="javascript:void(0)" alt="请选择城市">请选择城市</a></li>
+                                  </ul>
+                                  <input type="hidden" name="cho_City" value="请选择城市">
+                                </span>
+                                <span id="Area">
+                                  <i>请选择地区</i>
+                                  <ul>
+                                    <li><a href="javascript:void(0)" alt="请选择地区">请选择地区</a></li>
+                                  </ul>
+                                  <input type="hidden" name="cho_Area" value="请选择地区">
+                                </span>
+                                <span id="Insurer">
+                                  <i>请选择乡镇街道</i>
+                                  <ul>
+                                    <li><a href="javascript:void(0)" alt="请选择乡镇街道">请选择乡镇街道</a></li>
+                                  </ul>
+                                  <input type="hidden" name="cho_Insurer" value="请选择乡镇街道">
+                                </span>
+                              </div>
                             </div>
+                          </div>
                         </div>
                       </div>
 
@@ -224,13 +263,39 @@
         <div class="am-form-group clear">
           <label class="am-u-sm-3 am-form-label txt-r"> 所在地区</label>
           <div class="am-u-sm-9 txt-l">
-            <div class="liandong">
-              <select name="province1">
-              </select>
-              <select name="city1">
-              </select>
-              <select name="area1" required>
-              </select>
+            <div class="demo">
+              <div class="infolist">
+                <div class="liststyle">
+                  <span id="Province1" style="display:none;">
+                    <i>请选择省份</i>
+                    <ul>
+                      <li><a href="javascript:void(0)" alt="请选择省份">请选择省份</a></li>
+                    </ul>
+                    <input type="hidden" name="cho_Province" value="请选择省份">
+                  </span>
+                  <span id="City1">
+                    <i>请选择城市</i>
+                    <ul>
+                      <li><a href="javascript:void(0)" alt="请选择城市">请选择城市</a></li>
+                    </ul>
+                    <input type="hidden" name="cho_City" value="请选择城市">
+                  </span>
+                  <span id="Area1">
+                    <i>请选择地区</i>
+                    <ul>
+                      <li><a href="javascript:void(0)" alt="请选择地区">请选择地区</a></li>
+                    </ul>
+                    <input type="hidden" name="cho_Area" value="请选择地区">
+                  </span>
+                  <span id="Insurer1">
+                    <i>请选择乡镇街道</i>
+                    <ul>
+                      <li><a href="javascript:void(0)" alt="请选择乡镇街道">请选择乡镇街道</a></li>
+                    </ul>
+                    <input type="hidden" name="cho_Insurer" value="请选择乡镇街道">
+                  </span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -256,12 +321,14 @@
     </div>
   </div>
 </div>
-<script src="skin/js/jquery.min.js"></script>
+<script src="skin/js/jquery-1.8.0.min.js"></script>
 <script src="skin/js/amazeui.min.js"></script>
-<script src="skin/js/address.js"></script>
+<script type="text/javascript" src="skin/js/city4.city.js"></script>
+<script type="text/javascript" src="skin/js/city4.js"></script>
 <script type="text/javascript">
-    new PCAS("province","city","area","四川省","成都市");
-    new PCAS("province1","city1","area1","四川省","成都市");
+$(function(){
+  $.fn.citySelect({setId:['#Province1' , '#City1' , '#Area1','#Insurer1']})
+}) 
 </script>
 </body>
 </html>

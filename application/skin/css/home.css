@@ -91,7 +91,7 @@ body{
 	margin-bottom: 25px;
 }
 .content-tit ul{
-	float: left;
+	/* float: left; */
 }
 .content-tit>span{
 	padding: 10px 0;
@@ -319,6 +319,7 @@ body{
 	float: right;
 	width: 80%;
 	padding: 15px;
+	background: #fff;
 }
 .per-nav{
 	color: #333;
@@ -1499,7 +1500,8 @@ a.arrow{
 .service{
 	min-height: 600px;
 	margin-bottom: 50px;
-	padding-top: 60px;
+	padding-top: 30px;
+	background: #fff;
 }
 .service img{
 	max-width: 100%;
@@ -1533,7 +1535,7 @@ a.arrow{
 }
 /* 伴餐 */
 .elegance{
-	padding-top: 60px;
+	padding-top: 30px;
 	margin-bottom: 50px;
 	min-height: 600px;
 }
