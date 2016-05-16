@@ -570,6 +570,7 @@ table.middle>tbody>tr>td{
 	text-align: center;
 	height: 100%;
 	font-size: 18px;
+	background: transparent;
 }
 .num-btn span{
 	display: inline-block;
