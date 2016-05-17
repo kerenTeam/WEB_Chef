@@ -45,6 +45,17 @@
 							</td>
 							<td class="defr_sum">￥ <span class="total">30.34</span></td>
 						</tr>
+							<tr>
+								<td><div class="defr_tit">服务费</div></td>
+								<td>￥ <span class="price">30.34</span></td>
+								<td><div class="jiajian">
+									<!-- <img class="jian" src="skin/img/jian.png"> -->
+									<input class="shuzhi" value="1" readonly>
+									<!-- <img class="jia" src="skin/img/jia.jpg"> -->
+								</div>
+							</td>
+							<td class="defr_sum">￥ <span class="total">30.34</span></td>
+						</tr>
 					</tbody>
 				</table>
 				<!-- <div class="defr_info clear">
@@ -80,13 +91,13 @@
 										<input type="radio" name="price" value="" data-am-ucheck> Apple Pay
 								</label> 
 								<label class="am-radio am-danger">
-										<input type="radio" name="price" value="" data-am-ucheck> 微信支付
+										<input type="radio" name="price" value="" data-am-ucheck checked> 微信支付
 								</label>
 								<label class="am-radio am-danger">
 										<input type="radio" name="price" value="" data-am-ucheck> 支付宝支付
 								</label>
 								<label class="am-radio am-danger">
-										<input type="radio" name="price" value="" data-am-ucheck checked> 线下支付
+										<input type="radio" name="price" value="" data-am-ucheck> 线下支付
 								</label>
 						</div>
 				</div>
@@ -133,6 +144,37 @@
 						</table>
 					</div>
 				</div>
+				<div class="defr_info clear">
+					<p>服务时间</p>
+					<div class="payment">
+						<div class="am-g">
+						  <div class="am-u-sm-3">
+						    选择日期<br/>
+						    <p><input type="text" class="am-form-field" placeholder="选择要服务日期" id="my-start-2" required/></p>
+						  </div>
+						  <div class="am-u-sm-3">
+						    选择时间<br/>
+						    <p><select style="width: 100px;" required>
+						    	<option>10:00</option>
+						    	<option>11:00</option>
+						    	<option>11:30</option>
+						    	<option>12:00</option>
+						    	<option>12:30</option>
+						    	<option>14:30</option>
+						    	<option>15:00</option>
+						    	<option>16:00</option>
+						    	<option>17:00</option>
+						    	<option>18:00</option>
+						    	<option>18:30</option>
+						    	<option>19:00</option>
+						    	<option>19:30</option>
+						    	<option>20:00</option>
+						    </select></p>
+						  </div>
+						  <div class="am-u-sm-1"></div>
+						</div>
+					</div>
+				</div>
 				<div class="home_buy">
 					<p><span>优惠方式</span></p>
 					<!-- <label class="am-checkbox am-danger xz_yhj">
@@ -151,9 +193,9 @@
 										<ul class="am-avg-sm-4 defray_cart">
 											<li>
 												<label class="am-checkbox am-danger">
-													<input type="radio" name="conpon" value="" data-am-ucheck>
+													<input class="conponList" type="radio" name="conpon" value="" data-am-ucheck>
 													<div class="coupon_bg coupon_pic1">
-														<h1>￥<span>5</span></h1>
+														<h1>￥<span class="fanPrice">5</span></h1>
 														<p>菜品: 套餐系列</p>
 														<p>使用条件: 满30.00</p>
 														<p>有效时间: 2016.3.21-2016.3.24</p>
@@ -163,9 +205,9 @@
 											</li>
 											<li>
 												<label class="am-checkbox am-danger">
-													<input type="radio" name="conpon" value="" data-am-ucheck>
+													<input class="conponList" type="radio" name="conpon" value="" data-am-ucheck>
 													<div class="coupon_bg coupon_pic1">
-														<h1>￥<span>5</span></h1>
+														<h1>￥<span class="fanPrice">10</span></h1>
 														<p>菜品: 套餐系列</p>
 														<p>使用条件: 满30.00</p>
 														<p>有效时间: 2016.3.21-2016.3.24</p>
@@ -174,9 +216,9 @@
 											</li>
 											<li>
 												<label class="am-checkbox am-danger">
-													<input type="radio" name="conpon" value="" data-am-ucheck>
+													<input class="conponList" type="radio" name="conpon" value="" data-am-ucheck>
 													<div class="coupon_bg coupon_pic1">
-														<h1>￥<span>5</span></h1>
+														<h1>￥<span class="fanPrice">20</span></h1>
 														<p>菜品: 套餐系列</p>
 														<p>使用条件: 满30.00</p>
 														<p>有效时间: 2016.3.21-2016.3.24</p>
@@ -197,8 +239,8 @@
 								<div id="do-not-say-2" class="am-panel-collapse am-collapse">
 									<div class="am-panel-bd">
 										<label class="am-checkbox am-danger">
-											<input type="checkbox" name="conpon" value="" data-am-ucheck>
-											<span class="am-text-danger">使用200积分可抵￥30</span>
+											<input id="canjifen" type="checkbox" name="conpon" value="" data-am-ucheck>
+											<span class="am-text-danger">使用200积分可抵￥<span class="jifen">30</span></span>
 										</label>
 									</div>
 								</div>
@@ -404,4 +446,68 @@
 $(function(){
   $.fn.citySelect({setId:['#Province1' , '#City1' , '#Area1','#Insurer1']})
 })
+</script>
+<script>
+  $(function() {
+    var nowTemp = new Date();
+    var nowDay = new Date(nowTemp.getFullYear(), nowTemp.getMonth(), nowTemp.getDate(), 0, 0, 0, 0).valueOf();
+    var nowMoth = new Date(nowTemp.getFullYear(), nowTemp.getMonth(), 1, 0, 0, 0, 0).valueOf();
+    var nowYear = new Date(nowTemp.getFullYear(), 0, 1, 0, 0, 0, 0).valueOf();
+    var $myStart2 = $('#my-start-2');
+
+    var checkin = $myStart2.datepicker({
+      onRender: function(date, viewMode) {
+        // 默认 days 视图，与当前日期比较
+        var viewDate = nowDay;
+
+        switch (viewMode) {
+          // moths 视图，与当前月份比较
+          case 1:
+            viewDate = nowMoth;
+            break;
+          // years 视图，与当前年份比较
+          case 2:
+            viewDate = nowYear;
+            break;
+        }
+
+        return date.valueOf() < viewDate ? 'am-disabled' : '';
+      }
+    }).on('changeDate.datepicker.amui', function(ev) {
+        if (ev.date.valueOf() > checkout.date.valueOf()) {
+          var newDate = new Date(ev.date)
+          newDate.setDate(newDate.getDate() + 1);
+          checkout.setValue(newDate);
+        }
+        checkin.close();
+        $('#my-end-2')[0].focus();
+    }).data('amui.datepicker');
+
+    var checkout = $('#my-end-2').datepicker({
+      onRender: function(date, viewMode) {
+        var inTime = checkin.date;
+        var inDay = inTime.valueOf();
+        var inMoth = new Date(inTime.getFullYear(), inTime.getMonth(), 1, 0, 0, 0, 0).valueOf();
+        var inYear = new Date(inTime.getFullYear(), 0, 1, 0, 0, 0, 0).valueOf();
+
+        // 默认 days 视图，与当前日期比较
+        var viewDate = inDay;
+
+        switch (viewMode) {
+          // moths 视图，与当前月份比较
+          case 1:
+            viewDate = inMoth;
+            break;
+          // years 视图，与当前年份比较
+          case 2:
+            viewDate = inYear;
+            break;
+        }
+
+        return date.valueOf() <= viewDate ? 'am-disabled' : '';
+      }
+    }).on('changeDate.datepicker.amui', function(ev) {
+      checkout.close();
+    }).data('amui.datepicker');
+  });
 </script>

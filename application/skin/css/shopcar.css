@@ -215,3 +215,17 @@ li{
 	font-size: 20px;
 	font-weight: normal;
 }
+.shangpinlist ul li>span.serTit{
+	margin-left: 25px;
+}
+.shangpinlist .serPris{
+	margin: 0 0 0 40px;
+}
+.shangpinlist .serPrice{
+	margin: 0;
+	display: inline-block;
+	margin-left: 280px;
+}
+.shangpinlist .bancan{
+	margin: 0 0 0 565px;
+}

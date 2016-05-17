@@ -1,3 +1,9 @@
+
+var sum = $("#sum");
+var totalPrice = sum.html();// 总价
+var coupon = 0;//优惠券
+var jifen = 0;//积分
+var jifenNum = 0;//应付金额
 $(function(){
 	var input = $(".shuzhi");
 	input.each(function(){
@@ -6,6 +12,7 @@ $(function(){
 		total.html((parseFloat($(this).val()*price)).toFixed(2));
 	});
 	count();
+	console.log(totalPrice);
 });
 // // 减
 // $(".jian").bind("click",jian);
@@ -39,20 +46,38 @@ $(function(){
 // }
 // 合计
 function count(){
-	var sum = $("#sum");
 	var count = 0;
 	$(".total").each(function(i){
 		// console.log(parseFloat($(this).html()));
 		count += parseFloat($(this).html());
+		totalPrice = count;
 		sum.html(count.toFixed(2));
 	});
-
 }
-
+// 积分
+$('#canjifen').click(function(){
+	jifen = parseFloat($(this).parent().find('.jifen').html());
+	if($(this).prop('checked')){
+		jifenNum = (parseFloat(totalPrice) - coupon - jifen).toFixed(2);
+	}else{
+		jifenNum = (parseFloat(totalPrice) - coupon).toFixed(2);
+	}
+	sum.html(jifenNum);
+});
+// 优惠券
+$('.conponList').each(function(){
+	$(this).click(function(){
+		var allSum = parseFloat(sum.html());
+		var couponList = parseFloat($(this).parent().find('.fanPrice').html());
+		coupon = couponList;
+		jifenNum = (parseFloat(totalPrice) - coupon - jifen).toFixed(2);
+		sum.html(jifenNum);
+	});
+});
 
 // 手机验证
 	$(".phone_yz").bind("submit",function(){
-		var phone = $(this).find(".phone");
+		var phone = $(this).find(".phone"); 
 		if(!(/^1((3|4|5|8|7){1}\d{1}|70)\d{8}$/.test(phone.val()))){
 			phone.next('span').html("请输入正确的手机号");
 		}else{

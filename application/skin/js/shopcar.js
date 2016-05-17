@@ -17,6 +17,7 @@
  	var oUl = document.getElementById("youul");
  	var oLi_a = document.getElementById("youul").getElementsByClassName("you_a");
  	var service = document.getElementById('service');
+ 	var fuwu = document.getElementsByClassName('caipin');
  	
 	// 删除
 	for (var i = 0; i < oLi_a.length; i++) {
@@ -37,16 +38,21 @@
  	// 合计 计算
 	function count(){
 		var total = 0;
+		var fuwuPrice = 0;
 		var serviceNum = 60;
 		for (var i = 0; i < oP2span.length; i++) {
 			if (ochecklist[i].checked) {
 				total += parseFloat(oP2span[i].innerHTML);
+				console.log(oP2span[i].className.indexOf('caipin'));
+				if(oP2span[i].className.indexOf('caipin') > -1){
+					fuwuPrice += parseFloat(oP2span[i].innerHTML);
+				}
 			}
 		}
-		if(total >= 240 && total <= 300){
-			serviceNum = 300 - total;
+		if(fuwuPrice >= 240 && fuwuPrice <= 300){
+			serviceNum = 300 - fuwuPrice;
 			console.log(total);
-		}else if(total > 300){
+		}else if(fuwuPrice > 300){
 			serviceNum = 0;
 		}
 		if(serviceNum == 0){
@@ -55,6 +61,7 @@
 			service.parentNode.style.display = 'block';
 			service.innerHTML = serviceNum.toFixed(2);
 		}
+		console.log(fuwu.length);
 		total += parseFloat(serviceNum);
 		oP3span.innerHTML = total.toFixed(2);
 	}
@@ -163,7 +170,11 @@
  	}
 	oCheyouall[0].checked = true;
  	oCheyouall[0].onclick();
- 	document.getElementById('fuwuyuan').checked = false;
+ 	var fuwu = document.getElementsByClassName('fuwuyuan');
+ 	for(var i = 0;i < fuwu.length;i++){
+ 		fuwu[i].checked = false;
+ 	}
+ 	count();
 } 
 
 
