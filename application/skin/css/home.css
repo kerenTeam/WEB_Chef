@@ -976,7 +976,7 @@ table.middle>tbody>tr>td{
 	width: 250px;
 }
 .payment{
-	padding: 15px;
+	padding: 15px 0;
 }
 .payment .am-radio{
 	display: inline-block;

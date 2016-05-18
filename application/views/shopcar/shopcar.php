@@ -47,7 +47,7 @@
 					<div class="jiajian">
 						<img class="jian"  src="skin/img/jian.png"><input class="shuzhi" value="1"><img class="jia"  src="skin/img/jia.jpg">
 					</div>
-					<p class="p2">￥ <span class="p2span">0.00</span> </p>
+					<p class="p2">￥ <span class="p2span caipin">0.00</span> </p>
 					<a href="<?=site_url('welcome/exchange');?>">换一换</a>
 					<a href="javascript:;" class="you_a">删除</a>
 				</li>
@@ -65,7 +65,7 @@
 					<div class="jiajian">
 						<img class="jian"  src="skin/img/jian.png"><input class="shuzhi" value="1"><img class="jia"  src="skin/img/jia.jpg">
 					</div>
-					<p class="p2">￥ <span class="p2span">0.00</span> </p>
+					<p class="p2">￥ <span class="p2span caipin">0.00</span> </p>
 					<a href="<?=site_url('welcome/exchange');?>">换一换</a>
 					<a href="javascript:;" class="you_a">删除</a>
 				</li>
@@ -83,7 +83,7 @@
 					<div class="jiajian">
 						<img class="jian"  src="skin/img/jian.png"><input class="shuzhi" value="1"><img class="jia"  src="skin/img/jia.jpg">
 					</div>
-					<p class="p2">￥ <span class="p2span">0.00</span> </p>
+					<p class="p2">￥ <span class="p2span caipin">0.00</span> </p>
 					<a href="<?=site_url('welcome/exchange');?>">换一换</a>
 					<a href="javascript:;" class="you_a">删除</a>
 				</li>
@@ -102,27 +102,49 @@
 					<div class="jiajian">
 						<img class="jian"  src="skin/img/jian.png"><input class="shuzhi" value="1"><img class="jia"  src="skin/img/jia.jpg">
 					</div>
-					<p class="p2">￥ <span class="p2span">0.00</span> </p>
+					<p class="p2">￥ <span class="p2span caipin">0.00</span> </p>
 					<a href="javascript:;" class="you_a">删除</a>
 				</li>
-				<li><h4 class="am-text-primary">服务员</h4></li>
+				<li><h4 class="am-text-primary">服务</h4></li>
 				<li>
 					<label class="am-checkbox am-danger cheall">
-						<input id="fuwuyuan" class="cheyou" type ="checkbox" name ="selected" value ="" data-am-ucheck  />
+						<input class="fuwuyuan cheyou" type ="checkbox" name ="selected" value ="" data-am-ucheck  />
 					</label>
-					<a href="javascript:;" class="waiter">
-						<img src="skin/img/caipintu.jpg" alt="">
-					</a>
-					<span>
-						<!-- <a href="<?=site_url('welcome/info');?>"><b>回锅肉，</b>口味独特,色泽红亮,肥而不腻入口浓香.简单搞定<br/> 身体必备营养物质</a> -->
-						 正式开餐前，按照领班安排认真做好桌椅、餐厅卫生，餐厅铺台，准备好各种用品，确保正常营业使用
+					<span class="serTit">
+						钢琴艺术家
 					</span>
-					<p class="p1">￥<span class="p1span">30.45</span></p>
+					<p class="serPrice p1 am-hide"><span class="p1span">80</span></p>
+					<div class="jiajian am-hide">
+						<img class="jian"  src="skin/img/jian.png"><input class="shuzhi" value="1"><img class="jia"  src="skin/img/jia.jpg">
+					</div>
+					<p class="bancan p2">￥ <span class="p2span">80.00</span> </p>
+					<a href="javascript:;" class="you_a">删除</a>
+				</li>
+				<li>
+					<label class="am-checkbox am-danger cheall">
+						<input class="fuwuyuan cheyou" type ="checkbox" name ="selected" value ="" data-am-ucheck  />
+					</label>
+					<span class="serTit">
+						服务员（男）
+					</span>
+					<p class="serPrice p1"><span class="p1span">80</span>/位</p>
 					<div class="jiajian">
 						<img class="jian"  src="skin/img/jian.png"><input class="shuzhi" value="1"><img class="jia"  src="skin/img/jia.jpg">
 					</div>
-					<p class="p2">￥ <span class="p2span">0.00</span> </p>
-					<a href="javascript:;" class="you_a">删除</a>					
+					<p class="serPris p2">￥ <span class="p2span">0.00</span> </p>
+				</li>
+				<li>
+					<label class="am-checkbox am-danger cheall">
+						<input class="fuwuyuan cheyou" type ="checkbox" name ="selected" value ="" data-am-ucheck  />
+					</label>
+					<span class="serTit">
+						服务员（女）
+					</span>
+					<p class="serPrice p1"><span class="p1span">80</span>/位</p>
+					<div class="jiajian">
+						<img class="jian"  src="skin/img/jian.png"><input class="shuzhi" value="1"><img class="jia"  src="skin/img/jia.jpg">
+					</div>
+					<p class="serPris p2">￥ <span class="p2span">0.00</span> </p>
 				</li>
 			</ul>
 			<!-- 结算 -->
