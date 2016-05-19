@@ -24,6 +24,9 @@ li{
 	width: 1170px; 
 	margin:20px auto;
 }
+.hide{
+	display: none;
+}
 #youform{
 	min-height: 450px;
 }
@@ -74,6 +77,12 @@ li{
 /* 商品列表 */
 .shangpinlist{
 	border: 1px solid #c4c2c2;
+}
+.shangpinlist ul{
+	margin: 0;
+}
+.shangpinlist>ul>li{
+	padding: 0;
 }
 .shangpinlist li{
 	padding: 20px 0; 

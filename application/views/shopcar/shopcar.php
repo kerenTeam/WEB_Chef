@@ -32,6 +32,8 @@
 		<!-- 商品详情 -->
 		<div class="shangpinlist">
 			<ul id="youul">
+				<li>
+					<ul>
 				<li><h4 class="am-text-primary">点菜</h4></li>
 				<li>
 					<label class="am-checkbox am-danger cheall">
@@ -87,6 +89,11 @@
 					<a href="<?=site_url('welcome/exchange');?>">换一换</a>
 					<a href="javascript:;" class="you_a">删除</a>
 				</li>
+					</ul>
+
+				<li>
+					<ul>
+				</li>
 				<li><h4 class="am-text-primary">套餐</h4></li>
 				<li>
 					<label class="am-checkbox am-danger cheall">
@@ -105,10 +112,14 @@
 					<p class="p2">￥ <span class="p2span caipin">0.00</span> </p>
 					<a href="javascript:;" class="you_a">删除</a>
 				</li>
+				</li>
+					</ul>
+				<li>
+					<ul>
 				<li><h4 class="am-text-primary">服务</h4></li>
 				<li>
 					<label class="am-checkbox am-danger cheall">
-						<input class="fuwuyuan cheyou" type ="checkbox" name ="selected" value ="" data-am-ucheck  />
+						<input class="cheyou" type ="checkbox" name ="selected" value ="" data-am-ucheck  />
 					</label>
 					<span class="serTit">
 						钢琴艺术家
@@ -146,6 +157,8 @@
 					</div>
 					<p class="serPris p2">￥ <span class="p2span">0.00</span> </p>
 				</li>
+				</li>
+					</ul>
 			</ul>
 			<!-- 结算 -->
 			<div class="jiesuan">
